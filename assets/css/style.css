@@ -2120,6 +2120,7 @@ video {
   .anb-accordion.active h3 {
     font-size: 1.25rem;
     line-height: 1.75rem;
+    color:#2156A7;
   }
 }
 
@@ -2923,7 +2924,7 @@ video {
 }
 
 .group:hover .group-hover\:fill-\[\#8447FF\] {
-  fill: #8447FF;
+  fill: #2156A7;
 }
 
 .group:hover .group-hover\:fill-\[\#fff\] {
