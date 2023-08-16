@@ -1,0 +1,2321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <title>منصة أعناب</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-Almarai overflow-x-hidden relative">
+    <!-- Start Annab Header -->
+    <header class="bg-[#F7FAFA] z-50 lg:sticky top-0 px-[30px] lg:px-0">
+        <div class="container py-6 flex items-center gap-4 justify-between">
+            <!-- logo  -->
+            <a href="index.html" aria-label="Logo" class="shrink-0">
+                <img src="assets/images/logo.png" class="w-[128px] lg:w-[154px]" width="154" height="48"
+                    alt="Aanaab Logo">
+            </a>
+
+            <button type="button" aria-label="Mobile Menu" class="lg:hidden mob-menu-btn">
+                <img src="assets/images/menu.svg" width="24" height="24" alt="menu">
+            </button>
+
+            <div
+                class="mob-menu z-30 bg-white lg:bg-[#F7FAFA] fixed lg:static top-0 left-0 w-full h-screen lg:h-auto flex flex-col lg:flex-row lg:gap-8 lg:items-center invisible lg:visible opacity-0 lg:opacity-100 transition-all duration-300">
+                <div class="flex lg:hidden items-center gap-4 py-6 bg-white px-[30px] border-b border-[#D7D5D5]">
+                    <img src="assets/images/logo-shap.svg" width="40" height="40" alt="Logo Annab">
+                    <!-- mobile search  -->
+                    <form
+                        class="flex-1 py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3 w-full bg-white">
+                        <button type="button" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </button>
+                        <input type="search" name="mob-header-search" id="mob-header-search" placeholder="بحث"
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none w-full">
+                    </form>
+                    <button class="mob-menu-closbtn" type="button" title="Close">
+                        <img src="assets/images/close.svg" width="24" height="24" alt="close">
+                    </button>
+                </div>
+
+                <div
+                    class="flex-1 h-full overflow-y-scroll lg:h-full lg:overflow-y-visible flex flex-col lg:flex-row lg:items-center lg:gap-8">
+                    <!-- learn  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] menu-dropdown lg:border-none">
+                        <p
+                            class="group lg:hover:text-[#7841E8] text-[#333745] text-base lg:text-sm leading-normal font-bold flex items-center justify-between cursor-pointer gap-2 lg:py-2.5 lg:px-4 lg:rounded-full lg:border lg:border-[#7841E8] lg:text-[#7841E8]">
+                            تعلم
+                            <svg class="chevron transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="lg:fill-[#7841E8]"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#2156A7" />
+                            </svg>
+                        </p>
+                        <div class="hidden lg:block menu-dropdown-list">
+                            <div class="bg-white">
+                                <ul class="grid lg:grid-cols-2 gap-4 lg:gap-12 lg:py-12 lg:container">
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/book.svg" class="hidden lg:block" width="24" height="24"
+                                            alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="https://aanaab.com/courses"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الدورات</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات عن بعد لتعزيز كفاءة المعلمين والتربويين
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/award.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="qualifications.html"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">المؤهلات</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                مؤهّلات مهنيّة وشهادات احترافية بالتعاون مع شركائنا
+                                                لتكون معلّمًا مؤهّلًا في مختلف المجالات
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/briefcase.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="professional-licenses.html"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الرخص
+                                                المهنية</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات مكثفة لاجتياز اختبار الرخصة المهنية بكل جدارة
+                                                للعاملين في قطاع التعليم في السعودية
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/bookstore.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="https://shop.aanaab.com/"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">
+                                                متجر الكتب
+                                            </a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات مكثفة متجر لبيع الكتب الخاصة بالرخص المهنية
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- search  -->
+                    <form
+                        class="hidden lg:flex items-center gap-3 py-2.5 px-4 rounded-full border border-[#D7D5D5] -mr-4 ml-auto bg-white">
+                        <button type="button" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </button>
+                        <input type="search" name="header-search" id="header-search" placeholder="بحث"
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none lg:w-[140px]">
+                    </form>
+
+                    <!-- get your job  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none">
+                        <a href="#"
+                            class="text-[#333745] hover:text-[#7841E8] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 transition-all duration-300">
+                            حصل وظيفتك
+                        </a>
+                    </div>
+
+                    <!-- community  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none">
+                        <a href="community.html"
+                            class="text-[#333745] hover:text-[#7841E8] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 transition-all duration-300">
+                            المجتمع
+                        </a>
+                    </div>
+
+                    <!-- for schools  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none menu-dropdown">
+                        <div
+                            class="group lg:hover:text-[#8447FF] text-[#333745] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 colored-act transition-all duration-300">
+                            <a href="schools.html">
+                                للمدارس
+                            </a>
+
+                            <svg class="chevron transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="lg:group-hover:fill-[#8447FF] transition-all duration-300"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#2156A7" />
+                            </svg>
+                        </div>
+                        <div class="hidden lg:block menu-dropdown-list">
+                            <div class="bg-white">
+                                <ul class="grid lg:grid-cols-3 gap-4 lg:gap-12 lg:py-12 lg:container">
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="community.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">المجتمعات</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            مجتمع خاص بالمدارس
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="learning.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">التعلم</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            عزز مهارات معلمينك
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="jobs.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الوظائف</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            منصة التوظيف الأولى للمعلمين في الشرق الأوسط 
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="live-dashboard.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">لوحة
+                                            المتابعة المباشرة</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            مستقبل مشرق لمدرستك من خلال أداء أفضل لمعلميك
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="prices.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الأسعار
+                                        </a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            لأن الاستثمار المهني في المعلمين هو استثمار في مستقبل
+                                            المدرسة
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col lg:flex-row lg:items-center gap-4 p-8 lg:p-0 border-t border-[#D7D5D5] lg:border-none">
+                    <a href="https://aanaab.com/auth/register"
+                        class="py-3 text-center px-6 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                        انضم إلى أعناب
+                    </a>
+                    <a href="https://dashboard.aanaab.com/login/aanaab "
+                        class="py-3 text-center px-6 lg:p-0 rounded-[32px] bg-[#F3EDFF] lg:bg-transparent text-[#8447FF] lg:text-[#333745] text-base leading-6 font-bold lg:font-normal">تسجيل
+                        الدخول</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End  Annab Header -->
+    <!-- ======================================= -->
+
+    <!-- Start Annab  Main Content  -->
+    <main>
+
+        <!-- Start Course Content  -->
+        <section class="py-8 lg:pt-12 lg:pb-16 bg-[#F7FAFA]">
+            <div class="container flex flex-col gap-8">
+                <!-- Start Page Title Section  -->
+                <div class="flex items-end gap-[30px] px-[30px] lg:px-0">
+                    <div class="flex flex-col gap-5 lg:gap-3 flex-1">
+                        <div class="flex items-center gap-4">
+                            <a href="index.html">
+                                <img src="assets/images/home-icon.svg" width="20" height="20" alt="Home">
+                                <span class="sr-only">Aanaab Home Page Icon</span>
+                            </a>
+                            <img src="assets/images/breadcrumb.svg" width="12" height="12" alt="breadcrumb">
+                            <a href="#" class="text-[#838795] text-sm leading-normal font-bold">
+                                الدورات
+                            </a>
+                            <img src="assets/images/breadcrumb.svg" width="12" height="12" alt="breadcrumb">
+                            <a href="#" class="text-[333745] text-sm leading-normal font-bold truncate">
+                                الدورة التدريبية على الشهادة الاحترافية
+                            </a>
+                        </div>
+                        <h2 class="text-[#333745] text-2xl lg:text-[32px] leading-normal font-extrabold">
+                            منهجية التفكير التصميمي في التعليم
+                        </h2>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-4">
+                        <a href="#">
+                            <img src="assets/images/share-alt.svg" width="16" height="17" alt="share">
+                            <span class="sr-only">share Icon</span>
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/archive.svg" width="24" height="24" alt="archive">
+                            <span class="sr-only">archive Icon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course Content  -->
+                <div class="grid lg:grid-cols-3 gap-[30px]">
+                    <div class="lg:col-span-2 flex flex-col gap-8">
+
+                        <!-- video section -->
+                        <div class="lg:rounded-2xl overflow-hidden relative">
+
+                            <button type="button"
+                                class="play-vid z-[1] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 lg:w-16 lg:h-16">
+                                <img src="assets/images/homepage/play.svg" class="w-full h-full object-cover" width="64"
+                                    height="64" alt="Play Video">
+                                <span class="sr-only">Play Video Icon</span>
+                            </button>
+
+                            <video preload="metadata" class="w-full" width="730" height="410">
+                                <source src="assets/images/course.mp4#t=11.9" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="lg:absolute bottom-0 lg:right-auto lg:left-10 px-[30px] lg:px-0 -mt-10 lg:mt-0">
+                                <div
+                                    class="bg-white rounded-2xl lg:rounded-t-xl py-3 px-4 lg:p-6 flex lg:flex-col gap-4 lg:gap-2 items-center border border-[#E9E8E8] lg:border-none relative lg:rounded-b-none">
+                                    <p class="text-[#8447FF] text-sm leading-normal font-extrabold shrink-0">
+                                        هذه الدورة معتمدة من
+                                    </p>
+                                    <img src="assets/images/partner-3.png" class="h-12 w-[140px] lg:w-[180px] lg:h-16"
+                                        width="180" height="64" alt="Partner">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="flex items-center gap-5 lg:gap-6 px-[30px] lg:px-0">
+                            <div class="flex items-center gap-2">
+                                <span class="text-[#838795] text-sm lg:text-base leading-normal lg:leading-normal">نوع
+                                    الدورة:</span>
+                                <span
+                                    class="text-[#333745] text-sm lg:text-base leading-normal lg:leading-normal font-bold">دورة
+                                    مباشرة</span>
+                            </div>
+                            <!-- divider -->
+                            <span class="hidden lg:block border-l border-[#E9E8E8] h-full"></span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-[#838795] text-sm lg:text-base leading-normal lg:leading-normal">نوع
+                                    الدورة:</span>
+                                <span
+                                    class="text-[#333745] text-sm lg:text-base leading-normal lg:leading-normal font-bold">دورة
+                                    مباشرة</span>
+                            </div>
+                        </div>
+
+                        <!-- divider -->
+                        <span class="border-t border-[#E9E8E8] w-full"></span>
+
+                        <div class="flex flex-col gap-6 px-[30px] lg:px-0">
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-xl leading-normal font-bold">
+                                    عن الدورة
+                                </h3>
+
+                                <div class="flex flex-col gap-2 items-start">
+                                    <p
+                                        class="text-[#838795] text-base lg:text-lg leading-[180%] lg:leading-[180%] collapsed-txt line-clamp-4">
+                                        تستعرض الدورة مفهوم التفكير التصميمي ونشأته في التعليم والعلاقة بينه وبين التعلم
+                                        النشط،
+                                        كما تشرح المراحل الخمسة للتفكير التصميمي: التعاطف، التحديد، جمع الأفكار،
+                                        النمذجة،
+                                        الاختبار، مع أمثلة تطبيقية لكيفية تفعيل هذه المراحل في حل المشاكل والتحديات التي
+                                        تواجه
+                                        الطلاب أو العاملين في القطاع التعليمي.
+
+                                    </p>
+                                    <button class="text-[#8447FF] text-lg leading-normal font-bold read-more-btn">
+                                        قرأءة المزيد
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- tags  -->
+                            <div class="flex flex-wrap items-center gap-3">
+                                <span class="text-[#6B7280] text-sm leading-8">
+                                    الوسوم:
+                                </span>
+                                <a href="#"
+                                    class="bg-white px-2 rounded-full border border-[#E9E8E8] text-[#6B7280] text-sm leading-8">
+                                    تطوير ذاتي
+                                </a>
+                                <a href="#"
+                                    class="bg-white px-2 rounded-full border border-[#E9E8E8] text-[#6B7280] text-sm leading-8">
+                                    مهارات العرض
+                                </a>
+                                <a href="#"
+                                    class="bg-white px-2 rounded-full border border-[#E9E8E8] text-[#6B7280] text-sm leading-8">
+                                    الفصل التفاعلي
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- course content  -->
+                        <div class="px-[30px] lg:px-0">
+                            <div class="border border-[#E9E8E8] bg-white rounded-2xl p-6">
+                                <div class="flex flex-col gap-6">
+                                    <h3 class="text-[#333745] text-xl leading-normal font-bold">
+                                        محتويات الدورة
+                                    </h3>
+
+                                    <div class="flex flex-col gap-3">
+
+                                        <!-- Accordion Item  -->
+                                        <div
+                                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-lg p-4 flex flex-col">
+                                            <div
+                                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                                <h4
+                                                    class="text-[#333745] text-sm lg:text-base leading-normal lg;leading-normal font-bold flex-1 transition-all duration-300">
+                                                    مقدمة
+                                                </h4>
+                                                <span class="icon">
+                                                    <img src="assets/images/arrow-square-down.svg" width="24"
+                                                        height="24" alt="plus">
+                                                    <img src="assets/images/arrow-square-up.svg" class="hidden"
+                                                        width="24" height="24" alt="minus">
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                                <div class="flex flex-col gap-2 course-conrtent-item">
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            التدريب في أعناب
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            الخطة الزمنية لدورة منهجية التفكير التصميمي في التعليم
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            عرفنا بنفسك
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            مقدمة الدورة
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Accordion Item  -->
+                                        <div
+                                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-lg p-4 flex flex-col">
+                                            <div
+                                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                                <h4
+                                                    class="text-[#333745] text-sm lg:text-base leading-normal lg;leading-normal font-bold flex-1 transition-all duration-300">
+                                                    مقدمة لمنهجية التفكير التصميمي في التعليم
+                                                </h4>
+                                                <span class="icon">
+                                                    <img src="assets/images/arrow-square-down.svg" width="24"
+                                                        height="24" alt="plus">
+                                                    <img src="assets/images/arrow-square-up.svg" class="hidden"
+                                                        width="24" height="24" alt="minus">
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                                <div class="flex flex-col gap-2 course-conrtent-item">
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            التدريب في أعناب
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            الخطة الزمنية لدورة منهجية التفكير التصميمي في التعليم
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            عرفنا بنفسك
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            مقدمة الدورة
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Accordion Item  -->
+                                        <div
+                                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-lg p-4 flex flex-col">
+                                            <div
+                                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                                <h4
+                                                    class="text-[#333745] text-sm lg:text-base leading-normal lg;leading-normal font-bold flex-1 transition-all duration-300">
+                                                    المرحلة الأولى: التعاطف
+                                                </h4>
+                                                <span class="icon">
+                                                    <img src="assets/images/arrow-square-down.svg" width="24"
+                                                        height="24" alt="plus">
+                                                    <img src="assets/images/arrow-square-up.svg" class="hidden"
+                                                        width="24" height="24" alt="minus">
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                                <div class="flex flex-col gap-2 course-conrtent-item">
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            التدريب في أعناب
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            الخطة الزمنية لدورة منهجية التفكير التصميمي في التعليم
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            عرفنا بنفسك
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            مقدمة الدورة
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Accordion Item  -->
+                                        <div
+                                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-lg p-4 flex flex-col">
+                                            <div
+                                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                                <h4
+                                                    class="text-[#333745] text-sm lg:text-base leading-normal lg;leading-normal font-bold flex-1 transition-all duration-300">
+                                                    المرحلة الثانية: التحديد
+                                                </h4>
+                                                <span class="icon">
+                                                    <img src="assets/images/arrow-square-down.svg" width="24"
+                                                        height="24" alt="plus">
+                                                    <img src="assets/images/arrow-square-up.svg" class="hidden"
+                                                        width="24" height="24" alt="minus">
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                                <div class="flex flex-col gap-2 course-conrtent-item">
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            التدريب في أعناب
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            الخطة الزمنية لدورة منهجية التفكير التصميمي في التعليم
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            عرفنا بنفسك
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            مقدمة الدورة
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Accordion Item  -->
+                                        <div
+                                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-lg p-4 flex flex-col">
+                                            <div
+                                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                                <h4
+                                                    class="text-[#333745] text-sm lg:text-base leading-normal lg;leading-normal font-bold flex-1 transition-all duration-300">
+                                                    المرحلة الثالثة: جمع الأفكار
+                                                </h4>
+                                                <span class="icon">
+                                                    <img src="assets/images/arrow-square-down.svg" width="24"
+                                                        height="24" alt="plus">
+                                                    <img src="assets/images/arrow-square-up.svg" class="hidden"
+                                                        width="24" height="24" alt="minus">
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                                <div class="flex flex-col gap-2 course-conrtent-item">
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            التدريب في أعناب
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            الخطة الزمنية لدورة منهجية التفكير التصميمي في التعليم
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            عرفنا بنفسك
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            مقدمة الدورة
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Accordion Item  -->
+                                        <div
+                                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-lg p-4 flex flex-col">
+                                            <div
+                                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                                <h4
+                                                    class="text-[#333745] text-sm lg:text-base leading-normal lg;leading-normal font-bold flex-1 transition-all duration-300">
+                                                    المرحلة الرابعة: النمذجة
+                                                </h4>
+                                                <span class="icon">
+                                                    <img src="assets/images/arrow-square-down.svg" width="24"
+                                                        height="24" alt="plus">
+                                                    <img src="assets/images/arrow-square-up.svg" class="hidden"
+                                                        width="24" height="24" alt="minus">
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                                <div class="flex flex-col gap-2 course-conrtent-item">
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            التدريب في أعناب
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            الخطة الزمنية لدورة منهجية التفكير التصميمي في التعليم
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            عرفنا بنفسك
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            مقدمة الدورة
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Accordion Item  -->
+                                        <div
+                                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-lg p-4 flex flex-col">
+                                            <div
+                                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                                <h4
+                                                    class="text-[#333745] text-sm lg:text-base leading-normal lg;leading-normal font-bold flex-1 transition-all duration-300">
+                                                    المرحلة الخامسة: الاختبار
+                                                </h4>
+                                                <span class="icon">
+                                                    <img src="assets/images/arrow-square-down.svg" width="24"
+                                                        height="24" alt="plus">
+                                                    <img src="assets/images/arrow-square-up.svg" class="hidden"
+                                                        width="24" height="24" alt="minus">
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                                <div class="flex flex-col gap-2 course-conrtent-item">
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            التدريب في أعناب
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            الخطة الزمنية لدورة منهجية التفكير التصميمي في التعليم
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            عرفنا بنفسك
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+                                                    <!-- item -->
+                                                    <a href="#" class="item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewBox="0 0 20 20" fill="none">
+                                                            <path
+                                                                d="M10.443 17.0158H5.1763C2.54297 17.0158 1.66797 15.2658 1.66797 13.5074V6.49076C1.66797 3.85742 2.54297 2.98242 5.1763 2.98242H10.443C13.0763 2.98242 13.9513 3.85742 13.9513 6.49076V13.5074C13.9513 16.1408 13.068 17.0158 10.443 17.0158Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M16.2659 14.2501L13.9492 12.6251V7.36678L16.2659 5.74178C17.3992 4.95011 18.3326 5.43344 18.3326 6.82511V13.1751C18.3326 14.5668 17.3992 15.0501 16.2659 14.2501Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path
+                                                                d="M9.58203 9.16602C10.2724 9.16602 10.832 8.60637 10.832 7.91602C10.832 7.22566 10.2724 6.66602 9.58203 6.66602C8.89168 6.66602 8.33203 7.22566 8.33203 7.91602C8.33203 8.60637 8.89168 9.16602 9.58203 9.16602Z"
+                                                                stroke="#838795" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span class="flex-1">
+                                                            مقدمة الدورة
+                                                        </span>
+                                                        <span class="text-[#333745]">
+                                                            06:00
+                                                        </span>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- divider -->
+                        <span class="hidden lg:block border-t border-[#E9E8E8] w-full"></span>
+
+                        <!-- What Will You Learn -->
+                        <div class="flex flex-col gap-6 px-[30px] lg:px-0">
+                            <div class="flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-xl leading-normal font-bold">
+                                    ماذا ستتعلم في هذه الدورة
+                                </h3>
+                                <p class="text-[#838795] text-base lg:text-lg leading-[180%] lg:leading-[180%]">
+                                    تستعرض الدورة مفهوم التفكير التصميمي ونشأته في التعليم والعلاقة بينه وبين التعلم
+                                    النشط،
+                                    كما تشرح المراحل الخمسة للتفكير التصميمي: التعاطف، التحديد، جمع الأفكار،
+                                    النمذجة،
+                                    الاختبار، مع أمثلة تطبيقية لكيفية تفعيل هذه المراحل في حل المشاكل والتحديات التي
+                                    تواجه
+                                    الطلاب أو العاملين في القطاع التعليمي.
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <div
+                                    class="flex items-center gap-4 text-[#5B5F6D] text-base lg:text-lg leading-normal lg:leading-normal">
+                                    <img src="assets/images/Stepper.png" width="20" height="20" alt="Stepper">
+                                    مفهوم التفكير التصميمي
+                                </div>
+                                <div
+                                    class="flex items-center gap-4 text-[#5B5F6D] text-base lg:text-lg leading-normal lg:leading-normal">
+                                    <img src="assets/images/Stepper.png" width="20" height="20" alt="Stepper">
+                                    الأدوات المناسبة لتطبيق التفكير التصميمي بمراحله الخمسة
+                                </div>
+                                <div
+                                    class="flex items-center gap-4 text-[#5B5F6D] text-base lg:text-lg leading-normal lg:leading-normal">
+                                    <img src="assets/images/Stepper.png" width="20" height="20" alt="Stepper">
+                                    تطبيق منهجية التفكير التصميمي لحل المشاكل التي يواجهها الطلاب والعاملون في القطاع
+                                    التعليمي
+                                </div>
+                                <div
+                                    class="flex items-center gap-4 text-[#5B5F6D] text-base lg:text-lg leading-normal lg:leading-normal">
+                                    <img src="assets/images/Stepper.png" width="20" height="20" alt="Stepper">
+                                    التصميم المتمحور حول الإنسان وأسلوب العمل التعاوني في البيئة التعليمية
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 lg:gap-8 lg:sticky top-28 h-fit px-[30px] lg:p-0">
+
+                        <!-- Course Price -->
+                        <div
+                            class="fixed lg:static w-full left-0 bottom-0 z-20 lg:p-6 bg-white lg:rounded-2xl flex flex-col lg:gap-6 lg:border border-[#E9E8E8]">
+
+                            <div
+                                class="flex justify-between items-center lg:items-start lg:flex-col gap-1 py-4 px-[30px] lg:p-0">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-[#838795] text-xs lg:text-sm leading-normal lg:hidden">
+                                        السعر:
+                                    </span>
+                                    <span
+                                        class="text-[#8447FF]  lg:text-[32px] leading-normal lg:leading-normal font-extrabold">
+                                        1200 ر.س
+                                    </span>
+                                    <span class="text-[#838795] lg:text-sm leading-normal line-through hidden lg:block">
+                                        1900 ر.س
+                                    </span>
+                                </div>
+                                <p class="text-[#838795] text-xs lg:text-sm leading-normal">
+                                    (غير شامل الضريبة)
+                                </p>
+                            </div>
+
+                            <div class="px-[30px] lg:px-0">
+                                <a href="#"
+                                    class="lg:rounded-2xl pt-3 lg:p-4 border-t lg:border border-[#E9E8E8] flex items-center gap-4">
+
+                                    <span class="flex-1 text-[#333745] text-sm leading-normal">
+                                        أو قسم فاتورتك على 3 دفعات بدون فوائد اعرف أكثر ←
+                                    </span>
+                                    <img src="assets/images/tamara.png" width="73" height="24" alt="tamara">
+                                </a>
+                            </div>
+
+                            <div class="py-4 px-[30px] lg:p-0 flex">
+                                <a href="#"
+                                    class="py-4 w-full text-center px-8 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                                    التحق بالدورة الان!
+                                </a>
+                            </div>
+
+                            <div class="hidden lg:flex flex-col gap-4">
+                                <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                    تشمل هذه الدورة:
+                                </h3>
+                                <div class="flex flex-wrap">
+                                    <div
+                                        class="basis-1/2 p-2 flex items-center gap-3 text-[#838795] text-sm leading-normal font-bold">
+                                        <img src="assets/images/video.svg" width="20" height="20" alt="video">
+                                        22 ساعة فيديو
+                                    </div>
+                                    <div
+                                        class="basis-1/2 p-2 flex items-center gap-3 text-[#838795] text-sm leading-normal font-bold">
+                                        <img src="assets/images/video.svg" width="20" height="20" alt="video">
+                                        22 ساعة فيديو
+                                    </div>
+                                    <div
+                                        class="basis-1/2 p-2 flex items-center gap-3 text-[#838795] text-sm leading-normal font-bold">
+                                        <img src="assets/images/video.svg" width="20" height="20" alt="video">
+                                        22 ساعة فيديو
+                                    </div>
+                                    <div
+                                        class="basis-1/2 p-2 flex items-center gap-3 text-[#838795] text-sm leading-normal font-bold">
+                                        <img src="assets/images/video.svg" width="20" height="20" alt="video">
+                                        22 ساعة فيديو
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trainer card  -->
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion home transition-all duration-300 border border-[#E9E8E8] bg-white rounded-2xl p-4 flex flex-col">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h4
+                                    class="text-[#333745] text-xl leading-normal font-bold flex-1 transition-all duration-300">
+                                    المدرب
+                                </h4>
+                                <span class="icon">
+                                    <img src="assets/images/arrow-square-down.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/arrow-square-up.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <div class="anb-accordion-content hidden text-[#5B5F6D] text-sm leading-[180%] pt-6">
+                                <div class="flex items-start gap-4">
+
+                                    <div class="w-16 h-16 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg"
+                                            class="w-full h-full object-cover" width="64" height="64" alt="trainer">
+                                    </div>
+
+                                    <div class="flex flex-col gap-3 flex-1">
+                                        <h5 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                            Dr. Monica San Juan
+                                        </h5>
+                                        <p class="text-[#838795] text-sm leading-[180%]">
+                                            <span class="collapsed-txt line-clamp-4">
+                                                دكتوراة في التربية من جامعة كاميلو هوسيه سيلا، وعضو هيئة تدريس فيها.
+                                                خبيرة
+                                                في جودة التعليم والقيادة، ومنهجيات التعليم النشطة، وتعليم ذوي الاحتياجات
+                                                الخاصة.
+                                            </span>
+                                            <button class="text-[#8447FF] read-more-btn">المزيد ←</button>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course From  -->
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion home transition-all duration-300 border border-[#E9E8E8] bg-white rounded-2xl p-4 flex flex-col">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h4
+                                    class="text-[#333745] text-xl leading-normal font-bold flex-1 transition-all duration-300">
+                                    مقدمة من
+                                </h4>
+                                <span class="icon">
+                                    <img src="assets/images/arrow-square-down.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/arrow-square-up.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <div class="anb-accordion-content hidden text-[#5B5F6D] text-sm leading-[180%] pt-6">
+                                <div class="flex items-start gap-4">
+
+                                    <div class="w-16 h-16 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg"
+                                            class="w-full h-full object-cover" width="64" height="64" alt="trainer">
+                                    </div>
+                                    <div class="flex flex-col gap-3 flex-1">
+                                        <h5 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                            Universidad Camilo José
+                                            Ceia, Centro de
+                                            Enseöanza Universitaria
+                                            SEK S.A
+                                        </h5>
+                                        <p class="text-[#838795] text-sm leading-[180%]">
+                                            <span class="collapsed-txt line-clamp-4">
+                                                جامعة كاميلو هوزيه سيلا في مدريد، أسبانيا، هي جامعة خاصة ضمن مجموعة SEK
+                                                التعليمية التي يمتد سجلها الحافل في التميز في التدريس إلى أكثر من 125
+                                                عامًا.
+                                            </span>
+                                            <button class="text-[#8447FF] read-more-btn">المزيد ←</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Course Content Section  -->
+
+        <!-- ======================================= -->
+
+        <!-- Start Join Button setion  -->
+        <div class="hidden lg:block py-8 bg-[#F7FAFA]">
+            <div class="container flex items-center justify-center relative">
+                <span class="absolute top-1/2 left-0 w-full border border-[#E9E8E8]"></span>
+                <div class="px-6 bg-[#F7FAFA] relative">
+                    <a href="#"
+                        class="py-4 text-center px-8 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                        التحق بالدورة الان مجانا!
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Join Button setion  -->
+
+        <!-- ======================================= -->
+
+        <!-- Start Resume setion  -->
+        <section class="py-8 lg:py-16 px-8 lg:px-0 bg-[#F7FAFA]">
+            <div
+                class="container flex flex-col-reverse lg:flex-row lg:items-center bg-white border border-[#E9E8E8] rounded-2xl p-6 lg:p-12 gap-8 lg:gap-6">
+                <div class="flex flex-col gap-4 flex-1">
+                    <h2 class="text-[#333745] text-xl lg:text-2xl leading-normal lg:leading-normal font-extrabold">
+                        أثر سيرتك الذاتية بالحصول على الشهادة عند:
+                    </h2>
+
+                    <ul class="flex flex-col gap-2">
+                        <li
+                            class="flex items-baseline gap-4 text-[#5B5F6D] lg:text-lg leading-[180%] lg:leading-[180%]">
+                            <svg class="shrink-0" xmlns="http://www.w3.org/2000/svg" width="8" height="9"
+                                viewBox="0 0 8 9" fill="none">
+                                <circle cx="4" cy="4.5" r="4" fill="#8447FF" />
+                            </svg>
+                            <span>إكمالك لمحتويات الدورة المطلوب</span>
+
+                        </li>
+                        <li
+                            class="flex items-baseline gap-4 text-[#5B5F6D] lg:text-lg leading-[180%] lg:leading-[180%]">
+                            <svg class="shrink-0" xmlns="http://www.w3.org/2000/svg" width="8" height="9"
+                                viewBox="0 0 8 9" fill="none">
+                                <circle cx="4" cy="4.5" r="4" fill="#8447FF" />
+                            </svg>
+                            <span>
+                                اجتيازك للدورة بنسبة ٦٠٪
+                            </span>
+                        </li>
+                        <li
+                            class="flex items-baseline gap-4 text-[#5B5F6D] lg:text-lg leading-[180%] lg:leading-[180%]">
+                            <svg class="shrink-0" xmlns="http://www.w3.org/2000/svg" width="8" height="9"
+                                viewBox="0 0 8 9" fill="none">
+                                <circle cx="4" cy="4.5" r="4" fill="#8447FF" />
+                            </svg>
+                            <span>
+                                يمكن طلب شهادة معتمدة (تنطبق الشروط)*هذه الدورة مقدمة من معهد أعناب للتدريب تحت إشراف
+                                المؤسسة العامة للتدريب التقني والمهني برقم اعتماد 216268940
+                            </span>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex relative border border-[#D7D5D5] rounded-2xl">
+                    <img src="assets/images/resume-1.jpg" class="rounded-2xl" width="413" height="285" alt="resume">
+                    <img class="absolute -top-6 -left-6 -rotate-90 w-24 lg:w-auto"
+                        src="assets/images/homepage/medal.png" width="125" height="125" alt="medal">
+                </div>
+            </div>
+        </section>
+        <!-- End Resume setion  -->
+
+        <!-- ======================================= -->
+
+        <!-- Start FAQs setion  -->
+        <section class="py-16 px-8 lg:px-0 bg-[#F7FAFA]">
+            <div class="container flex flex-col gap-12">
+
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3">
+                    <h2 class="text-[#333745] text-2xl lg:text-[32px] leading-normal text-center font-extrabold">
+                        الأسئلة الشائعة
+                    </h2>
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-normal text-center">
+                        لأن الاستثمار المهني في المعلمين هو استثمار في مستقبل المدرسة
+                    </p>
+                </header>
+
+                <!-- FAQs section Content  -->
+                <div class="flex flex-col gap-6 lg:w-[730px] mx-auto">
+                    <div class="flex flex-col gap-3">
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    من هي الفئة المستهدفة؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    هل يلزمني إتقان اللغة الإنجليزية لحضور الدورة؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    هل الدورة معتمدة؟
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="text-[#333745] text-base leading-normal flex-1 transition-all duration-300">
+                                    برنامج أعناب للمدارس
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                المعلمين والقيادات التعليمية المهتمين بجعل المدارس والعملية التعليمية متمحورة حول الطالب
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End FAQs setion  -->
+
+        <!-- ======================================= -->
+
+        <!-- Start Related Courses Section -->
+        <section class="py-12 lg:py-16 overflow-hidden training-courses">
+            <div class="container flex flex-col gap-8 lg:gap-12 items-center">
+                <header class="lg:w-[730px] flex flex-col items-center gap-3 px-[30px] lg:px-0">
+                    <h2 class="text-[#333745] text-center text-2xl lg:text-[32px] leading-normal font-extrabold">
+                        دورات ذات صلة
+                    </h2>
+                    <p class="text-[#5B5F6D] text-base text-center lg:text-lg leading-[180%]">
+                        دورات ذات صلة دورات ذات صلةدورات ذات صلةدورات ذات صلة
+                    </p>
+                </header>
+
+                <ul
+                    class="iso-nav flex lg:justify-center gap-4 items-center overflow-x-auto lg:overflow-visible max-w-full px-[30px] lg:px-0">
+                    <li data-filter="*" class="filter-item active">الكل</li>
+                    <li data-filter=".filt-1" class="filter-item">تقنيات التعليم</li>
+                    <li data-filter=".filt-2" class="filter-item">
+                        استراتيجيات التعليم
+                    </li>
+                    <li data-filter=".filt-3" class="filter-item">
+                        أدوات ومصادر تعليمية
+                    </li>
+                    <li data-filter=".filt-4" class="filter-item">تقنيات التعليم</li>
+                    <li data-filter=".filt-5" class="filter-item">تطوير ذاتي مهني</li>
+                </ul>
+
+                <!-- Related Courses Slider  -->
+                <div class="swiper slider-training-courses w-full h-full px-[30px] lg:px-0">
+                    <div class="swiper-wrapper main-iso">
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden group transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <button type="button"
+                                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                                    <img src="assets/images/homepage/play.svg" width="64" height="64"
+                                        alt="Play Video Icon">
+                                </button>
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
+                                </div>
+
+                                <img src="assets/images/homepage/training-courses-1.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
+                                        </div>
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
+                                        </p>
+                                    </div>
+
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide filt-2 filt-2 filt-4 border border-[#E9E8E8] rounded-2xl overflow-hidden group transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
+                                </div>
+
+                                <img src="assets/images/homepage/training-courses-2.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
+                                        </div>
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
+                                        </p>
+                                    </div>
+
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide filt-3 filt-2 filt-1 border border-[#E9E8E8] rounded-2xl overflow-hidden group transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
+                                </div>
+
+                                <img src="assets/images/homepage/training-courses-3.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
+                                        </div>
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
+                                        </p>
+                                    </div>
+
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide filt-4 filt-2 filt-3 border border-[#E9E8E8] rounded-2xl overflow-hidden group transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <button type="button"
+                                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                                    <img src="assets/images/homepage/play.svg" width="64" height="64"
+                                        alt="Play Video Icon">
+                                </button>
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
+                                </div>
+
+                                <img src="assets/images/homepage/training-courses-1.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
+                                        </div>
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
+                                        </p>
+                                    </div>
+
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide filt-4 filt-2 filt-1 border border-[#E9E8E8] rounded-2xl overflow-hidden group transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
+                                </div>
+
+                                <img src="assets/images/homepage/training-courses-2.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
+                                        </div>
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
+                                        </p>
+                                    </div>
+
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide filt-1 filt-3 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden group transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
+                                </div>
+
+                                <img src="assets/images/homepage/training-courses-3.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
+                                        </div>
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
+                                        </p>
+                                    </div>
+
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pagination  -->
+                <div class="swiper-pagination training-courses-pagination static flex justify-center gap-4 bg-white">
+                </div>
+            </div>
+        </section>
+        <!-- End Related Courses Section -->
+
+
+        <!-- Start Aanaab Testimonials section -->
+        <section class="py-12 lg:py-16">
+            <div class="container flex flex-col items-center gap-8 lg:gap-10">
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3 px-[30px] lg:px-0">
+                    <h2 class="text-[#333745] text-center text-2xl lg:text-[32px] leading-normal font-extrabold">
+                        قالوا عن أعناب
+                    </h2>
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-[180%] text-center">
+                        قادة المدارس وخبراء التعليم يشاركون تجربتهم مع منصة أعناب
+                    </p>
+                </header>
+
+                <!-- start Testimonial  -->
+                <div class="w-full">
+                    <div class="swiper slider-testimonials px-[30px] lg:px-0">
+                        <div class="swiper-wrapper py-6">
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    منصة جميلة وسهلة الاستخدام لا تقيدنا بوقت محدد، واستفدنا من
+                                    دوراتها، وقد انعكست على التحضير والحصص. الدورات المتاحة فيها
+                                    مناسبة لنا ومفيدة. ووجود الاختبارات جعلنا أكثر إلتزامًا"
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        شهد الشريف
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    المنصة ضرورة لجميع المعلمين والمشرفين للاطلاع على كل ماهو
+                                    جديد في مجال التعليم. نتطلع إلى مزيد من الدورات كما عهدناكم"
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        شهد الشريف
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    لشكر الجزيل للقائمين على منصة أعناب، التي أتاحت لنا فرصة
+                                    تدريب معلمات مدرسة نخبة الخبر. حيث اتسمت ورش العمل التوضيحية
+                                    بالمرونة والوضوح. وتنوع مواضيع الدورات المقدمة وجودة محتواها
+                                    وسهولة استخدام المنصة. الشكر لك استاذة نوف على اهتمامك بكل
+                                    التفاصيل  ومساعدتك
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        شهد الشريف
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    المنصة ضرورة لجميع المعلمين والمشرفين للاطلاع على كل ماهو
+                                    جديد في مجال التعليم. نتطلع إلى مزيد من الدورات كما عهدناكم"
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        شهد الشريف
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- start Testimonial pagination -->
+                <div class="swiper-pagination testimonials-pagination static flex justify-center gap-4"></div>
+            </div>
+        </section>
+        <!-- End Aanaab Testimonials section -->
+
+        <!-- ======================================= -->
+
+        <!-- Start Call To action section -->
+        <section class="container py-8 lg:py-16">
+            <div class="bg-cta py-12 lg:py-16 px-8 lg:px-16 lg:rounded-[32px] relative overflow-hidden">
+                <!-- Line pattern img -->
+                <img src="assets/images/Line-pattern.png"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
+                    alt="Line pattern">
+                <!-- call to action  -->
+                <div class="flex items-center flex-col lg:flex-row gap-12 relative z-10">
+                    <!-- cta content  -->
+                    <div class="flex flex-col items-center lg:items-start gap-3 grow">
+                        <h2
+                            class="text-white text-2xl lg:text-[32px] leading-normal font-extrabold text-center lg:text-right">
+                            دورات تدريبية للمعلمين على بعد نقرة واحدة
+                        </h2>
+                        <p
+                            class="text-white text-base lg:text-xl leading-[180%] lg:leading-[180%] font-bold text-center lg:text-right">
+                            مستعد لرحلة جديدة في مسارك المهني؟ ابدأ الآن وسجّل في أعناب
+                        </p>
+                    </div>
+
+                    <!-- cta button  -->
+                    <a href="#"
+                        class="py-3 px-8 rounded-[32px] w-full text-center lg:w-auto bg-white text-[#8447FF] hover:text-[#7841E8] active:text-[#9D6CFF] transition-all duration-300 text-base leading-6 font-bold">
+                        سجّل في أعناب
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Call To action section -->
+    </main>
+    <!-- ======================================= -->
+    <!-- End  Annab Main Content -->
+
+    <!-- Start Annab Footer -->
+    <footer class="px-[30px] sm:px-9 lg:px-0 sm:border-t sm:border-t-[#D1D5DB] relative">
+        <section
+            class="container border-b border-b-[#D1D5DB] flex flex-col lg:flex-row gap-8 sm:gap-4 lg:gap-20 pt-10 pb-8">
+            <div class="flex flex-col sm:flex-row gap-8 sm:gap-4 lg:gap-20">
+                <div class="basis-6/12 flex flex-col gap-6 items-start">
+                    <img src="assets/images/logo.png" width="128" height="38" alt="aanab logo">
+                    <p class="text-sm leading-6 text-[#6B7280]">
+                        منصة تعليمية إلكترونية تهتم بتقديم دورات تدريبية متخصصة في مجال
+                        التطوير المهني للمعلمين والتربويين، يقدمها أكاديميون ومعلمون
+                        متميزون من مختلف أرجاء العالم العربي، ومتحمسون لتوسيع دائرة
+                        المستفيدين من مخزونهم العلمي والمعرفي المتخصص في مجال التدريس؛ حيث
+                        يسعون لإيصاله لمن هم خارج محيطهم المباشر.
+                    </p>
+                </div>
+                <div class="basis-6/12 flex flex-col gap-6 items-start">
+                    <h2 class="text-[#6B7280] text-lg leading-[22px] font-bold">
+                        دورات اعناب
+                    </h2>
+                    <div class="flex gap-4 w-full lg:gap-[45px]">
+                        <ul class="flex-1 text-sm leading-7 lg:text-base lg:leading-9 text-[#6B7280]">
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تطوير ذاتى
+                                    مهنى
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">استراتيجيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تقنيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">أدوات ومصادر
+                                    تعليميه</a>
+                            </li>
+                        </ul>
+                        <ul class="flex-1 text-sm leading-7 lg:text-base lg:leading-9 text-[#6B7280]">
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تطوير ذاتى
+                                    مهنى
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">استراتيجيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">تقنيات
+                                    التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="transition-all duration-300 text-[#6B7280] hover:text-[#8447FF]">أدوات ومصادر
+                                    تعليميه</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 sm:basis-12/12 lg:basis-4/12 flex flex-col gap-[31px] items-start">
+                <h2 class="text-[#6B7280] text-lg leading-[22px] font-bold">
+                    لنكن على تواصل
+                </h2>
+                <div class="flex flex-col gap-6">
+                    <div class="flex gap-4">
+                        <a href="https://www.youtube.com/channel/UCvu0ccFN2m7yI6s5VEfeLQA" aria-label="youtube"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#c4302b] hover:border-[#c4302b] group">
+                            <svg class="group-hover:fill-[#fff]" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none transition duration-300"
+                                    d="M18.6654 3.99067C18.6654 2.33867 17.3267 1 15.676 1H4.32003C2.6707 1 1.33203 2.33867 1.33203 3.99067V10.008C1.33203 11.6613 2.6707 13 4.32003 13H15.676C17.3267 13 18.6654 11.6613 18.6654 10.008V3.99067ZM7.9987 10.208V3.66667L13.7094 7L7.9987 10.208Z"
+                                    stroke="#6B7280" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab Youtube Page</span>
+                        </a>
+                        <a href="https://www.facebook.com/aanaabcom" aria-label="fb"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#3b5998] hover:border-[#3b5998] group">
+                            <svg class="group-hover:fill-[#fff]" width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none transition duration-300"
+                                    d="M11.1174 6.66662H7.9987V5.30396C7.9987 4.60529 8.4627 4.44129 8.78803 4.44129C9.1147 4.44129 10.6654 4.44129 10.6654 4.44129V1.36529L7.5307 1.35596C4.4667 1.35596 3.9987 3.64796 3.9987 5.11462V6.66662H1.33203V9.33329H3.9987C3.9987 13.3986 3.9987 18.6666 3.9987 18.6666H7.9987C7.9987 18.6666 7.9987 13.3506 7.9987 9.33329H10.792L11.1174 6.66662Z"
+                                    stroke="#6B7280" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab FaceBook Page</span>
+                        </a>
+                        <a href="https://twitter.com/aanaabcom" aria-label="Twitter"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#1da1f2] hover:border-[#1da1f2] group">
+                            <svg class="group-hover:fill-[#fff]" width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-none transition duration-300 group-hover:fill-[#fff]"
+                                    d="M17.6681 0.805204C17.6681 0.805204 15.8667 0.99987 15.0681 1.15987C14.4281 0.47587 13.5161 0.0505371 12.5067 0.0505371C10.5681 0.0505371 8.99606 1.62254 8.99606 3.55987C8.99606 3.8332 9.02673 4.10387 9.08673 4.35854C6.17073 4.21454 3.5854 2.81587 1.85473 0.69187C1.55206 1.21187 1.37873 1.8132 1.37873 2.4572C1.37873 3.67587 1.99873 4.74787 2.94006 5.3772C2.3654 5.35854 1.82406 5.2012 1.35073 4.9372C1.35073 4.9532 1.35073 4.9692 1.35073 4.98387C1.35073 6.68254 2.56006 8.1012 4.1654 8.42254C3.65073 8.56387 3.1094 8.58387 2.5814 8.48387C3.02806 9.8772 4.32406 10.8919 5.85873 10.9225C4.35873 12.0985 2.49606 12.5892 0.664062 12.3745C2.2174 13.3705 4.06273 13.9532 6.04406 13.9532C12.4987 13.9532 16.0281 8.60387 16.0281 3.96787C16.0281 3.81587 16.0254 3.66387 16.0174 3.51454C16.7027 3.0172 17.1974 1.5092 17.6681 0.805204Z"
+                                    fill="none" stroke="#6B7280"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab Twitter Page</span>
+                        </a>
+                        <a href="https://www.instagram.com/aanaabcom/" aria-label="insta"
+                            class="border border-[#D1D5DB] rounded-full w-[30px] h-[30px] flex items-center justify-center transition duration-300 hover:bg-[#c13584] hover:border-[#c13584] group">
+                            <svg class="group-hover:fill-[#fff]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.6693 21.5543C24.6693 23.273 23.2759 24.6663 21.5586 24.6663H10.4466C8.72927 24.6663 7.33594 23.273 7.33594 21.5543V10.4423C7.33594 8.72501 8.72927 7.33301 10.4466 7.33301H21.5586C23.2759 7.33301 24.6693 8.72501 24.6693 10.4423V21.5543Z"
+                                    stroke="#6B7280" stroke-miterlimit="10" stroke-linejoin="round"></path>
+                                <path d="M7.33594 12.6665H13.0239" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                                <path d="M18.9805 12.6665H24.6685" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M16 19.333C18.2091 19.333 20 17.5421 20 15.333C20 13.1239 18.2091 11.333 16 11.333C13.7909 11.333 12 13.1239 12 15.333C12 17.5421 13.7909 19.333 16 19.333Z"
+                                    stroke="#6B7280" stroke-miterlimit="10" stroke-linejoin="round"></path>
+                                <path d="M22.6693 9.33301H21.3359V10.6663H22.6693V9.33301Z" fill="#6B7280"></path>
+                                <path d="M10 7.33301V12.6663" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                                <path d="M12.668 7.33325V12.6666" stroke="#6B7280" stroke-miterlimit="10"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="sr-only">Aanaab insta Page</span>
+                        </a>
+                    </div>
+                    <a href="mailto:info@aanaab.com"
+                        class="hidden lg:flex items-center gap-3 px-[18px] py-[10px] rounded-[48px] border bordder-[#D1D5DB]">
+                        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 13.3261C22 14.0821 21.3864 14.6957 20.6304 14.6957H2.36957C1.61357 14.6957 1 14.0821 1 13.3261V2.36957C1 1.61265 1.61357 1 2.36957 1H20.6304C21.3864 1 22 1.61265 22 2.36957V13.3261Z"
+                                stroke="#6B7280" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M19.261 4.6521L11.5001 9.67384L3.73926 4.6521" stroke="#6B7280"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M3.73926 11.4999L6.93491 9.67383" stroke="#6B7280" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M19.2621 11.4999L16.0664 9.67383" stroke="#6B7280" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <span class="text-[#6B7280] text-xs leading-4 w-full">
+                            او تواصل عبر البريد
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-8 flex flex-col gap-2 lg:flex-row items-center justify-between">
+            <p class="text-[#6B7280] text-sm leading-normal">
+                جميع الحقوق محفوظة © منصة أعناب
+            </p>
+            <nav class="flex leading-[8px] flex-wrap justify-center lg:justify-start">
+                <a href="https://aanaab.com"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l border-[#D1D5DB] px-4">
+                    الرئيسية
+                </a>
+                <a href="https://aanaab.com/about"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l border-[#D1D5DB] px-4">
+                    عن أعناب
+                </a>
+                <a href="https://aanaab.com/courses"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm border-l border-[#D1D5DB] px-4">
+                    تصفح الدورات
+                </a>
+                <a href="https://aanaab.com/privacy"
+                    class="text-[#6B7280] transition-all duration-300 hover:text-[#8447FF] text-[13px] leading-loose lg:text-sm px-4">
+                    سياسة الخصوصية
+                </a>
+            </nav>
+        </div>
+    </footer>
+    <!-- End  Annab header -->
+    <!-- scripts -->
+    <script src="assets/scripts/jquiry.js"></script>
+    <script src="assets/scripts/swiper.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
