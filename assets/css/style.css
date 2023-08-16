@@ -1468,7 +1468,7 @@ video {
 
 .bg-\[\#F3EDFF\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 237 255 / var(--tw-bg-opacity));
+  background-color: #FDFBF7;
 }
 
 .bg-\[\#F4F4F5\] {
@@ -1507,7 +1507,7 @@ video {
 }
 
 .bg-cta {
-  background-image: linear-gradient(0deg, #7841E8, #7841E8), radial-gradient(74.58% 74.58% at 50% 50%, #8447FF 0%, #5E32B5 100%);
+  background-image: linear-gradient(0deg, #7841E8, #7841E8), radial-gradient(74.58% 74.58% at 50% 50%, #2156A7 0%, #5E32B5 100%);
 }
 
 .bg-gradient-to-b {
@@ -2192,7 +2192,7 @@ video {
 }
 
 .menu-dropdown.active .colored-act > svg path {
-  fill: #8447FF;
+  fill: #2156A7;
 }
 
 .menu-dropdown-list {
@@ -2325,14 +2325,9 @@ video {
   transition-duration: 300ms;
 }
 
-.course-conrtent-item .item:nth-child(odd) {
-  --tw-bg-opacity: 1;
-  background-color: #FDFBF7;
-}
-
 .course-conrtent-item .item:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 237 255 / var(--tw-bg-opacity));
+  background-color: #FDFBF7;
   --tw-text-opacity: 1;
   color: #2156A7;
 }
@@ -2350,7 +2345,7 @@ video {
 }
 
 .course-conrtent-item .item:hover svg path {
-  stroke: #8447FF;
+  stroke: #2156A7;
 }
 
 .collapsed-txt.open {
@@ -2854,7 +2849,7 @@ video {
 
 .hover\:bg-\[\#7841E8\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(120 65 232 / var(--tw-bg-opacity));
+  background-color: #356fc8;
 }
 
 .hover\:bg-\[\#D9C6FF\]:hover {
@@ -2910,7 +2905,7 @@ video {
 
 .active\:bg-\[\#F3EDFF\]:active {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 237 255 / var(--tw-bg-opacity));
+  background-color: #FDFBF7;
 }
 
 .active\:text-\[\#838795\]:active {
@@ -2946,7 +2941,7 @@ video {
 
 .peer:checked ~ .peer-checked\:bg-\[\#F3EDFF\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 237 255 / var(--tw-bg-opacity));
+  background-color: #FDFBF7;
 }
 
 .peer:checked ~ .peer-checked\:bg-\[white\] {
