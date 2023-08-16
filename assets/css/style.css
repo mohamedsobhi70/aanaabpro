@@ -3836,8 +3836,10 @@ video {
   bottom: -510px;
   border-radius: 1160px;
   opacity: 0.1;
+  left: 50%;
   background: #fff;
   filter: blur(110px);
+  transform: translateX(-50%);
 }
 
 @font-face {
