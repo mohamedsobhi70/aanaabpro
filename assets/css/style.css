@@ -3732,7 +3732,7 @@ video {
   }
 
   .group:hover .lg\:group-hover\:fill-\[\#8447FF\] {
-    fill: #8447FF;
+    fill: #2156A7;
   }
 
   :is([dir="rtl"] .rtl\:lg\:text-right) {
