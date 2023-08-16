@@ -1507,7 +1507,7 @@ video {
 }
 
 .bg-cta {
-  background-image: linear-gradient(0deg, #7841E8, #7841E8), radial-gradient(74.58% 74.58% at 50% 50%, #2156A7 0%, #5E32B5 100%);
+  background: #1D1D1B;
 }
 
 .bg-gradient-to-b {
