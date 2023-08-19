@@ -762,8 +762,10 @@ if ($(".aanaab-tabs").length > 0) {
     $(".tab-content").addClass("hidden");
     $(".tab-content:first-of-type").removeClass("hidden")
     $(".aanaab-tabs .program-filter-item").on("click", function () {
+        $(".aanaab-tabs .program-filter-item").removeClass("active")
         let th = $(this),
             filt = th.attr("data-tab");
+        th.addClass("active")
         console.log(filt);
         $(".tab-content").addClass("hidden");
         $(`.tab-content[data-tab=${filt}]`).removeClass("hidden")
