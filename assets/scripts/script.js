@@ -38,6 +38,29 @@ if ($(".slider-testimonials").length > 0) {
         },
     });
 }
+
+if ($(".slider-team").length > 0) {
+    let swiper = new Swiper(".slider-team", {
+        pagination: {
+            el: ".slider-team-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+            },
+            680: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+            },
+        },
+    });
+}
 // =================================================
 
 // Partners Carousel
@@ -735,31 +758,6 @@ if ($(".filter-courses-listing").length > 0) {
     });
 }
 
-if ($("#countdown").length > 0) {
-    // Set the date we're counting down to
-    let date = $("#countdown").attr("data-date");
-    let countDownDate = new Date(date).getTime();
-    // Update the count down every 1 second
-    let x = setInterval(function () {
-        // Get today's date and time
-        let now = new Date().getTime();
-        // Find the distance between now and the count down date
-        let distance = countDownDate - now;
-        // Time calculations for days, hours, minutes and seconds
-        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        // Display the result in the element with id="demo"
-        document.getElementById("countdown").innerHTML = (days > 0 ? days + ":" : "")
-            + (hours > 0 ? hours + ":" : "")
-            + (minutes > 0 ? minutes + ":" : "")
-            + (seconds > 0 ? seconds : "");
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-
+if ($(".aanaab-tabs").length > 0) {
+    
 }

@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <title>منصة أعناب</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-DIN overflow-x-hidden relative">
+    <!-- Start Annab Header -->
+    <header class="bg-[#F7FAFA] z-50 lg:sticky top-0 px-[30px] lg:px-0">
+        <div class="container py-6 flex items-center gap-12 justify-between">
+            <!-- logo  -->
+            <a href="index-en.html" aria-label="Logo" class="shrink-0">
+                <img src="assets/images/Logo-en.svg" width="63" height="50" alt="Aanaab Logo">
+                <span class="sr-only">Aanaab Logo</span>
+            </a>
+
+            <button type="button" aria-label="Mobile Menu" class="lg:hidden mob-menu-btn">
+                <img src="assets/images/menu.svg" width="24" height="24" alt="menu">
+                <span class="sr-only">Mobile Menu Btn</span>
+            </button>
+
+            <div
+                class="mob-menu z-30 bg-white lg:bg-[#F7FAFA] fixed lg:static top-0 left-0 w-full h-screen lg:h-auto flex flex-col lg:flex-row lg:gap-8 lg:items-center invisible lg:visible opacity-0 lg:opacity-100 transition-all duration-300">
+                <div class="flex lg:hidden items-center gap-4 py-6 bg-white px-[30px] border-b border-[#D7D5D5]">
+                    <img src="assets/images/logo-shap.svg" width="40" height="40" alt="Logo Annab">
+                    <!-- mobile search  -->
+                    <form
+                        class="flex-1 py-2.5 px-4 rounded-full border border-[#D7D5D5] flex items-center gap-3 w-full bg-white">
+                        <button type="button" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </button>
+                        <input type="search" name="mob-header-search" id="mob-header-search" placeholder="Search ..."
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none w-full">
+                    </form>
+                    <button class="mob-menu-closbtn" type="button" title="Close">
+                        <img src="assets/images/close.svg" width="24" height="24" alt="close">
+                    </button>
+                </div>
+
+                <div
+                    class="flex-1 h-full overflow-y-scroll lg:h-full lg:overflow-y-visible flex flex-col lg:flex-row lg:items-center lg:gap-8">
+                    <!-- learn  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] menu-dropdown lg:border-none">
+                        <p
+                            class="group text-[#333745] text-base lg:text-sm leading-normal font-bold flex items-center justify-between cursor-pointer gap-2 lg:py-2.5 lg:px-4 lg:rounded-full lg:border lg:border-[#00000033] lg:text-[#1D1D1B]">
+                            Programs
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.8291 8.25L11.9541 15.125L5.0791 8.25" stroke="#1D1D1B" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </p>
+                        <div class="hidden lg:block menu-dropdown-list">
+                            <div class="bg-white">
+                                <ul class="grid lg:grid-cols-2 gap-4 lg:gap-12 lg:py-12 lg:container">
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/book.svg" class="hidden lg:block" width="24" height="24"
+                                            alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="courses-listing.html"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الدورات</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات عن بعد لتعزيز كفاءة المعلمين والتربويين
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/award.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="qualifications.html"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">المؤهلات</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                مؤهّلات مهنيّة وشهادات احترافية بالتعاون مع شركائنا
+                                                لتكون معلّمًا مؤهّلًا في مختلف المجالات
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/briefcase.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="professional-licenses.html"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الرخص
+                                                المهنية</a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات مكثفة لاجتياز اختبار الرخصة المهنية بكل جدارة
+                                                للعاملين في قطاع التعليم في السعودية
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="lg:flex lg:items-start lg:gap-6">
+                                        <img src="assets/images/bookstore.svg" class="hidden lg:block" width="24"
+                                            height="24" alt="book">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="https://shop.aanaab.com/"
+                                                class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">
+                                                متجر الكتب
+                                            </a>
+                                            <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                                دورات مكثفة متجر لبيع الكتب الخاصة بالرخص المهنية
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- search  -->
+                    <form
+                        class="hidden lg:flex items-center gap-3 py-2.5 px-4 rounded-full border border-[#D7D5D5] -ms-4 me-auto bg-white">
+                        <button type="button" aria-label="search">
+                            <img src="assets/images/search.svg" width="16" height="16" alt="search">
+                        </button>
+                        <input type="search" name="header-search" id="header-search" readonly placeholder="Search ..."
+                            class="text-sm leading-[21px] placeholder:text-[#838795] focus:outline-none lg:w-[140px]">
+                    </form>
+
+                    <!-- get your job  -->
+                    <!-- <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none">
+                        <a href="#"
+                            class="text-[#333745] hover:text-[#7841E8] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 transition-all duration-300">
+                            حصل وظيفتك
+                        </a>
+                    </div> -->
+
+                    <!-- community  -->
+                    <!-- <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none">
+                        <a href="community.html"
+                            class="text-[#333745] hover:text-[#7841E8] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 transition-all duration-300">
+                            المجتمع
+                        </a>
+                    </div> -->
+
+                    <!-- for schools  -->
+                    <div class="p-8 lg:p-0 flex flex-col gap-6 border-b border-[#D7D5D5] lg:border-none menu-dropdown">
+                        <!--
+                             <div
+                            class="group lg:hover:text-[#8447FF] text-[#333745] text-base lg:text-sm leading-normal font-bold lg:font-normal flex items-center justify-between cursor-pointer gap-1 colored-act transition-all duration-300">
+                            <a href="schools.html">
+                                للمدارس
+                            </a>
+
+                            <svg class="chevron transition-all duration-300" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="lg:group-hover:fill-[#8447FF] transition-all duration-300"
+                                    d="M4.66797 5.71094L0.859375 1.92188C0.683594 1.72656 0.683594 1.43359 0.859375 1.25781L1.30859 0.808594C1.48438 0.632812 1.77734 0.632812 1.97266 0.808594L5 3.81641L8.00781 0.808594C8.20312 0.632812 8.49609 0.632812 8.67188 0.808594L9.12109 1.25781C9.29688 1.43359 9.29688 1.72656 9.12109 1.92188L5.3125 5.71094C5.13672 5.88672 4.84375 5.88672 4.66797 5.71094Z"
+                                    fill="#2156A7" />
+                            </svg>
+                        </div> 
+                        <div class="hidden lg:block menu-dropdown-list">
+                            <div class="bg-white">
+                                <ul class="grid lg:grid-cols-3 gap-4 lg:gap-12 lg:py-12 lg:container">
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="community.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">المجتمعات</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            مجتمع خاص بالمدارس
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="learning.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">التعلم</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            عزز مهارات معلمينك
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="jobs.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الوظائف</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            منصة التوظيف الأولى للمعلمين في الشرق الأوسط 
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="live-dashboard.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">لوحة
+                                            المتابعة المباشرة</a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            مستقبل مشرق لمدرستك من خلال أداء أفضل لمعلميك
+                                        </p>
+                                    </li>
+                                    <li class="lg:flex lg:flex-col lg:gap-2">
+                                        <a href="prices.html"
+                                            class="text-[#333745] text-base lg:text-xl leading-normal lg:font-bold">الأسعار
+                                        </a>
+                                        <p class="hidden lg:block text-[#5B5F6D] text-sm leading-normal">
+                                            لأن الاستثمار المهني في المعلمين هو استثمار في مستقبل
+                                            المدرسة
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    -->
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col lg:flex-row lg:items-center gap-4 p-8 lg:p-0 border-t border-[#D7D5D5] lg:border-none">
+                    <a href="https://aanaab.com/auth/register"
+                        class="py-3 text-center px-6 rounded-[32px] bg-[#1D1D1B] transition-all duration-300 text-white text-base leading-6 font-bold">
+                        Log In
+                    </a>
+                    <a href="https://dashboard.aanaab.com/login/aanaab "
+                        class="border border-[#EAECF0] py-3 text-center px-6 lg:p-3 rounded-[32px] bg-[#F3EDFF] lg:bg-white text-[#8447FF] lg:text-[#333745] text-base leading-6 font-bold lg:font-normal">
+                        Join for Free
+                    </a>
+                </div>
+            </div>
+
+            <div class="search-result-container">
+                <div
+                    class="w-full lg:w-[920px] h-full bg-white rounded-2xl overflow-hidden border border-[#D7D5D5] flex flex-col">
+                    <div class="flex items-center gap-2 p-6 lg:px-8 border-b border-[#E9E8E8]">
+                        <button type="button">
+                            <img src="assets/images/search.svg" width="24" height="24" alt="Search Icon">
+                            <span class="sr-only">
+                                Search Icon
+                            </span>
+                        </button>
+                        <input type="search" name="search-2" id="search-2"
+                            placeholder="بحث عن دورات - مؤهلات - رخص مهنية"
+                            class="placeholder:text-[#5B5F6D] text-base leading-normal flex-1 focus:outline-none">
+                        <button type="button" class="close-search-res">
+                            <img src="assets/images/close.svg" width="24" height="24" alt="Search Icon">
+                            <span class="sr-only">
+                                Close Icon
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Filters  -->
+                    <div class="lg:px-8 border-b border-[#E9E8E8]">
+                        <ul
+                            class="iso-nav flex items-center overflow-x-auto lg:overflow-visible max-w-full px-[30px] lg:px-0">
+                            <li data-filter="*" class="filter-srch flex items-center gap-2 active">
+                                الكل
+                            </li>
+                            <li data-filter=".courses" class="filter-srch flex items-center gap-2">
+                                دورات
+                                <span
+                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
+                            </li>
+                            <li data-filter=".qualifications" class="filter-srch flex items-center gap-2">
+                                مؤهلات
+                                <span
+                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
+                            </li>
+                            <li data-filter=".pro-qualifications" class="filter-srch flex items-center gap-2">
+                                المؤهلات الاحترافية
+                                <span
+                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
+                            </li>
+                            <li data-filter=".pro-licence" class="filter-srch flex items-center gap-2">
+                                رخص مهنية
+                                <span
+                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Saerch Results -->
+                    <div class="search-res-filters overflow-y-scroll">
+                        <div class="lg:p-8 flex flex-col lg:gap-4 border-b border-[#E9E8E8] srch-filter-card courses">
+                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
+                                دورات
+                            </h2>
+                            <div
+                                class="flex lg:grid lg:grid-cols-3 gap-5 overflow-x-scroll lg:overflow-x-visible px-6 pb-6 lg:p-0">
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> Track Pillar: Master the Tools</a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    April 18th - May 20th (4 weeks)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> Track Pillar: Master the Tools</a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    April 18th - May 20th (4 weeks)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> Track Pillar: Master the Tools</a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    April 18th - May 20th (4 weeks)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> Track Pillar: Master the Tools</a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    April 18th - May 20th (4 weeks)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/homepage/training-courses-1.jpg"
+                                            class="w-full h-full object-cover" width="350" height="224"
+                                            alt="training-courses-1">
+                                    </div>
+                                    <div class="p-4 flex flex-col gap-2 bg-white">
+                                        <div class="flex flex-col gap-2">
+                                            <h2 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                                <a href="single-course.html"> Track Pillar: Master the Tools</a>
+                                            </h2>
+                                            <p class="flex items-start gap-1.5 text-[#838795] text-sm leading-normal">
+                                                <img src="assets/images/homepage/calender.png" class="mt-1" width="12"
+                                                    height="14" alt="calender">
+                                                <span class="flex-1">
+                                                    April 18th - May 20th (4 weeks)
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- ======================================= -->
+
+                        <div
+                            class="lg:p-8 flex flex-col lg:gap-4 border-b border-[#E9E8E8] srch-filter-card qualifications">
+                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
+                                مؤهلات
+                            </h2>
+                            <div
+                                class="lg:pt-0 p-6 lg:p-0 flex lg:grid lg:grid-cols-2 gap-5 overflow-x-scroll lg:overflow-x-visible">
+                                <div
+                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
+                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
+                                        <img src="assets/images/qual-1.png"
+                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
+                                            width="750" height="500" alt="licence-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 flex-1">
+                                        <div class="flex flex-col gap-4">
+                                            <div class="flex flex-col gap-2">
+                                                <h2
+                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-2">
+                                                    <a href="#">
+                                                        الدورة التدريبية على الشهادة الاحترافية في ضبط جودة التعلي٫٫
+                                                    </a>
+                                                </h2>
+                                                <div class="flex items-center gap-2">
+                                                    <div
+                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                        <img src="assets/images/homepage/calender.png" width="12"
+                                                            height="14" alt="calender">
+                                                        1 شهر
+                                                    </div>
+                                                    <div
+                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                        <img src="assets/images/clock-alt.png" width="14" height="13"
+                                                            alt="clock">
+                                                        30 ساعة
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-[#838795] text-xs leading-[180%] line-clamp-2">
+                                                معهد أعناب هو أحد الجهات المعتمدة من المركز الوطني للتعليم الإلكتروني
+                                                المقدمة للتدريب
+                                                على الشهادة الاحترافية في ضبط ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
+                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
+                                        <img src="assets/images/qual-1.png"
+                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
+                                            width="750" height="500" alt="licence-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 flex-1">
+                                        <div class="flex flex-col gap-4">
+                                            <div class="flex flex-col gap-2">
+                                                <h2
+                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-2">
+                                                    <a href="#">
+                                                        الدورة التدريبية على الشهادة الاحترافية في ضبط جودة التعلي٫٫
+                                                    </a>
+                                                </h2>
+                                                <div class="flex items-center gap-2">
+                                                    <div
+                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                        <img src="assets/images/homepage/calender.png" width="12"
+                                                            height="14" alt="calender">
+                                                        1 شهر
+                                                    </div>
+                                                    <div
+                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                        <img src="assets/images/clock-alt.png" width="14" height="13"
+                                                            alt="clock">
+                                                        30 ساعة
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-[#838795] text-xs leading-[180%] line-clamp-2">
+                                                معهد أعناب هو أحد الجهات المعتمدة من المركز الوطني للتعليم الإلكتروني
+                                                المقدمة للتدريب
+                                                على الشهادة الاحترافية في ضبط ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ======================================= -->
+
+                        <div
+                            class="lg:p-8 flex flex-col lg:gap-4 border-b border-[#E9E8E8] srch-filter-card pro-qualifications">
+                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
+                                المؤهلات الاحترافية
+                            </h2>
+                            <div
+                                class="lg:pt-0 p-6 lg:p-0 flex lg:grid lg:grid-cols-2 gap-5 overflow-x-scroll lg:overflow-x-visible">
+                                <div
+                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
+                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
+                                        <img src="assets/images/qual-1.png"
+                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
+                                            width="750" height="500" alt="licence-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 flex-1">
+                                        <div class="flex flex-col gap-4">
+                                            <div class="flex flex-col gap-2">
+                                                <h2
+                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-1">
+                                                    <a href="#">
+                                                        إشراك أولياء الأمور في التعلم عن بعد
+                                                    </a>
+                                                </h2>
+                                                <p
+                                                    class="flex items-start gap-1.5 text-[#838795] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" class="mt-1"
+                                                        width="12" height="14" alt="calender">
+                                                    <span class="flex-1">
+                                                        April 18th - May 20th (4 weeks)
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
+                                                        height="16" alt="icon">
+                                                    4 Courses
+                                                </div>
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="13"
+                                                        height="16" alt="icon">
+                                                    28 Day
+                                                </div>
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
+                                                        height="16" alt="icon">
+                                                    32 Hours
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
+                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
+                                        <img src="assets/images/qual-1.png"
+                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
+                                            width="750" height="500" alt="licence-1">
+                                    </div>
+                                    <div class="p-6 flex flex-col gap-6 flex-1">
+                                        <div class="flex flex-col gap-4">
+                                            <div class="flex flex-col gap-2">
+                                                <h2
+                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-1">
+                                                    <a href="#">
+                                                        إشراك أولياء الأمور في التعلم عن بعد
+                                                    </a>
+                                                </h2>
+                                                <p
+                                                    class="flex items-start gap-1.5 text-[#838795] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" class="mt-1"
+                                                        width="12" height="14" alt="calender">
+                                                    <span class="flex-1">
+                                                        April 18th - May 20th (4 weeks)
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
+                                                        height="16" alt="icon">
+                                                    4 Courses
+                                                </div>
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="13"
+                                                        height="16" alt="icon">
+                                                    28 Day
+                                                </div>
+                                                <div
+                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
+                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
+                                                        height="16" alt="icon">
+                                                    32 Hours
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ======================================= -->
+
+                        <div class="lg:p-8 flex flex-col lg:gap-4 srch-filter-card pro-licence">
+                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
+                                الرخص المهنية
+                            </h2>
+                            <div
+                                class="flex lg:grid lg:grid-cols-3 gap-5 overflow-x-scroll lg:overflow-x-visible px-6 pb-6 lg:p-0">
+                                <div
+                                    class="shrink-0 w-[272px] lg:w-auto rounded-2xl overflow-hidden border border-[#E9E8E8] bg-white hover:border-[#8447FF] transition-all duration-300">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/license-card.jpg" class="w-full h-full object-cover"
+                                            width="348" height="224" alt="Card">
+                                    </div>
+                                    <div class="flex flex-col gap-5 p-5 pt-0 -mt-4 relative">
+                                        <div class="flex flex-col gap-2 items-start">
+                                            <span
+                                                class="flex items-center gap-2.5 bg-[#F8F4FF] border-2 border-white rounded-full px-4 text-[#6B7280] text-[13px] leading-[30px] font-bold">
+                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.8125 2.52344V11.4609H1.1875V1.91406C1.1875 1.35547 1.61914 0.898438 2.20312 0.898438H14.7969C15.3555 0.898438 15.8125 1.35547 15.8125 1.91406V11.4609H14.1875V2.52344H2.8125ZM16.2188 12.2734C16.4219 12.2734 16.625 12.4766 16.625 12.6797V13.4922C16.625 13.7207 16.4219 13.8984 16.2188 13.8984H0.78125C0.552734 13.8984 0.375 13.7207 0.375 13.4922V12.6797C0.375 12.4766 0.552734 12.2734 0.78125 12.2734H7.6875V10.6484H12.5625V12.2734H16.2188Z"
+                                                        fill="#6B7280"></path>
+                                                </svg>
+                                                دورة قصيرة
+                                            </span>
+
+                                            <h3 class="text-black text-sm leading-normal font-bold">
+                                                <a href="#">
+                                                    الرخصة المهنية للاختبار التربوي العام (المسجلة)
+                                                </a>
+                                            </h3>
+
+                                            <div
+                                                class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                <span class="flex-1">
+                                                    المدة: ٤ اسابيع (تبدأ ١٨ ابريل حتى ٢٠ مايو)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="shrink-0 w-[272px] lg:w-auto rounded-2xl overflow-hidden border border-[#E9E8E8] bg-white hover:border-[#8447FF] transition-all duration-300">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/license-card.jpg" class="w-full h-full object-cover"
+                                            width="348" height="224" alt="Card">
+                                    </div>
+                                    <div class="flex flex-col gap-5 p-5 pt-0 -mt-4 relative">
+                                        <div class="flex flex-col gap-2 items-start">
+                                            <span
+                                                class="flex items-center gap-2.5 bg-[#F8F4FF] border-2 border-white rounded-full px-4 text-[#6B7280] text-[13px] leading-[30px] font-bold">
+                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.8125 2.52344V11.4609H1.1875V1.91406C1.1875 1.35547 1.61914 0.898438 2.20312 0.898438H14.7969C15.3555 0.898438 15.8125 1.35547 15.8125 1.91406V11.4609H14.1875V2.52344H2.8125ZM16.2188 12.2734C16.4219 12.2734 16.625 12.4766 16.625 12.6797V13.4922C16.625 13.7207 16.4219 13.8984 16.2188 13.8984H0.78125C0.552734 13.8984 0.375 13.7207 0.375 13.4922V12.6797C0.375 12.4766 0.552734 12.2734 0.78125 12.2734H7.6875V10.6484H12.5625V12.2734H16.2188Z"
+                                                        fill="#6B7280"></path>
+                                                </svg>
+                                                دورة قصيرة
+                                            </span>
+
+                                            <h3 class="text-black text-sm leading-normal font-bold">
+                                                <a href="#">
+                                                    الرخصة المهنية للاختبار التربوي العام (المسجلة)
+                                                </a>
+                                            </h3>
+
+                                            <div
+                                                class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                <span class="flex-1">
+                                                    المدة: ٤ اسابيع (تبدأ ١٨ ابريل حتى ٢٠ مايو)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="shrink-0 w-[272px] lg:w-auto rounded-2xl overflow-hidden border border-[#E9E8E8] bg-white hover:border-[#8447FF] transition-all duration-300">
+                                    <div class="h-[150px] relative">
+                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                height="64" alt="badge" class="h-full w-full object-cover">
+                                        </div>
+                                        <img src="assets/images/license-card.jpg" class="w-full h-full object-cover"
+                                            width="348" height="224" alt="Card">
+                                    </div>
+                                    <div class="flex flex-col gap-5 p-5 pt-0 -mt-4 relative">
+                                        <div class="flex flex-col gap-2 items-start">
+                                            <span
+                                                class="flex items-center gap-2.5 bg-[#F8F4FF] border-2 border-white rounded-full px-4 text-[#6B7280] text-[13px] leading-[30px] font-bold">
+                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.8125 2.52344V11.4609H1.1875V1.91406C1.1875 1.35547 1.61914 0.898438 2.20312 0.898438H14.7969C15.3555 0.898438 15.8125 1.35547 15.8125 1.91406V11.4609H14.1875V2.52344H2.8125ZM16.2188 12.2734C16.4219 12.2734 16.625 12.4766 16.625 12.6797V13.4922C16.625 13.7207 16.4219 13.8984 16.2188 13.8984H0.78125C0.552734 13.8984 0.375 13.7207 0.375 13.4922V12.6797C0.375 12.4766 0.552734 12.2734 0.78125 12.2734H7.6875V10.6484H12.5625V12.2734H16.2188Z"
+                                                        fill="#6B7280"></path>
+                                                </svg>
+                                                دورة قصيرة
+                                            </span>
+
+                                            <h3 class="text-black text-sm leading-normal font-bold">
+                                                <a href="#">
+                                                    الرخصة المهنية للاختبار التربوي العام (المسجلة)
+                                                </a>
+                                            </h3>
+
+                                            <div
+                                                class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
+                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                                    alt="calender">
+                                                <span class="flex-1">
+                                                    المدة: ٤ اسابيع (تبدأ ١٨ ابريل حتى ٢٠ مايو)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End  Annab Header -->
+    <!-- ======================================= -->
+
+    <!-- Start Annab  Main Content  -->
+    <main class="relative overflow-x-hidden">
+        <!-- Start Home page Hero Section -->
+        <section class="py-12 lg:py-36 bg-[#F7FAFA]">
+            <div class="container relative lg:flex lg:justify-center">
+                <img src="assets/images/home-shap-1.png" width="146" height="146" alt="shape"
+                    class="absolute hidden lg:block -bottom-16 left-4">
+                <img src="assets/images/home-shap-2.png" width="144" height="147" alt="shape"
+                    class="absolute hidden lg:block -bottom-20 right-4">
+                <img src="assets/images/home-shap-3.png" width="121" height="122" alt="shape"
+                    class="absolute hidden lg:block -top-16 -left-12">
+                <img src="assets/images/home-shap-4.png" width="121" height="122" alt="shape"
+                    class="absolute hidden lg:block -top-24 -right-6">
+
+                <div class="lg:w-[710px] flex flex-col gap-10 lg:gap-8 items-center px-6 lg:px-0">
+                    <span
+                        class="rounded-full bg-[#FBF6EF] px-3 py-2 text-[#445566] text-xs lg:text-base leading-4 lg:leading-6 font-medium">
+                        Aanaab: Best Course & Certification Plaftom in Mena
+                    </span>
+                    <h1
+                        class="text-center text-[#1D1D1B] rtl:text-[32px] rtl:lg:text-5xl ltr:text-5xl ltr:lg:text-[64px] ltr:-tracking-[1.28px] ltr:leading-[72px] rtl:leading-normal lg:leading-normal font-bold">
+                        Your Path to Career
+                        <br>
+                        <span class="relative">
+                            Excellence
+                            <svg class="absolute left-1/2 -translate-x-1/2 -bottom-5 lg:-bottom-3"
+                                xmlns="http://www.w3.org/2000/svg" width="342" height="19" viewBox="0 0 342 19"
+                                fill="none">
+                                <path d="M3 16C79.1895 6.18989 253.055 -7.54425 339 16" stroke="#FF3425"
+                                    stroke-width="5" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        Begins Here!
+                    </h1>
+                    <p
+                        class="text-center text-[#445566] ltr:lg:w-[508px] lg:text-lg ltr:-tracking-[0.36px] ltr:leading-[22px] rtl:leading-normal lg:leading-[180%] ltr:font-medium">
+                        Discover unparalleled career success with Aanaab's expert e-course. Elevate, invest, and
+                        lead your field.
+                    </p>
+                    <div
+                        class="w-full lg:w-fit flex flex-col lg:flex-row lg:justify-center lg:items-center gap-2 lg:gap-4">
+                        <a href="#"
+                            class="py-3 px-6 lg:px-8 rounded-full bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 flex items-center justify-center text-white text-base leading-6 font-bold">
+                            Join for Free
+                        </a>
+                        <a href="#"
+                            class="py-3 px-6 rounded-full border border-[#C9C5C5] hover:border-[#B6AFAF] hover:bg-white flex items-center justify-center gap-2 transition-all duration-300 text-[#101828] hover:text-[#333745] active:text-[#838795] text-base leading-6 font-bold">
+                            Explore Course
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.625 10H17.375" stroke="#101828" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="#1A1A1A" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Home page Hero Section -->
+
+        <!-- =============================-->
+        <!-- Start Programs  section -->
+        <section class="py-8 lg:pb-[72px] lg:pt-12 bg-[#F7FAFA] px-6 lg:px-0">
+            <div class="container flex flex-col gap-6 lg:gap-8 items-center">
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3">
+                    <h2
+                        class="lg:w-[573px] text-[#333745] text-center rtl:text-2xl rtl:lg:text-[32px] ltr:text-[32px] ltr:lg:text-5xl ltr:leading-[48px] ltr:lg:leading-[64px] rtl:leading-normal font-bold">
+                        Programs for Career Growth and Fulfillment
+                    </h2>
+                </header>
+
+                <ul class="flex flex-wrap justify-center gap-3 lg:w-10/12 aanaab-tabs">
+                    <li data-tab="tab-1" class="program-filter-item active">
+                        Trending Now 🔥
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Design
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Marketing
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Development
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Product
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Data Analys
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Engineering
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Art
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Music
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Business
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Gaming
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Sport
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Wellness
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Science
+                    </li>
+                    <li data-tab="tab-1" class="program-filter-item">
+                        Food
+                    </li>
+                </ul>
+
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- program item  -->
+                    <div
+                        class="border border-[#D0D5DD] hover:border-[#2156A7] flex flex-col rounded-2xl overflow-hidden transition-colors duration-300">
+                        <div class="h-[224px] relative">
+                            <div
+                                class="absolute font-bold end-5 top-5 bg-[#2E90FA] rounded-full px-[10px] py-2 text-white text-sm leading-normal ltr:leading-5 ltr:-tracking-[0.42px]">
+                                Beginner
+                            </div>
+                            <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                height="244" alt="programs">
+                        </div>
+                        <div class="p-6 bg-white flex flex-col gap-4">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-black text-lg leading-normal font-bold">
+                                    <a href="#" class="">
+                                        Consulting Foundation Program (CFP)
+                                    </a>
+                                </h3>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/clock-1.svg" width="20" height="20" alt="clock">
+                                        <span
+                                            class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                            3 Months Learning
+                                        </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/book-1.svg" width="20" height="20" alt="clock">
+                                        <span
+                                            class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                            4 Tracks 12 Courses
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="line-clamp-2 text-[#445566] text-xs leading-[180%] ltr:leading-[160%]">
+                                The Consulting Foundation Program (CFP) is a highly engaging talent development program
+                                designed to equip ....
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class=" flex items-center gap-2">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.2217 1.28906C15.4795 1.40625 15.667 1.6875 15.667 1.96875V9.42188C15.667 9.84375 15.292 10.1484 14.8936 10.1484C14.8232 10.1484 14.7295 10.1484 14.6592 10.125C13.9326 9.89062 13.2061 9.79688 12.4795 9.79688C9.59668 9.79688 6.71387 11.25 3.83105 11.25C2.91699 11.25 2.00293 11.1094 1.08887 10.7344C0.831055 10.6172 0.666992 10.3359 0.666992 10.0547V2.60156C0.666992 2.17969 1.01855 1.85156 1.41699 1.85156C1.4873 1.85156 1.58105 1.875 1.65137 1.89844C2.37793 2.13281 3.10449 2.22656 3.83105 2.22656C6.71387 2.22656 9.59668 0.75 12.4795 0.75C13.3936 0.75 14.3076 0.914062 15.2217 1.28906ZM1.79199 3.11719V4.52344C2.51855 4.52344 3.10449 4.00781 3.24512 3.32812C2.75293 3.28125 2.26074 3.23438 1.79199 3.11719ZM1.79199 9.79688C2.26074 9.96094 2.75293 10.0781 3.26855 10.1016C3.24512 9.30469 2.58887 8.67188 1.79199 8.67188V9.79688ZM8.16699 8.25C9.19824 8.25 10.042 7.26562 10.042 6C10.042 4.75781 9.19824 3.75 8.16699 3.75C7.1123 3.75 6.29199 4.75781 6.29199 6C6.29199 7.26562 7.1123 8.25 8.16699 8.25ZM14.542 8.90625V7.57031C13.9092 7.64062 13.3936 8.10938 13.2529 8.71875C13.6982 8.74219 14.1201 8.8125 14.542 8.90625ZM14.542 3.375V2.22656C14.1201 2.08594 13.6748 1.99219 13.2295 1.94531C13.2529 2.67188 13.8154 3.28125 14.542 3.375Z"
+                                            fill="#445566" />
+                                    </svg>
+                                    <p class="text-[#1D1D1B] text-xs leading-normal font-bold">
+                                        Price:
+                                        <span class="text-[#2156A7]">
+                                            6000
+                                        </span>
+                                        SAR
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-6 h-6 rounded-full">
+                                        <img src="assets/images/homepage/course-trainer.jpg"
+                                            class="w-full h-full object-cover" width="24" height="24" alt="person">
+                                    </div>
+                                    <p class="text-[#1D1D1B] text-[13px] leading-normal">
+                                        Mohamed Abdelrazek
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- program item  -->
+                    <div
+                        class="border border-[#D0D5DD] hover:border-[#2156A7] flex flex-col rounded-2xl overflow-hidden transition-colors duration-300">
+                        <div class="h-[224px] relative">
+                            <div
+                                class="absolute font-bold end-5 top-5 bg-[#2E90FA] rounded-full px-[10px] py-2 text-white text-sm leading-normal ltr:leading-5 ltr:-tracking-[0.42px]">
+                                Beginner
+                            </div>
+                            <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                height="244" alt="programs">
+                        </div>
+                        <div class="p-6 bg-white flex flex-col gap-4">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-black text-lg leading-normal font-bold">
+                                    <a href="#" class="">
+                                        Consulting Foundation Program (CFP)
+                                    </a>
+                                </h3>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/clock-1.svg" width="20" height="20" alt="clock">
+                                        <span
+                                            class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                            3 Months Learning
+                                        </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/book-1.svg" width="20" height="20" alt="clock">
+                                        <span
+                                            class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                            4 Tracks 12 Courses
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="line-clamp-2 text-[#445566] text-xs leading-[180%] ltr:leading-[160%]">
+                                The Consulting Foundation Program (CFP) is a highly engaging talent development program
+                                designed to equip ....
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class=" flex items-center gap-2">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.2217 1.28906C15.4795 1.40625 15.667 1.6875 15.667 1.96875V9.42188C15.667 9.84375 15.292 10.1484 14.8936 10.1484C14.8232 10.1484 14.7295 10.1484 14.6592 10.125C13.9326 9.89062 13.2061 9.79688 12.4795 9.79688C9.59668 9.79688 6.71387 11.25 3.83105 11.25C2.91699 11.25 2.00293 11.1094 1.08887 10.7344C0.831055 10.6172 0.666992 10.3359 0.666992 10.0547V2.60156C0.666992 2.17969 1.01855 1.85156 1.41699 1.85156C1.4873 1.85156 1.58105 1.875 1.65137 1.89844C2.37793 2.13281 3.10449 2.22656 3.83105 2.22656C6.71387 2.22656 9.59668 0.75 12.4795 0.75C13.3936 0.75 14.3076 0.914062 15.2217 1.28906ZM1.79199 3.11719V4.52344C2.51855 4.52344 3.10449 4.00781 3.24512 3.32812C2.75293 3.28125 2.26074 3.23438 1.79199 3.11719ZM1.79199 9.79688C2.26074 9.96094 2.75293 10.0781 3.26855 10.1016C3.24512 9.30469 2.58887 8.67188 1.79199 8.67188V9.79688ZM8.16699 8.25C9.19824 8.25 10.042 7.26562 10.042 6C10.042 4.75781 9.19824 3.75 8.16699 3.75C7.1123 3.75 6.29199 4.75781 6.29199 6C6.29199 7.26562 7.1123 8.25 8.16699 8.25ZM14.542 8.90625V7.57031C13.9092 7.64062 13.3936 8.10938 13.2529 8.71875C13.6982 8.74219 14.1201 8.8125 14.542 8.90625ZM14.542 3.375V2.22656C14.1201 2.08594 13.6748 1.99219 13.2295 1.94531C13.2529 2.67188 13.8154 3.28125 14.542 3.375Z"
+                                            fill="#445566" />
+                                    </svg>
+                                    <p class="text-[#1D1D1B] text-xs leading-normal font-bold">
+                                        Price:
+                                        <span class="text-[#2156A7]">
+                                            6000
+                                        </span>
+                                        SAR
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-6 h-6 rounded-full">
+                                        <img src="assets/images/homepage/course-trainer.jpg"
+                                            class="w-full h-full object-cover" width="24" height="24" alt="person">
+                                    </div>
+                                    <p class="text-[#1D1D1B] text-[13px] leading-normal">
+                                        Mohamed Abdelrazek
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- program item  -->
+                    <div
+                        class="border border-[#D0D5DD] hover:border-[#2156A7] flex flex-col rounded-2xl overflow-hidden transition-colors duration-300">
+                        <div class="h-[224px] relative">
+                            <div
+                                class="absolute font-bold end-5 top-5 bg-[#2E90FA] rounded-full px-[10px] py-2 text-white text-sm leading-normal ltr:leading-5 ltr:-tracking-[0.42px]">
+                                Beginner
+                            </div>
+                            <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                height="244" alt="programs">
+                        </div>
+                        <div class="p-6 bg-white flex flex-col gap-4">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-black text-lg leading-normal font-bold">
+                                    <a href="#" class="">
+                                        Consulting Foundation Program (CFP)
+                                    </a>
+                                </h3>
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/clock-1.svg" width="20" height="20" alt="clock">
+                                        <span
+                                            class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                            3 Months Learning
+                                        </span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="assets/images/book-1.svg" width="20" height="20" alt="clock">
+                                        <span
+                                            class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                            4 Tracks 12 Courses
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="line-clamp-2 text-[#445566] text-xs leading-[180%] ltr:leading-[160%]">
+                                The Consulting Foundation Program (CFP) is a highly engaging talent development program
+                                designed to equip ....
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class=" flex items-center gap-2">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.2217 1.28906C15.4795 1.40625 15.667 1.6875 15.667 1.96875V9.42188C15.667 9.84375 15.292 10.1484 14.8936 10.1484C14.8232 10.1484 14.7295 10.1484 14.6592 10.125C13.9326 9.89062 13.2061 9.79688 12.4795 9.79688C9.59668 9.79688 6.71387 11.25 3.83105 11.25C2.91699 11.25 2.00293 11.1094 1.08887 10.7344C0.831055 10.6172 0.666992 10.3359 0.666992 10.0547V2.60156C0.666992 2.17969 1.01855 1.85156 1.41699 1.85156C1.4873 1.85156 1.58105 1.875 1.65137 1.89844C2.37793 2.13281 3.10449 2.22656 3.83105 2.22656C6.71387 2.22656 9.59668 0.75 12.4795 0.75C13.3936 0.75 14.3076 0.914062 15.2217 1.28906ZM1.79199 3.11719V4.52344C2.51855 4.52344 3.10449 4.00781 3.24512 3.32812C2.75293 3.28125 2.26074 3.23438 1.79199 3.11719ZM1.79199 9.79688C2.26074 9.96094 2.75293 10.0781 3.26855 10.1016C3.24512 9.30469 2.58887 8.67188 1.79199 8.67188V9.79688ZM8.16699 8.25C9.19824 8.25 10.042 7.26562 10.042 6C10.042 4.75781 9.19824 3.75 8.16699 3.75C7.1123 3.75 6.29199 4.75781 6.29199 6C6.29199 7.26562 7.1123 8.25 8.16699 8.25ZM14.542 8.90625V7.57031C13.9092 7.64062 13.3936 8.10938 13.2529 8.71875C13.6982 8.74219 14.1201 8.8125 14.542 8.90625ZM14.542 3.375V2.22656C14.1201 2.08594 13.6748 1.99219 13.2295 1.94531C13.2529 2.67188 13.8154 3.28125 14.542 3.375Z"
+                                            fill="#445566" />
+                                    </svg>
+                                    <p class="text-[#1D1D1B] text-xs leading-normal font-bold">
+                                        Price:
+                                        <span class="text-[#2156A7]">
+                                            6000
+                                        </span>
+                                        SAR
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-6 h-6 rounded-full">
+                                        <img src="assets/images/homepage/course-trainer.jpg"
+                                            class="w-full h-full object-cover" width="24" height="24" alt="person">
+                                    </div>
+                                    <p class="text-[#1D1D1B] text-[13px] leading-normal">
+                                        Mohamed Abdelrazek
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Programs  section -->
+
+        <!-- =============================-->
+
+        <!-- Start Categories  section -->
+        <section class="py-8 lg:py-[72px] bg-[#F7FAFA] px-6 lg:px-0">
+            <div class="container flex flex-col gap-6 lg:gap-8 items-center">
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3">
+                    <h2
+                        class="lg:w-[573px] text-[#333745] text-center rtl:text-2xl rtl:lg:text-[32px] ltr:text-[32px] ltr:lg:text-5xl ltr:leading-[48px] ltr:lg:leading-[64px] rtl:leading-normal font-bold">
+                        Explore Our Popular Categories
+                    </h2>
+                </header>
+
+                <ul class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+                    <!-- program item  -->
+                    <li>
+                        <a href="#" class="flex gap-3 items-center bg-white  rounded-xl p-4 border border-[#0000001A]">
+                            <div class="w-12 h-12 lg:h-16 lg:w-16 rounded-full overflow-hidden">
+                                <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                    height="244" alt="programs">
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <h3
+                                    class="text-[#1D1D1B] text-xl leading-normal ltr:leading-6 font-bold ltr:-tracking-tight">
+                                    Data Science
+                                </h3>
+                                <p
+                                    class="text-[#1D1D1B] opacity-60 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                    20 Programs
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-3 items-center bg-white  rounded-xl p-4 border border-[#0000001A]">
+                            <div class="w-12 h-12 lg:h-16 lg:w-16 rounded-full overflow-hidden">
+                                <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                    height="244" alt="programs">
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <h3
+                                    class="text-[#1D1D1B] text-xl leading-normal ltr:leading-6 font-bold ltr:-tracking-tight">
+                                    UX Design
+                                </h3>
+                                <p
+                                    class="text-[#1D1D1B] opacity-60 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                    20 Programs
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-3 items-center bg-white  rounded-xl p-4 border border-[#0000001A]">
+                            <div class="w-12 h-12 lg:h-16 lg:w-16 rounded-full overflow-hidden">
+                                <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                    height="244" alt="programs">
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <h3
+                                    class="text-[#1D1D1B] text-xl leading-normal ltr:leading-6 font-bold ltr:-tracking-tight">
+                                    Marketing
+                                </h3>
+                                <p
+                                    class="text-[#1D1D1B] opacity-60 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                    20 Programs
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-3 items-center bg-white  rounded-xl p-4 border border-[#0000001A]">
+                            <div class="w-12 h-12 lg:h-16 lg:w-16 rounded-full overflow-hidden">
+                                <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                    height="244" alt="programs">
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <h3
+                                    class="text-[#1D1D1B] text-xl leading-normal ltr:leading-6 font-bold ltr:-tracking-tight">
+                                    Engineer
+                                </h3>
+                                <p
+                                    class="text-[#1D1D1B] opacity-60 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                    20 Programs
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-3 items-center bg-white  rounded-xl p-4 border border-[#0000001A]">
+                            <div class="w-12 h-12 lg:h-16 lg:w-16 rounded-full overflow-hidden">
+                                <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                    height="244" alt="programs">
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <h3
+                                    class="text-[#1D1D1B] text-xl leading-normal ltr:leading-6 font-bold ltr:-tracking-tight">
+                                    Product
+                                </h3>
+                                <p
+                                    class="text-[#1D1D1B] opacity-60 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                    20 Programs
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-3 items-center bg-white  rounded-xl p-4 border border-[#0000001A]">
+                            <div class="w-12 h-12 lg:h-16 lg:w-16 rounded-full overflow-hidden">
+                                <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                    height="244" alt="programs">
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <h3
+                                    class="text-[#1D1D1B] text-xl leading-normal ltr:leading-6 font-bold ltr:-tracking-tight">
+                                    Development
+                                </h3>
+                                <p
+                                    class="text-[#1D1D1B] opacity-60 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                    20 Programs
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-3 items-center bg-white  rounded-xl p-4 border border-[#0000001A]">
+                            <div class="w-12 h-12 lg:h-16 lg:w-16 rounded-full overflow-hidden">
+                                <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                    height="244" alt="programs">
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <h3
+                                    class="text-[#1D1D1B] text-xl leading-normal ltr:leading-6 font-bold ltr:-tracking-tight">
+                                    Consulting
+                                </h3>
+                                <p
+                                    class="text-[#1D1D1B] opacity-60 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                    20 Programs
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-3 items-center bg-white  rounded-xl p-4 border border-[#0000001A]">
+                            <div class="w-12 h-12 lg:h-16 lg:w-16 rounded-full overflow-hidden">
+                                <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover" width="371"
+                                    height="244" alt="programs">
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <h3
+                                    class="text-[#1D1D1B] text-xl leading-normal ltr:leading-6 font-bold ltr:-tracking-tight">
+                                    IT Support
+                                </h3>
+                                <p
+                                    class="text-[#1D1D1B] opacity-60 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                    20 Programs
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <a href="#"
+                    class="border border-[#EAECF0] bg-white rounded-full p-3 flex items-center gap-2 text-[#101828] leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                    Explore More
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 15L15 5" stroke="#101828" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6.875 5H15V13.125" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+
+            </div>
+        </section>
+        <!-- End Categories  section -->
+
+        <!-- =============================-->
+
+        <!-- Start Team section -->
+        <section class="py-8 lg:py-[72px] bg-[#F7FAFA]">
+            <div class="container flex flex-col gap-6 lg:gap-8 items-center">
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3 px-6 lg:px-0">
+                    <h2
+                        class="lg:w-[573px] text-[#333745] text-center rtl:text-2xl rtl:lg:text-[32px] ltr:text-[32px] ltr:lg:text-5xl ltr:leading-[48px] ltr:lg:leading-[64px] rtl:leading-normal font-bold">
+                        Meet Our Esteemed Mentors
+                    </h2>
+                </header>
+
+                <div class="w-full">
+                    <div class="swiper slider-team px-[30px] lg:px-0">
+                        <div class="swiper-wrapper">
+                            <!-- team item  -->
+                            <div class="swiper-slide flex flex-col gap-3">
+                                <div class="h-[360px] rounded-xl overflow-hidden">
+                                    <img src="assets/images/team-1.jpg" class="h-full w-full object-cover" width="272"
+                                        height="360" alt="team member">
+                                </div>
+                                <div class="p-4 flex flex-col gap-0.5">
+                                    <h3
+                                        class="text-[#1D1D1B] text-xl leading-normal font-bold ltr:leading-6 ltr:-tracking-[.48px]">
+                                        Mohamed Ahmed Mansour
+                                    </h3>
+                                    <p
+                                        class="text-[#1D1D1B] opacity-60  text-base leading-normal ltr:leading-[18px] -tracking-[0.16px]">
+                                        Product Designer
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- team item  -->
+                            <div class="swiper-slide flex flex-col gap-3">
+                                <div class="h-[360px] rounded-xl overflow-hidden">
+                                    <img src="assets/images/team-2.jpg" class="h-full w-full object-cover" width="272"
+                                        height="360" alt="team member">
+                                </div>
+                                <div class="p-4 flex flex-col gap-0.5">
+                                    <h3
+                                        class="text-[#1D1D1B] text-xl leading-normal font-bold ltr:leading-6 ltr:-tracking-[.48px]">
+                                        Ramy Reda Yonan
+                                    </h3>
+                                    <p
+                                        class="text-[#1D1D1B] opacity-60  text-base leading-normal ltr:leading-[18px] -tracking-[0.16px]">
+                                        Product Designer
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- team item  -->
+                            <div class="swiper-slide flex flex-col gap-3">
+                                <div class="h-[360px] rounded-xl overflow-hidden">
+                                    <img src="assets/images/team-3.jpg" class="h-full w-full object-cover" width="272"
+                                        height="360" alt="team member">
+                                </div>
+                                <div class="p-4 flex flex-col gap-0.5">
+                                    <h3
+                                        class="text-[#1D1D1B] text-xl leading-normal font-bold ltr:leading-6 ltr:-tracking-[.48px]">
+                                        Ahmed Ali
+                                    </h3>
+                                    <p
+                                        class="text-[#1D1D1B] opacity-60  text-base leading-normal ltr:leading-[18px] -tracking-[0.16px]">
+                                        Product Designer
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- team item  -->
+                            <div class="swiper-slide flex flex-col gap-3">
+                                <div class="h-[360px] rounded-xl overflow-hidden">
+                                    <img src="assets/images/team-4.jpg" class="h-full w-full object-cover" width="272"
+                                        height="360" alt="team member">
+                                </div>
+                                <div class="p-4 flex flex-col gap-0.5">
+                                    <h3
+                                        class="text-[#1D1D1B] text-xl leading-normal font-bold ltr:leading-6 ltr:-tracking-[.48px]">
+                                        Wael Darwish
+                                    </h3>
+                                    <p
+                                        class="text-[#1D1D1B] opacity-60  text-base leading-normal ltr:leading-[18px] -tracking-[0.16px]">
+                                        Product Designer
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- team item  -->
+                            <div class="swiper-slide flex flex-col gap-3">
+                                <div class="h-[360px] rounded-xl overflow-hidden">
+                                    <img src="assets/images/team-1.jpg" class="h-full w-full object-cover" width="272"
+                                        height="360" alt="team member">
+                                </div>
+                                <div class="p-4 flex flex-col gap-0.5">
+                                    <h3
+                                        class="text-[#1D1D1B] text-xl leading-normal font-bold ltr:leading-6 ltr:-tracking-[.48px]">
+                                        Mohamed Ahmed Mansour
+                                    </h3>
+                                    <p
+                                        class="text-[#1D1D1B] opacity-60  text-base leading-normal ltr:leading-[18px] -tracking-[0.16px]">
+                                        Product Designer
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination slider-team-pagination static flex justify-center gap-4 bg-white"></div>
+
+            </div>
+        </section>
+        <!-- End Team section -->
+
+        <!-- ======================================= -->
+
+        <!-- Start FAQs setion  -->
+        <section class="py-16 px-8 lg:px-0">
+            <div class="container flex flex-col gap-12">
+
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3">
+                    <h2
+                        class="lg:w-[573px] text-[#333745] text-center rtl:text-2xl rtl:lg:text-[32px] ltr:text-[32px] ltr:lg:text-5xl ltr:leading-[48px] ltr:lg:leading-[64px] rtl:leading-normal font-bold">
+                        Frequently Asked Questions
+                    </h2>
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-normal text-center">
+                        Answers to your most pressing questions about the Consulting Foundation Program.
+                    </p>
+                </header>
+
+                <!-- FAQs section Content  -->
+                <div class="flex flex-col gap-6 lg:w-[730px] mx-auto">
+                    <div class="flex flex-col gap-3">
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="colored-title text-[#333745] text-base leading-normal flex-1 transition-all duration-300 font-medium">
+                                    Who is the Consulting Foundation Program designed for?
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus" class="">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4"
+                                style="display: none;">
+                                The Consulting Foundation Program is tailored for a diverse range of individuals. It's
+                                ideal for fresh university graduates aiming to venture into consulting, young employees
+                                and experienced managers who aspire to refine their business acumen, government
+                                employees eager to adopt a consultant's mindset for enhanced collaboration, and
+                                essentially anyone keen on cultivating solid and adaptable business skills.
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="colored-title text-[#333745] text-base leading-normal flex-1 transition-all duration-300 font-medium">
+                                    What core skills can I expect to gain from the Consulting Foundation Program?
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                The Consulting Foundation Program is tailored for a diverse range of individuals. It's
+                                ideal for fresh university graduates aiming to venture into consulting, young employees
+                                and experienced managers who aspire to refine their business acumen, government
+                                employees eager to adopt a consultant's mindset for enhanced collaboration, and
+                                essentially anyone keen on cultivating solid and adaptable business skills.
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="colored-title text-[#333745] text-base leading-normal flex-1 transition-all duration-300 font-medium">
+                                    How does the program differentiate itself from other consulting training courses
+                                    available?
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                The Consulting Foundation Program is tailored for a diverse range of individuals. It's
+                                ideal for fresh university graduates aiming to venture into consulting, young employees
+                                and experienced managers who aspire to refine their business acumen, government
+                                employees eager to adopt a consultant's mindset for enhanced collaboration, and
+                                essentially anyone keen on cultivating solid and adaptable business skills.
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3 class="colored-title text-[#333745] text-base leading-normal flex-1 transition-all duration-300 font-medium">
+                                    What kind of post-program support or resources are available for graduates?
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                The Consulting Foundation Program is tailored for a diverse range of individuals. It's
+                                ideal for fresh university graduates aiming to venture into consulting, young employees
+                                and experienced managers who aspire to refine their business acumen, government
+                                employees eager to adopt a consultant's mindset for enhanced collaboration, and
+                                essentially anyone keen on cultivating solid and adaptable business skills.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End FAQs setion  -->
+
+        <!-- ======================================= -->
+
+        <!-- Start Aanaab Testimonials section -->
+        <section class="py-12 lg:py-16">
+            <div class="container flex flex-col items-center gap-8 lg:gap-10">
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3 px-[30px] lg:px-0">
+                    <h2
+                        class="lg:w-[573px] text-[#333745] text-center rtl:text-2xl rtl:lg:text-[32px] ltr:text-[32px] ltr:lg:text-5xl ltr:leading-[48px] ltr:lg:leading-[64px] rtl:leading-normal font-bold">
+                        Voices from Our CFP Graduates
+                    </h2>
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-[180%] text-center ltr:leading-[22px]">
+                        Success Stories Straight from the Source
+                    </p>
+                </header>
+
+                <!-- start Testimonial  -->
+                <div class="w-full">
+                    <div class="swiper slider-testimonials px-[30px] lg:px-0">
+                        <div class="swiper-wrapper py-6">
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide group h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    Joined CFP to better liaise with consultants. It not only helped me communicate but
+                                    also improved my problem-solving and strategy approach. Highly recommended!
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        Mohamed Abdelrazek
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide group h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    Joined CFP to better liaise with consultants. It not only helped me communicate but
+                                    also improved my problem-solving and strategy approach. Highly recommended!
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        Mohamed Abdelrazek
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide group h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    Joined CFP to better liaise with consultants. It not only helped me communicate but
+                                    also improved my problem-solving and strategy approach. Highly recommended!
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        Mohamed Abdelrazek
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item  -->
+                            <div
+                                class="swiper-slide group h-auto transition-all duration-300 p-8 border rounded-3xl border-[#D7D5D5] flex flex-col items-center gap-8 lg:gap-12">
+                                <div class="flex items-end">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="24" height="24" src="assets/images/star.svg" alt="star">
+                                    <img width="20" height="20" src="assets/images/star.svg" alt="star">
+                                    <img width="16" height="16" src="assets/images/star.svg" alt="star">
+                                </div>
+                                <p class="text-center text-base leading-normal text-black my-auto">
+                                    CFP was a game-changer. The blend of theory and practice helped me immediately apply
+                                    what I learned. It's boosted my confidence and solidified my role as a key
+                                    consultant.
+                                </p>
+                                <div class="flex flex-col gap-2 items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg" width="48" height="48"
+                                            alt="person">
+                                    </div>
+                                    <h3 class="text-base leading-normal text-[#333745]">
+                                        Mohamed Abdelrazek
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- start Testimonial pagination -->
+                <div class="swiper-pagination testimonials-pagination static flex justify-center gap-4"></div>
+            </div>
+        </section>
+        <!-- End Aanaab Testimonials section -->
+
+        <!-- ======================================= -->
+
+        <!-- Start Call To action section -->
+        <section class="bg-[#0F0F0F] px-6 lg:px-0 py-8 lg:py-[72px]">
+            <div
+                class="container bg-[#1B1C1F] rounded-3xl lg:border border-[#ffffff1a] py-8 lg:py-15 px-6 lg:px-20 relative overflow-hidden">
+                <img src="assets/images/footer-ctapattern.png" class="absolute w-full h-full object-cover top-0 left-0"
+                    width="2415" height="1021" alt="pattern">
+                <div class="absolute cta-blur-shap"></div>
+                <div class="relative flex flex-col items-center gap-6">
+                    <h2
+                        class="text-white text-2xl max-w-[612px] lg:text-5xl leading-normal ltr:leading-8 ltr:lg:leading-[64px] lg:leading-normal font-bold text-center lg:basis-1/2">
+                        Step Into a Future of Excellence
+                    </h2>
+                    <p class="text-white text-base lg:text-lg opacity-70 lg:px-24 font-normal text-center">
+                        Open doors to boundless opportunities with Aanaab's transformative e-course. Elevate your
+                        skills,
+                        amplify your growth, and lead your field with confidence
+                    </p>
+                    <div class="flex flex-col lg:flex-row lg:justify-center gap-4">
+                        <a href="#"
+                            class="py-3 text-center px-6 rounded-full bg-[#8447FF] hover:bg-[#7841E8] transition-all duration-300 text-white text-base leading-5">
+                            Join for Free
+                        </a>
+                        <a href="#"
+                            class="py-3 px-6 rounded-full border border-[#C9C5C5] hover:border-[#B6AFAF] hover:bg-white flex items-center justify-center gap-2 transition-all duration-300 text-[#101828] bg-white hover:text-[#333745] text-base leading-5">
+                            Explore Course
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.625 10H17.375" stroke="#101828" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="#1A1A1A" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Call To action section -->
+    </main>
+    <!-- ======================================= -->
+    <!-- End  Annab Main Content -->
+
+    <footer class="bg-[#0F0F0F] py-8 lg:py-12 px-6 lg:px-0">
+        <div class="container flex flex-col gap-8">
+            <div class="grid grid-cols-2 lg:grid-cols-8 gap-6">
+                <div class="flex flex-col gap-4 flex-1 col-span-2">
+                    <h2 class="text-white text-xl leading-normal ltr:leading-6 ltr:-tracking-[0.4px] font-bold">
+                        Top Programs
+                    </h2>
+                    <ul class="flex flex-col gap-6">
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Consulting for Professionals (CFP)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Leadership Essentials: Guiding Teams to Success
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Digital Marketing Mastery: Strategies for Online Success
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#FFFFFF33] w-fit rounded-full p-3 flex items-center gap-2 text-white leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                Explore More
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 15L15 5" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M6.875 5H15V13.125" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4 flex-1 col-span-1 lg:col-span-2">
+                    <h2 class="text-white text-xl leading-normal ltr:leading-6 ltr:-tracking-[0.4px] font-bold">
+                        Categories
+                    </h2>
+                    <ul class="flex flex-col gap-6">
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Makerting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Product
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Data Analysis
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Engineer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Data Analysis
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#FFFFFF33] w-fit rounded-full p-3 flex items-center gap-2 text-white leading-normal ltr:leading-5 ltr:-tracking-[0.48px]">
+                                Explore More
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 15L15 5" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M6.875 5H15V13.125" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4 flex-1 col-span-1 lg:col-span-2">
+                    <h2 class="text-white text-xl leading-normal ltr:leading-6 ltr:-tracking-[0.4px] font-bold">
+                        Support
+                    </h2>
+                    <ul class="flex flex-col gap-6">
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Contact Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Help Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Customer Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Report an Issue
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4 lg:w-32 col-span-1">
+                    <h2 class="text-white text-xl leading-normal ltr:leading-6 ltr:-tracking-[0.4px] font-bold">
+                        Info
+                    </h2>
+                    <ul class="flex flex-col gap-6">
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Career
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Press
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4 lg:w-32 col-span-1">
+                    <h2 class="text-white text-xl leading-normal ltr:leading-6 ltr:-tracking-[0.4px] font-bold">
+                        Legal
+                    </h2>
+                    <ul class="flex flex-col gap-6">
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Terms of Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Cookie Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-white opacity-60 hover:opacity-90 text-base leading-normal ltr:leading-5 ltr:-tracking-[0.48px] transition-all duration-300">
+                                Disclaimer
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div
+                class="pt-8 border-t border-[#C6C6C6] border-opacity-10 flex flex-col lg:flex-row gap-6 justify-between items-center">
+                <p class="text-white">
+                    © 2023 Aanaab | All Rights Reserved
+                </p>
+
+                <div class="flex items-center gap-6">
+                    <a href="#"
+                        class="border border-[#FFFFFF33] rounded-full p-3 flex items-center justify-center transition-all duration-300 hover:scale-105">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 10.0558C0 15.0275 3.61083 19.1617 8.33333 20V12.7775H5.83333V10H8.33333V7.7775C8.33333 5.2775 9.94417 3.88917 12.2225 3.88917C12.9442 3.88917 13.7225 4 14.4442 4.11083V6.66667H13.1667C11.9442 6.66667 11.6667 7.2775 11.6667 8.05583V10H14.3333L13.8892 12.7775H11.6667V20C16.3892 19.1617 20 15.0283 20 10.0558C20 4.525 15.5 0 10 0C4.5 0 0 4.525 0 10.0558Z"
+                                fill="white" />
+                        </svg>
+                        <span class="sr-only">Facbook</span>
+                    </a>
+                    <a href="#"
+                        class="border border-[#FFFFFF33] rounded-full p-3 flex items-center justify-center transition-all duration-300 hover:scale-105">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.99731 6.66525C8.16111 6.66525 6.66262 8.16376 6.66262 10C6.66262 11.8362 8.16111 13.3348 9.99731 13.3348C11.8335 13.3348 13.332 11.8362 13.332 10C13.332 8.16376 11.8335 6.66525 9.99731 6.66525ZM19.9989 10C19.9989 8.61907 20.0114 7.25064 19.9338 5.87221C19.8563 4.27113 19.4911 2.85017 18.3203 1.67938C17.147 0.506085 15.7286 0.14334 14.1275 0.065788C12.7466 -0.0117644 11.3782 0.000744113 9.99981 0.000744113C8.61891 0.000744113 7.25051 -0.0117644 5.8721 0.065788C4.27105 0.14334 2.85012 0.508587 1.67935 1.67938C0.506076 2.85267 0.143338 4.27113 0.0657868 5.87221C-0.0117642 7.25314 0.000744099 8.62157 0.000744099 10C0.000744099 11.3784 -0.0117642 12.7494 0.0657868 14.1278C0.143338 15.7289 0.508578 17.1498 1.67935 18.3206C2.85262 19.4939 4.27105 19.8567 5.8721 19.9342C7.25301 20.0118 8.62141 19.9993 9.99981 19.9993C11.3807 19.9993 12.7491 20.0118 14.1275 19.9342C15.7286 19.8567 17.1495 19.4914 18.3203 18.3206C19.4936 17.1473 19.8563 15.7289 19.9338 14.1278C20.0139 12.7494 19.9989 11.3809 19.9989 10ZM9.99731 15.131C7.15795 15.131 4.86644 12.8394 4.86644 10C4.86644 7.16058 7.15795 4.86903 9.99731 4.86903C12.8367 4.86903 15.1282 7.16058 15.1282 10C15.1282 12.8394 12.8367 15.131 9.99731 15.131ZM15.3383 5.8572C14.6754 5.8572 14.14 5.32184 14.14 4.65889C14.14 3.99594 14.6754 3.46058 15.3383 3.46058C16.0013 3.46058 16.5366 3.99594 16.5366 4.65889C16.5368 4.81631 16.5059 4.97222 16.4458 5.1177C16.3856 5.26317 16.2974 5.39535 16.1861 5.50666C16.0748 5.61798 15.9426 5.70624 15.7971 5.76639C15.6516 5.82654 15.4957 5.8574 15.3383 5.8572Z"
+                                fill="white" />
+                        </svg>
+                        <span class="sr-only">instagram</span>
+                    </a>
+                    <a href="#"
+                        class="border border-[#FFFFFF33] rounded-full p-3 flex items-center justify-center transition-all duration-300 hover:scale-105">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3612 6.64898C16.372 6.79482 16.372 6.93982 16.372 7.08482C16.372 11.5223 12.9945 16.6357 6.82199 16.6357C4.92033 16.6357 3.15366 16.0848 1.66699 15.1282C1.93699 15.159 2.19699 15.1698 2.47783 15.1698C4.04699 15.1698 5.49116 14.6398 6.64533 13.7357C5.16949 13.7048 3.93283 12.7382 3.50616 11.4082C3.71366 11.439 3.92199 11.4598 4.14033 11.4598C4.44116 11.4598 4.74366 11.4182 5.02449 11.3457C3.48533 11.034 2.33283 9.68315 2.33283 8.05149V8.00982C2.78033 8.25899 3.29949 8.41482 3.84949 8.43565C2.94533 7.83399 2.35283 6.80482 2.35283 5.64065C2.35283 5.01732 2.51866 4.44565 2.80949 3.94732C4.46199 5.98315 6.94616 7.31399 9.73116 7.45982C9.67949 7.20982 9.64783 6.95065 9.64783 6.69065C9.64783 4.84065 11.1445 3.33398 13.0045 3.33398C13.9712 3.33398 14.8437 3.73898 15.457 4.39398C16.2153 4.24815 16.942 3.96732 17.587 3.58315C17.3378 4.36232 16.807 5.01732 16.1112 5.43315C16.787 5.35982 17.442 5.17315 18.0437 4.91315C17.587 5.57815 17.0162 6.17065 16.3612 6.64898Z"
+                                fill="white" />
+                        </svg>
+                        <span class="sr-only">twitter</span>
+                    </a>
+                    <a href="#"
+                        class="border border-[#FFFFFF33] rounded-full p-3 flex items-center justify-center transition-all duration-300 hover:scale-105">
+                        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.967 0.546524C20.9288 0.671826 21.848 1.60713 21.9649 2.58254C22.379 6.15726 22.379 9.62366 21.9649 13.1973C21.848 14.1727 20.9288 15.1091 19.967 15.2333C14.1026 15.962 8.17197 15.962 2.30924 15.2333C1.34665 15.1088 0.427488 14.1727 0.310539 13.1973C-0.103513 9.62338 -0.103513 6.15726 0.310539 2.58254C0.427488 1.60713 1.34665 0.671548 2.30924 0.546524C8.17197 -0.182175 14.1024 -0.182175 19.967 0.546524ZM9.28131 4.17777V11.6031L14.8503 7.8906L9.28131 4.17777Z"
+                                fill="white" />
+                        </svg>
+                        <span class="sr-only">youtube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="assets/scripts/jquiry.js"></script>
+    <script src="assets/scripts/swiper.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
