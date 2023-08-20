@@ -9,6 +9,11 @@ if ($("#header-search").length > 0) {
         $(".search-result-container").addClass("active")
     })
 }
+if ($(".searching").length > 0) {
+    $(".searching").on("focus", function () {
+        $(".search-result-container").addClass("active")
+    })
+}
 if ($(".close-search-res").length > 0) {
     $(".close-search-res").on("click", function () {
         $(".search-result-container").removeClass("active")
