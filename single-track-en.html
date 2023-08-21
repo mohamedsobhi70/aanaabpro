@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="font-DIN overflow-x-hidden relative">
+<body class="font-Almarai overflow-x-hidden relative">
     <!-- Start Annab Header -->
     <header class="bg-[#F7FAFA] z-50 lg:sticky top-0 px-[30px] lg:px-0">
         <div class="container py-6 flex items-center gap-12 justify-between">
@@ -762,529 +762,904 @@
     <!-- Start Annab  Main Content  -->
     <main>
 
-        <!-- Start  -->
-        <section class="py-8 lg:py-12 bg-[#F7FAFA] overflow-hidden">
-            <div class="container ">
-                <!-- Start Page Title Section  -->
-                <div class="flex flex-col gap-8 items-center">
-                    <div class="flex flex-col items-center gap-4 lg:gap-3 flex-1 px-[30px] lg:px-0">
-                        <span class="text-[#8447FF] text-base leading-normal font-extrabold">
-                            Tracks
-                        </span>
-                        <h2 class="text-[#333745] lg:text-[32px] text-2xl leading-normal font-extrabold text-center">
-                            Exploring Comprehensive Consulting Tracks
-                        </h2>
-                        <p
-                            class="text-[#5B5F6D] text-base lg:text-lg leading-[180%] lg:leading-[180%] text-center lg:px-24">
-                            Dive into Specialized Learning Pathways Tailored for Consulting Excellence
-                        </p>
-                    </div>
+        <!-- Start Section  -->
+        <section class="py-8 lg:pt-12 lg:pb-16 bg-[#F7FAFA]">
+            <div class="container">
+                <!--   -->
+                <div class="grid lg:grid-cols-3 gap-[30px]">
+                    <div class="lg:col-span-2 flex flex-col gap-8 px-[30px] lg:px-0">
+                        <!-- Start Page Title Section  -->
+                        <div class="flex flex-col gap-5 lg:gap-3 flex-1">
+                            <div class="flex items-center gap-4">
+                                <a href="index.html">
+                                    <img src="assets/images/home-icon.svg" width="20" height="20" alt="Home">
+                                    <span class="sr-only">Aanaab Home Page Icon</span>
+                                </a>
+                                <img src="assets/images/breadcrumb.svg" class="ltr:rotate-180" width="12" height="12"
+                                    alt="breadcrumb">
+                                <a href="#" class="text-[#838795] text-sm leading-normal font-bold">
+                                    courses
+                                </a>
+                                <img src="assets/images/breadcrumb.svg" class="ltr:rotate-180" width="12" height="12"
+                                    alt="breadcrumb">
+                                <a href="#" class="text-[333745] text-sm leading-normal font-bold truncate">
+                                    CFP Program
+                                </a>
+                            </div>
+                            <h2 class="text-[#333745] text-2xl lg:text-[32px] leading-normal font-bold">
+                                CFP Program
+                            </h2>
+                            <p class="text-[#838795] lg:text-xl leading-[180%] lg:leading-[180%]">
+                                The first pillar, 'Mastering the Tools', focuses on developing proficiency in the tools
+                                commonly used by consultants, enabling them to deliver effective solutions and drive
+                                meaningful change.
+                            </p>
+                        </div>
 
-                    <div class="flex flex-col gap-4 w-screen lg:w-auto">
-                        <div class=" px-[30px] lg:px-0">
-                            <div class="bg-white rounded-full py-4 px-6 flex items-center gap-4 w-full">
-                                <div class="flex items-center gap-2 flex-1 lg:w-[730px]">
-                                    <button class="shrink-0" type="button">
-                                        <img src="assets/images/search.svg" width="24" height="24" alt="search">
-                                        <span class="sr-only">Search Input</span>
-                                    </button>
-                                    <input type="search"
-                                        class="w-full focus:outline-none lg:text-lg leading-normal shrink"
-                                        name="search-courses" placeholder="Search" id="search-courses">
+                        <div class="flex flex-col gap-8 lg:gap-12">
+                            <div class="flex flex-col gap-6">
+                                <div class="w-full flex items-center justify-between gap-4">
+                                    <h2 class="text-[#333745] text-xl lg:text-2xl leading-normal font-bold">
+                                        courses
+                                    </h2>
+
+                                    <label
+                                        class="flex gap-2 bg-white border border-[#D1D5DB] rounded-full py-1 px-4 lg:px-6 text-sm lg:text-base leading-normal lg:leading-normal">
+                                        <span class="flex items-center gap-2 text-[#838795]">
+                                            <svg width="11" height="15" viewBox="0 0 11 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.19141 8.375H9.55859C10.2969 8.375 10.6836 9.28906 10.1562 9.81641L5.97266 14C5.62109 14.3516 5.09375 14.3516 4.77734 14L0.59375 9.81641C0.03125 9.28906 0.417969 8.375 1.19141 8.375ZM10.1562 4.68359C10.6836 5.24609 10.2969 6.125 9.55859 6.125H1.19141C0.417969 6.125 0.03125 5.24609 0.59375 4.68359L4.77734 0.5C5.09375 0.183594 5.62109 0.183594 5.97266 0.5L10.1562 4.68359Z"
+                                                    fill="#6B7280" />
+                                            </svg>
+                                            <span class="hidden lg:block">
+                                                Sort by
+                                            </span>
+                                        </span>
+
+                                        <select name="sort-events" id="sort-events"
+                                            class="focus:outline-none cursor-pointer lg:py-2 text-[#6B7280] font-bold bg-white">
+                                            <option value="1">
+                                                most recent
+                                            </option>
+                                            <option value="2">
+                                                most recent
+                                            </option>
+                                        </select>
+
+                                    </label>
+
+                                </div>
+                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                    <!-- item  -->
+                                    <div
+                                        class="group border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                        <div class="h-56 relative">
+                                            <div
+                                                class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                                <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                    height="64" alt="badge" class="h-full w-full object-cover">
+                                            </div>
+
+                                            <img src="assets/images/homepage/training-courses-2.jpg"
+                                                class="w-full h-full object-cover" width="350" height="224"
+                                                alt="training-courses-1">
+                                        </div>
+                                        <div class="p-6 flex flex-col gap-6 bg-white">
+                                            <div class="flex flex-col gap-2">
+                                                <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                    <a href="single-course.html">
+                                                        Slice and dice with Excel
+                                                    </a>
+                                                </h3>
+                                                <p
+                                                    class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" width="12"
+                                                        height="14" alt="calender">
+                                                    April 18th - May 20th (4 weeks)
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center gap-3 justify-between">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                        <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                            height="40" alt="course-trainer">
+                                                    </div>
+                                                    <div class="flex flex-col gap-0.5">
+                                                        <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                            Hala Kamal
+                                                        </h4>
+                                                        <p class="text-[#838795] text-sm leading-normal">
+                                                            Data Analyst
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item  -->
+                                    <div
+                                        class="group border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                        <div class="h-56 relative">
+                                            <div
+                                                class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                                <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                    height="64" alt="badge" class="h-full w-full object-cover">
+                                            </div>
+
+                                            <img src="assets/images/homepage/training-courses-2.jpg"
+                                                class="w-full h-full object-cover" width="350" height="224"
+                                                alt="training-courses-1">
+                                        </div>
+                                        <div class="p-6 flex flex-col gap-6 bg-white">
+                                            <div class="flex flex-col gap-2">
+                                                <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                    <a href="single-course.html">
+                                                        Slice and dice with Excel
+                                                    </a>
+                                                </h3>
+                                                <p
+                                                    class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" width="12"
+                                                        height="14" alt="calender">
+                                                    April 18th - May 20th (4 weeks)
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center gap-3 justify-between">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                        <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                            height="40" alt="course-trainer">
+                                                    </div>
+                                                    <div class="flex flex-col gap-0.5">
+                                                        <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                            Hala Kamal
+                                                        </h4>
+                                                        <p class="text-[#838795] text-sm leading-normal">
+                                                            Data Analyst
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item  -->
+                                    <div
+                                        class="group border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                        <div class="h-56 relative">
+                                            <div
+                                                class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                                <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                    height="64" alt="badge" class="h-full w-full object-cover">
+                                            </div>
+
+                                            <img src="assets/images/homepage/training-courses-2.jpg"
+                                                class="w-full h-full object-cover" width="350" height="224"
+                                                alt="training-courses-1">
+                                        </div>
+                                        <div class="p-6 flex flex-col gap-6 bg-white">
+                                            <div class="flex flex-col gap-2">
+                                                <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                    <a href="single-course.html">
+                                                        Slice and dice with Excel
+                                                    </a>
+                                                </h3>
+                                                <p
+                                                    class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" width="12"
+                                                        height="14" alt="calender">
+                                                    April 18th - May 20th (4 weeks)
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center gap-3 justify-between">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                        <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                            height="40" alt="course-trainer">
+                                                    </div>
+                                                    <div class="flex flex-col gap-0.5">
+                                                        <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                            Hala Kamal
+                                                        </h4>
+                                                        <p class="text-[#838795] text-sm leading-normal">
+                                                            Data Analyst
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item  -->
+                                    <div
+                                        class="group border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                        <div class="h-56 relative">
+                                            <div
+                                                class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                                <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                    height="64" alt="badge" class="h-full w-full object-cover">
+                                            </div>
+
+                                            <img src="assets/images/homepage/training-courses-2.jpg"
+                                                class="w-full h-full object-cover" width="350" height="224"
+                                                alt="training-courses-1">
+                                        </div>
+                                        <div class="p-6 flex flex-col gap-6 bg-white">
+                                            <div class="flex flex-col gap-2">
+                                                <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                    <a href="single-course.html">
+                                                        Slice and dice with Excel
+                                                    </a>
+                                                </h3>
+                                                <p
+                                                    class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" width="12"
+                                                        height="14" alt="calender">
+                                                    April 18th - May 20th (4 weeks)
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center gap-3 justify-between">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                        <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                            height="40" alt="course-trainer">
+                                                    </div>
+                                                    <div class="flex flex-col gap-0.5">
+                                                        <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                            Hala Kamal
+                                                        </h4>
+                                                        <p class="text-[#838795] text-sm leading-normal">
+                                                            Data Analyst
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item  -->
+                                    <div
+                                        class="group border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                        <div class="h-56 relative">
+                                            <div
+                                                class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                                <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                    height="64" alt="badge" class="h-full w-full object-cover">
+                                            </div>
+
+                                            <img src="assets/images/homepage/training-courses-2.jpg"
+                                                class="w-full h-full object-cover" width="350" height="224"
+                                                alt="training-courses-1">
+                                        </div>
+                                        <div class="p-6 flex flex-col gap-6 bg-white">
+                                            <div class="flex flex-col gap-2">
+                                                <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                    <a href="single-course.html">
+                                                        Slice and dice with Excel
+                                                    </a>
+                                                </h3>
+                                                <p
+                                                    class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" width="12"
+                                                        height="14" alt="calender">
+                                                    April 18th - May 20th (4 weeks)
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center gap-3 justify-between">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                        <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                            height="40" alt="course-trainer">
+                                                    </div>
+                                                    <div class="flex flex-col gap-0.5">
+                                                        <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                            Hala Kamal
+                                                        </h4>
+                                                        <p class="text-[#838795] text-sm leading-normal">
+                                                            Data Analyst
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- item  -->
+                                    <div
+                                        class="group border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF] filter-card">
+                                        <div class="h-56 relative">
+                                            <div
+                                                class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                                <img src="assets/images/homepage/training-courses-badge.png" width="64"
+                                                    height="64" alt="badge" class="h-full w-full object-cover">
+                                            </div>
+
+                                            <img src="assets/images/homepage/training-courses-2.jpg"
+                                                class="w-full h-full object-cover" width="350" height="224"
+                                                alt="training-courses-1">
+                                        </div>
+                                        <div class="p-6 flex flex-col gap-6 bg-white">
+                                            <div class="flex flex-col gap-2">
+                                                <h3 class="text-[#333745] text-base leading-normal font-extrabold">
+                                                    <a href="single-course.html">
+                                                        Slice and dice with Excel
+                                                    </a>
+                                                </h3>
+                                                <p
+                                                    class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                                    <img src="assets/images/homepage/calender.png" width="12"
+                                                        height="14" alt="calender">
+                                                    April 18th - May 20th (4 weeks)
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center gap-3 justify-between">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-10 h-10 rounded-full overflow-hidden">
+                                                        <img src="assets/images/homepage/course-trainer.jpg" width="40"
+                                                            height="40" alt="course-trainer">
+                                                    </div>
+                                                    <div class="flex flex-col gap-0.5">
+                                                        <h4 class="text-[#333745] text-sm leading-normal font-bold">
+                                                            Hala Kamal
+                                                        </h4>
+                                                        <p class="text-[#838795] text-sm leading-normal">
+                                                            Data Analyst
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                        <ul
-                            class="iso-nav blog-filter flex lg:justify-center items-center overflow-x-auto lg:overflow-visible max-w-full px-[30px] lg:px-0">
-                            <li data-filter="*" class="filter-item filter-tw active">
-                                All
-                            </li>
-                            <li data-filter=".filt-1" class="filter-item filter-tw">
-                                Design
-                            </li>
-                            <li data-filter=".filt-2" class="filter-item filter-tw">
-                                Sport
-                            </li>
-                            <li data-filter=".filt-3" class="filter-item filter-tw">
-                                Engineering
-                            </li>
-                            <li data-filter=".filt-4" class="filter-item filter-tw">
-                                Art
-                            </li>
-                            <li data-filter=".filt-5" class="filter-item filter-tw">
-                                Business
-                            </li>
-                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-4 lg:sticky top-28 h-fit px-[30px] lg:p-0">
+
+                        <!-- Price -->
+                        <div
+                            class="fixed lg:static w-full left-0 bottom-0 z-20 lg:p-6 bg-white lg:rounded-2xl flex flex-col lg:gap-6 lg:border border-[#E9E8E8]">
+
+                            <div
+                                class="flex justify-between items-center lg:items-start lg:flex-col gap-1 py-4 px-[30px] lg:p-0">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-[#838795] text-xs lg:text-sm leading-normal lg:hidden">
+                                        Price:
+                                    </span>
+                                    <span
+                                        class="text-[#8447FF]  lg:text-[32px] leading-normal lg:leading-normal font-extrabold">
+                                        1999 SAR
+                                    </span>
+                                    <span class="text-[#838795] lg:text-sm leading-normal line-through hidden lg:block">
+                                        2500 SAR
+                                    </span>
+                                </div>
+                                <p class="text-[#838795] text-xs lg:text-sm leading-normal">
+                                    (Excluding tax)
+                                </p>
+                            </div>
+
+                            <div class="px-[30px] lg:px-0">
+                                <a href="#"
+                                    class="lg:rounded-2xl pt-3 lg:p-4 border-t lg:border border-[#E9E8E8] flex items-center gap-4">
+
+                                    <span class="flex-1 text-[#333745] text-sm leading-normal">
+                                        Or pay in 3 interest-free installments. Learn more →
+                                    </span>
+                                    <img src="assets/images/tamara.png" width="73" height="24" alt="tamara">
+                                </a>
+                            </div>
+
+                            <div class="py-4 px-[30px] lg:p-0 flex">
+                                <a href="#"
+                                    class="py-4 w-full text-center px-8 rounded-[32px] bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                                    Enroll in the track now!
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4 lg:p-6 flex items-center gap-4 bg-white rounded-2xl border border-[#E9E8E8]">
+                            <span
+                                class="w-12 lg:w-14 h-12 lg:h-14 rounded-2xl bg-[#F3EDFF] border border-[#D9C6FF] flex items-center justify-center">
+                                <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.5 20.5V2.375C0.5 1.35938 1.32031 0.5 2.375 0.5H13.625C14.6406 0.5 15.5 1.35938 15.5 2.375V20.5L8 16.125L0.5 20.5Z"
+                                        fill="#2156A7" />
+                                </svg>
+
+                            </span>
+                            <div class="flex flex-col gap-1 lg:gap-2">
+                                <h2 class="text-[#333745] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                    Start and end date
+                                </h2>
+                                <p
+                                    class="text-[#8447FF] text-base lg:text-lg leading-normal lg:leading-normal font-bold">
+                                    December 12th - March 12th
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-4 lg:p-6 flex items-center gap-4 bg-white rounded-2xl border border-[#E9E8E8]">
+                            <span
+                                class="w-12 lg:w-14 h-12 lg:h-14 rounded-2xl bg-[#F3EDFF] border border-[#D9C6FF] flex items-center justify-center">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 0.8125C15.3516 0.8125 19.6875 5.14844 19.6875 10.5C19.6875 15.8516 15.3516 20.1875 10 20.1875C4.64844 20.1875 0.3125 15.8516 0.3125 10.5C0.3125 5.14844 4.64844 0.8125 10 0.8125ZM13.5938 13.0391C13.6719 12.9609 13.75 12.8047 13.75 12.6484C13.75 12.4531 13.6328 12.2969 13.5156 12.1797L11.25 10.5V4.875C11.25 4.5625 10.9375 4.25 10.625 4.25H9.375C9.02344 4.25 8.75 4.5625 8.75 4.875V10.9688C8.75 11.4766 8.94531 11.9062 9.33594 12.1797L11.9531 14.1328C12.0312 14.2109 12.1875 14.2891 12.3047 14.2891C12.5391 14.2891 12.6953 14.1719 12.8125 14.0156L13.5938 13.0391Z"
+                                        fill="#2156A7" />
+                                </svg>
+
+                            </span>
+                            <div class="flex flex-col gap-1 lg:gap-2">
+                                <h2 class="text-[#333745] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                    Live and recorded watch
+                                </h2>
+                                <p
+                                    class="text-[#8447FF] text-base lg:text-lg leading-normal lg:leading-normal font-bold">
+                                    124 hours
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-4 lg:p-6 flex items-center gap-4 bg-white rounded-2xl border border-[#E9E8E8]">
+                            <span
+                                class="w-12 lg:w-14 h-12 lg:h-14 rounded-2xl bg-[#F3EDFF] border border-[#D9C6FF] flex items-center justify-center">
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.8906 10.5L20.6875 12.2578C21.2344 12.7656 20.9609 13.6641 20.2578 13.8594L17.8359 14.4844L18.5 16.9062C18.6953 17.6094 18.0703 18.2344 17.3672 18.0391L14.9453 17.375L14.3203 19.7969C14.125 20.5391 13.2266 20.7734 12.7188 20.2266L11 18.4297L9.24219 20.2266C8.73438 20.7344 7.83594 20.5391 7.64062 19.7969L7.01562 17.375L4.59375 18.0391C3.89062 18.2344 3.26562 17.6094 3.46094 16.9062L4.125 14.4844L1.70312 13.8594C1 13.6641 0.726562 12.7656 1.27344 12.2578L3.07031 10.5L1.27344 8.74219C0.726562 8.23438 1 7.33594 1.70312 7.17969L4.125 6.55469L3.46094 4.13281C3.26562 3.42969 3.89062 2.76562 4.59375 2.96094L7.01562 3.66406L7.64062 1.20312C7.79688 0.5 8.73438 0.265625 9.24219 0.8125L11 2.60938L12.7188 0.8125C13.2266 0.265625 14.1641 0.539062 14.3203 1.20312L14.9453 3.66406L17.3672 2.96094C18.0703 2.76562 18.6953 3.42969 18.5 4.13281L17.8359 6.55469L20.2578 7.17969C20.9609 7.33594 21.2344 8.23438 20.6875 8.74219L18.8906 10.5Z"
+                                        fill="#2156A7" />
+                                </svg>
+
+                            </span>
+                            <div class="flex flex-col gap-1 lg:gap-2">
+                                <h2 class="text-[#333745] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                    Certificate of completion
+                                </h2>
+                                <p
+                                    class="text-[#8447FF] text-base lg:text-lg leading-normal lg:leading-normal font-bold">
+                                    Provided by Cambridge
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-4 lg:p-6 flex items-center gap-4 bg-white rounded-2xl border border-[#E9E8E8]">
+                            <span
+                                class="w-12 lg:w-14 h-12 lg:h-14 rounded-2xl bg-[#F3EDFF] border border-[#D9C6FF] flex items-center justify-center">
+                                <svg width="24" height="15" viewBox="0 0 24 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.0938 8.94531L20.2812 13.7891C19.8516 14.5312 19.0312 15 18.0938 15H2.50781C1.76562 15 1.29688 14.2188 1.6875 13.5938L4.5 8.75C4.92969 8.00781 5.75 7.5 6.6875 7.5H22.2734C23.0156 7.5 23.4844 8.32031 23.0938 8.94531ZM6.6875 6.25C5.32031 6.25 4.10938 6.99219 3.44531 8.125L0.75 12.7734V1.875C0.75 0.859375 1.57031 0 2.625 0H8.875L11.375 2.5H17.625C18.6406 2.5 19.5 3.35938 19.5 4.375V6.25H6.6875Z"
+                                        fill="#2156A7" />
+                                </svg>
+
+                            </span>
+                            <div class="flex flex-col gap-1 lg:gap-2">
+                                <h2 class="text-[#333745] text-xs lg:text-sm leading-normal lg:leading-normal">
+                                    The number of courses
+                                </h2>
+                                <p
+                                    class="text-[#8447FF] text-base lg:text-lg leading-normal lg:leading-normal font-bold">
+                                    4 courses
+                                </p>
+                            </div>
+                        </div>
+                        <!--  From  -->
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion home transition-all duration-300 border border-[#E9E8E8] bg-white rounded-2xl p-4 flex flex-col">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h4
+                                    class="text-[#333745] text-xl leading-normal font-bold flex-1 transition-all duration-300">
+                                    Provided by Cambridge
+                                </h4>
+                                <span class="icon">
+                                    <img src="assets/images/arrow-square-down.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/arrow-square-up.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <div class="anb-accordion-content hidden text-[#5B5F6D] text-sm leading-[180%] pt-6">
+                                <div class="flex items-start gap-4">
+
+                                    <div class="w-16 h-16 rounded-full overflow-hidden">
+                                        <img src="assets/images/homepage/course-trainer.jpg"
+                                            class="w-full h-full object-cover" width="64" height="64" alt="trainer">
+                                    </div>
+                                    <div class="flex flex-col gap-3 flex-1">
+                                        <h5 class="text-[#333745] text-sm leading-normal font-extrabold">
+                                            Universidad Camilo José
+                                            Ceia, Centro de
+                                            Enseöanza Universitaria
+                                            SEK S.A
+                                        </h5>
+                                        <p class="text-[#838795] text-sm leading-[180%]">
+                                            <span class="collapsed-txt line-clamp-4">
+                                                The University was established in 1209, making ....
+                                            </span>
+                                            <button class="text-[#8447FF] read-more-btn">more →</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Section  -->
+        <!-- End  Section  -->
 
         <!-- ======================================= -->
 
-        <!-- Start  Section  -->
-        <section class="pb-8 lg:pb-16 px-[30px] lg:px-0 bg-[#F7FAFA]">
-            <div class="container">
-                <div class="flex flex-col gap-8 lg:gap-12">
-                    <div class="flex flex-col gap-12 lg:gap-6">
-                        <div class="w-full flex items-center justify-between gap-4">
-                            <h2 class="text-[#333745] text-xl leading-normal font-bold">
-                                All Tracks
-                            </h2>
+        <!-- Start Training Courses Section -->
+        <section class="py-12 lg:py-16 overflow-hidden training-courses">
+            <div class="container flex flex-col gap-8 lg:gap-12 items-center">
+                <header class="lg:w-[730px] flex flex-col items-center gap-3 px-[30px] lg:px-0">
+                    <span class="text-[#8447FF] text-base leading-normal font-extrabold">
+                        Program Overview
+                    </span>
+                    <h2 class="text-[#333745] text-center text-2xl lg:text-[32px] leading-normal font-extrabold">
+                        Part of the Consulting for Professionals Program
+                    </h2>
+                    <p class="text-[#5B5F6D] text-base text-center lg:text-lg leading-[180%]">
+                        This track is part of the Consulting for Professionals program. Browse our courses and use the
+                        filter to view specific tracks or the entire CFP program lineup.
+                    </p>
+                </header>
 
-                            <label
-                                class="flex gap-2 bg-white border border-[#D1D5DB] rounded-full py-1 px-4 lg:px-6 text-sm lg:text-base leading-normal lg:leading-normal">
-                                <span class="flex items-center gap-2 text-[#838795]">
-                                    <svg width="11" height="15" viewBox="0 0 11 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.19141 8.375H9.55859C10.2969 8.375 10.6836 9.28906 10.1562 9.81641L5.97266 14C5.62109 14.3516 5.09375 14.3516 4.77734 14L0.59375 9.81641C0.03125 9.28906 0.417969 8.375 1.19141 8.375ZM10.1562 4.68359C10.6836 5.24609 10.2969 6.125 9.55859 6.125H1.19141C0.417969 6.125 0.03125 5.24609 0.59375 4.68359L4.77734 0.5C5.09375 0.183594 5.62109 0.183594 5.97266 0.5L10.1562 4.68359Z"
-                                            fill="#6B7280" />
-                                    </svg>
-                                    <span class="hidden lg:block">
-                                        Sort by
-                                    </span>
-                                </span>
+                <ul
+                    class="iso-nav flex lg:justify-center gap-4 items-center overflow-x-auto lg:overflow-visible max-w-full px-[30px] lg:px-0">
+                    <li data-filter="*" class="filter-item active">
+                        All CFP Program Courses
+                    </li>
+                    <li data-filter=".filt-1" class="filter-item">
+                        Track Pillar: Master the tools
+                    </li>
+                    <li data-filter=".filt-2" class="filter-item">
+                        Track Name
+                    </li>
+                    <li data-filter=".filt-3" class="filter-item">
+                        Track Name
+                    </li>
+                    <li data-filter=".filt-4" class="filter-item">
+                        Track Name
+                    </li>
+                    <li data-filter=".filt-5" class="filter-item">
+                        Track Name
+                    </li>
+                </ul>
 
-                                <select name="sort-events" id="sort-events"
-                                    class="focus:outline-none cursor-pointer lg:py-2 text-[#6B7280] font-bold bg-white">
-                                    <option value="1">
-                                        most recent
-                                    </option>
-                                    <option value="2">
-                                        most recent
-                                    </option>
-                                </select>
+                <!-- Training Courses Slider  -->
+                <div class="swiper slider-training-courses w-full h-full px-[30px] lg:px-0">
+                    <div class="swiper-wrapper main-iso">
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <button type="button"
+                                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                                    <img src="assets/images/homepage/play.svg" width="64" height="64"
+                                        alt="Play Video Icon">
+                                </button>
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
+                                </div>
 
-                            </label>
+                                <img src="assets/images/homepage/training-courses-1.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
 
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
+                                        </div>
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
+                                        </p>
+                                    </div>
+
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[30px] filt-items-container">
-                            <!-- item  -->
-                            <div
-                                class="filt-4 filt-5 filter-card border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                <div class="lg:w-[260px] pb-0 p-6 lg:p-0 overflow-hidden -mt-12">
-                                    <img src="assets/images/homepage/prof-licence.png"
-                                        class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                        width="750" height="500" alt="licence-1">
+
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide group filt-2 filt-2 filt-4 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
                                 </div>
-                                <div class="p-6 flex flex-col gap-6 flex-1">
-                                    <div class="flex flex-col gap-4">
-                                        <div class="flex flex-col gap-2">
-                                            <h2 class="text-[#333745] text-base leading-normal font-bold">
-                                                <a href="#"> Track Pillar: Master the Tools</a>
-                                            </h2>
-                                            <p class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                April 18th - May 20th (4 weeks)
-                                            </p>
+
+                                <img src="assets/images/homepage/training-courses-2.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
                                         </div>
-                                        <p class="text-[#838795] text-sm leading-[180%]">
-                                            Mastering the Tools' enhances proficiency in key tools like Excel and
-                                            PowerPoint, fostering effective solutions.
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
                                         </p>
                                     </div>
 
-                                    <div class="flex items-center gap-2">
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            4 Courses
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="13" height="16"
-                                                alt="icon">
-                                            28 Day
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            32 Hours
-                                        </div>
-                                    </div>
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
                                 </div>
                             </div>
-                            <!-- item  -->
-                            <div
-                                class="filt-2 filt-3 filter-card border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                <div class="lg:w-[260px] pb-0 p-6 lg:p-0 overflow-hidden -mt-12">
-                                    <img src="assets/images/homepage/prof-licence.png"
-                                        class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                        width="750" height="500" alt="licence-1">
+                        </div>
+
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide group filt-3 filt-2 filt-1 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
                                 </div>
-                                <div class="p-6 flex flex-col gap-6 flex-1">
-                                    <div class="flex flex-col gap-4">
-                                        <div class="flex flex-col gap-2">
-                                            <h2 class="text-[#333745] text-base leading-normal font-bold">
-                                                <a href="#"> Track Pillar: Master the Tools</a>
-                                            </h2>
-                                            <p class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                April 18th - May 20th (4 weeks)
-                                            </p>
+
+                                <img src="assets/images/homepage/training-courses-3.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
                                         </div>
-                                        <p class="text-[#838795] text-sm leading-[180%]">
-                                            Mastering the Tools' enhances proficiency in key tools like Excel and
-                                            PowerPoint, fostering effective solutions.
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
                                         </p>
                                     </div>
 
-                                    <div class="flex items-center gap-2">
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            4 Courses
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="13" height="16"
-                                                alt="icon">
-                                            28 Day
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            32 Hours
-                                        </div>
-                                    </div>
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
                                 </div>
                             </div>
-                            <!-- item  -->
-                            <div
-                                class="filt-1 filt-3 filter-card border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                <div class="lg:w-[260px] pb-0 p-6 lg:p-0 overflow-hidden -mt-12">
-                                    <img src="assets/images/homepage/prof-licence.png"
-                                        class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                        width="750" height="500" alt="licence-1">
+                        </div>
+
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide group filt-4 filt-2 filt-3 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <button type="button"
+                                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                                    <img src="assets/images/homepage/play.svg" width="64" height="64"
+                                        alt="Play Video Icon">
+                                </button>
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
                                 </div>
-                                <div class="p-6 flex flex-col gap-6 flex-1">
-                                    <div class="flex flex-col gap-4">
-                                        <div class="flex flex-col gap-2">
-                                            <h2 class="text-[#333745] text-base leading-normal font-bold">
-                                                <a href="#"> Track Pillar: Master the Tools</a>
-                                            </h2>
-                                            <p class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                April 18th - May 20th (4 weeks)
-                                            </p>
+
+                                <img src="assets/images/homepage/training-courses-1.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
                                         </div>
-                                        <p class="text-[#838795] text-sm leading-[180%]">
-                                            Mastering the Tools' enhances proficiency in key tools like Excel and
-                                            PowerPoint, fostering effective solutions.
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
                                         </p>
                                     </div>
 
-                                    <div class="flex items-center gap-2">
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            4 Courses
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="13" height="16"
-                                                alt="icon">
-                                            28 Day
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            32 Hours
-                                        </div>
-                                    </div>
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
                                 </div>
                             </div>
-                            <!-- item  -->
-                            <div
-                                class="filt-2 filt-5 filter-card border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                <div class="lg:w-[260px] pb-0 p-6 lg:p-0 overflow-hidden -mt-12">
-                                    <img src="assets/images/homepage/prof-licence.png"
-                                        class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                        width="750" height="500" alt="licence-1">
+                        </div>
+
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide group filt-4 filt-2 filt-1 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
                                 </div>
-                                <div class="p-6 flex flex-col gap-6 flex-1">
-                                    <div class="flex flex-col gap-4">
-                                        <div class="flex flex-col gap-2">
-                                            <h2 class="text-[#333745] text-base leading-normal font-bold">
-                                                <a href="#"> Track Pillar: Master the Tools</a>
-                                            </h2>
-                                            <p class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                April 18th - May 20th (4 weeks)
-                                            </p>
+
+                                <img src="assets/images/homepage/training-courses-2.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
+                            </div>
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
                                         </div>
-                                        <p class="text-[#838795] text-sm leading-[180%]">
-                                            Mastering the Tools' enhances proficiency in key tools like Excel and
-                                            PowerPoint, fostering effective solutions.
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
                                         </p>
                                     </div>
 
-                                    <div class="flex items-center gap-2">
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            4 Courses
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="13" height="16"
-                                                alt="icon">
-                                            28 Day
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            32 Hours
-                                        </div>
-                                    </div>
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
                                 </div>
                             </div>
-                            <!-- item  -->
-                            <div
-                                class="filt-2 filt-4 filter-card border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                <div class="lg:w-[260px] pb-0 p-6 lg:p-0 overflow-hidden -mt-12">
-                                    <img src="assets/images/homepage/prof-licence.png"
-                                        class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                        width="750" height="500" alt="licence-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 flex-1">
-                                    <div class="flex flex-col gap-4">
-                                        <div class="flex flex-col gap-2">
-                                            <h2 class="text-[#333745] text-base leading-normal font-bold">
-                                                <a href="#"> Track Pillar: Master the Tools</a>
-                                            </h2>
-                                            <p class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                April 18th - May 20th (4 weeks)
-                                            </p>
-                                        </div>
-                                        <p class="text-[#838795] text-sm leading-[180%]">
-                                            Mastering the Tools' enhances proficiency in key tools like Excel and
-                                            PowerPoint, fostering effective solutions.
-                                        </p>
-                                    </div>
+                        </div>
 
-                                    <div class="flex items-center gap-2">
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            4 Courses
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="13" height="16"
-                                                alt="icon">
-                                            28 Day
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            32 Hours
-                                        </div>
-                                    </div>
+                        <!-- course item  -->
+                        <div
+                            class="swiper-slide group filt-1 filt-3 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
+                            <div class="h-56 relative">
+                                <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
+                                    <img src="assets/images/homepage/training-courses-badge.png" width="64" height="64"
+                                        alt="badge" class="h-full w-full object-cover">
                                 </div>
+
+                                <img src="assets/images/homepage/training-courses-3.jpg"
+                                    class="w-full h-full object-cover" width="350" height="224"
+                                    alt="training-courses-1">
                             </div>
-                            <!-- item  -->
-                            <div
-                                class="filt-1 filt-5 filter-card border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                <div class="lg:w-[260px] pb-0 p-6 lg:p-0 overflow-hidden -mt-12">
-                                    <img src="assets/images/homepage/prof-licence.png"
-                                        class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                        width="750" height="500" alt="licence-1">
+                            <div class="p-6 flex flex-col gap-6 bg-white">
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-[#333745] text-base leading-normal font-extrabold">
+                                        <a href="single-course.html"> إشراك أولياء الأمور في التعلم عن بعد </a>
+                                    </h2>
+                                    <p class="flex items-center gap-1.5 text-[#838795] text-sm leading-normal">
+                                        <img src="assets/images/homepage/calender.png" width="12" height="14"
+                                            alt="calender">
+                                        تبدا في ١٨ ابريل وتنتهي في ٢٠ مايو (٤ اسابيع)
+                                    </p>
                                 </div>
-                                <div class="p-6 flex flex-col gap-6 flex-1">
-                                    <div class="flex flex-col gap-4">
-                                        <div class="flex flex-col gap-2">
-                                            <h2 class="text-[#333745] text-base leading-normal font-bold">
-                                                <a href="#"> Track Pillar: Master the Tools</a>
-                                            </h2>
-                                            <p class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                April 18th - May 20th (4 weeks)
-                                            </p>
+
+                                <div class="flex items-center gap-3 justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden">
+                                            <img src="assets/images/homepage/course-trainer.jpg" width="40" height="40"
+                                                alt="course-trainer">
                                         </div>
-                                        <p class="text-[#838795] text-sm leading-[180%]">
-                                            Mastering the Tools' enhances proficiency in key tools like Excel and
-                                            PowerPoint, fostering effective solutions.
+                                        <p class="text-[#6B7280] text-[13px] leading-normal font-bold">
+                                            هالة كمال
                                         </p>
                                     </div>
 
-                                    <div class="flex items-center gap-2">
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            4 Courses
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="13" height="16"
-                                                alt="icon">
-                                            28 Day
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            32 Hours
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item  -->
-                            <div
-                                class="filt-2 filt-3 filter-card border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                <div class="lg:w-[260px] pb-0 p-6 lg:p-0 overflow-hidden -mt-12">
-                                    <img src="assets/images/homepage/prof-licence.png"
-                                        class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                        width="750" height="500" alt="licence-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 flex-1">
-                                    <div class="flex flex-col gap-4">
-                                        <div class="flex flex-col gap-2">
-                                            <h2 class="text-[#333745] text-base leading-normal font-bold">
-                                                <a href="#"> Track Pillar: Master the Tools</a>
-                                            </h2>
-                                            <p class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                April 18th - May 20th (4 weeks)
-                                            </p>
-                                        </div>
-                                        <p class="text-[#838795] text-sm leading-[180%]">
-                                            Mastering the Tools' enhances proficiency in key tools like Excel and
-                                            PowerPoint, fostering effective solutions.
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-2">
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            4 Courses
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="13" height="16"
-                                                alt="icon">
-                                            28 Day
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            32 Hours
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item  -->
-                            <div
-                                class="filt-1 filt-2 filter-card border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                <div class="lg:w-[260px] pb-0 p-6 lg:p-0 overflow-hidden -mt-12">
-                                    <img src="assets/images/homepage/prof-licence.png"
-                                        class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                        width="750" height="500" alt="licence-1">
-                                </div>
-                                <div class="p-6 flex flex-col gap-6 flex-1">
-                                    <div class="flex flex-col gap-4">
-                                        <div class="flex flex-col gap-2">
-                                            <h2 class="text-[#333745] text-base leading-normal font-bold">
-                                                <a href="#"> Track Pillar: Master the Tools</a>
-                                            </h2>
-                                            <p class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                April 18th - May 20th (4 weeks)
-                                            </p>
-                                        </div>
-                                        <p class="text-[#838795] text-sm leading-[180%]">
-                                            Mastering the Tools' enhances proficiency in key tools like Excel and
-                                            PowerPoint, fostering effective solutions.
-                                        </p>
-                                    </div>
-
-                                    <div class="flex items-center gap-2">
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            4 Courses
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="13" height="16"
-                                                alt="icon">
-                                            28 Day
-                                        </div>
-                                        <div
-                                            class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                            <img src="assets/images/homepage/lic-icon-1.png" width="14" height="16"
-                                                alt="icon">
-                                            32 Hours
-                                        </div>
-                                    </div>
+                                    <a href="#">
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="group-hover:fill-[#8447FF] transition-all duration-300"
+                                                d="M0.738281 5.21875L5.66406 0.267578C5.91797 0.0390625 6.29883 0.0390625 6.52734 0.267578L7.11133 0.851562C7.33984 1.08008 7.33984 1.46094 7.11133 1.71484L3.20117 5.625L7.11133 9.56055C7.33984 9.81445 7.33984 10.1953 7.11133 10.4238L6.52734 11.0078C6.29883 11.2363 5.91797 11.2363 5.66406 11.0078L0.738281 6.05664C0.509766 5.82812 0.509766 5.44727 0.738281 5.21875Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                        <span class="sr-only">Chevron Left Icon</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-center justify-center gap-2">
-                        <a href="#" class="pagin-item active">
-                            1
-                        </a>
-                        <a href="#" class="pagin-item">
-                            2
-                        </a>
-                        <a href="#" class="pagin-item">
-                            3
-                        </a>
-                        <a href="#" class="pagin-item">
-                            4
-                        </a>
-                        <a href="#" class="pagin-item">
-                            5
-                        </a>
-                        <span class="flex items-center justify-center text-[#DADBDD] text-sm leading-normal">
-                            ••••
-                        </span>
-                        <a href="#" class="pagin-item">
-                            6
-                        </a>
-                    </div>
+                </div>
+
+                <!-- pagination  -->
+                <div class="swiper-pagination training-courses-pagination static flex justify-center gap-4 bg-white">
                 </div>
             </div>
         </section>
-
+        <!-- End Training Courses Section -->
         <!-- ======================================= -->
 
         <!-- Start Aanaab Testimonials section -->
-        <section class="py-12 lg:py-16">
+        <section class="py-12 lg:py-16 bg-[#F7FAFA] ">
             <div class="container flex flex-col items-center gap-8 lg:gap-10">
                 <!-- header section  -->
                 <header class="flex flex-col items-center gap-3 px-[30px] lg:px-0">
-                    <h2 class="text-[#333745] text-center text-2xl lg:text-[32px] leading-normal font-bold">
+                    <h2
+                        class="lg:w-[573px] text-[#333745] text-center text-2xl lg:text-[32px] leading-normal font-bold">
                         Voices from Our CFP Graduates
                     </h2>
-                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-[180%] text-center">
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-[180%] text-center ltr:leading-[22px]">
                         Success Stories Straight from the Source
                     </p>
                 </header>
@@ -1313,7 +1688,7 @@
                                             alt="person">
                                     </div>
                                     <h3 class="text-base leading-normal text-[#333745]">
-                                        Mohamed Abdelrazek
+                                        shahd Elsherif
                                     </h3>
                                 </div>
                             </div>
@@ -1338,7 +1713,7 @@
                                             alt="person">
                                     </div>
                                     <h3 class="text-base leading-normal text-[#333745]">
-                                        Mohamed Abdelrazek
+                                        shahd Elsherif
                                     </h3>
                                 </div>
                             </div>
@@ -1363,7 +1738,7 @@
                                             alt="person">
                                     </div>
                                     <h3 class="text-base leading-normal text-[#333745]">
-                                        Mohamed Abdelrazek
+                                        shahd Elsherif
                                     </h3>
                                 </div>
                             </div>
@@ -1379,8 +1754,9 @@
                                     <img width="16" height="16" src="assets/images/star.svg" alt="star">
                                 </div>
                                 <p class="text-center text-base leading-normal text-black my-auto">
-                                    المنصة ضرورة لجميع المعلمين والمشرفين للاطلاع على كل ماهو
-                                    جديد في مجال التعليم. نتطلع إلى مزيد من الدورات كما عهدناكم"
+                                    CFP was a game-changer. The blend of theory and practice helped me immediately apply
+                                    what I learned. It's boosted my confidence and solidified my role as a key
+                                    consultant.
                                 </p>
                                 <div class="flex flex-col gap-2 items-center">
                                     <div class="w-12 h-12 rounded-full overflow-hidden">
@@ -1388,7 +1764,7 @@
                                             alt="person">
                                     </div>
                                     <h3 class="text-base leading-normal text-[#333745]">
-                                        Mohamed Abdelrazek
+                                        shahd Elsherif
                                     </h3>
                                 </div>
                             </div>
@@ -1400,6 +1776,133 @@
             </div>
         </section>
         <!-- End Aanaab Testimonials section -->
+
+        <!-- Start FAQs setion  -->
+        <section class="py-16 px-8 lg:px-0">
+            <div class="container flex flex-col gap-12">
+
+                <!-- header section  -->
+                <header class="flex flex-col items-center gap-3">
+                    <h2
+                        class="lg:w-[573px] text-[#333745] text-center text-2xl lg:text-[32px] leading-normal font-bold">
+                        Frequently Asked Questions
+                    </h2>
+                    <p class="text-[#5B5F6D] text-base lg:text-lg leading-normal text-center">
+                        Answers to your most pressing questions about the Consulting Foundation Program.
+                    </p>
+                </header>
+
+                <!-- FAQs section Content  -->
+                <div class="flex flex-col gap-6 lg:w-[730px] mx-auto">
+                    <div class="flex flex-col gap-3">
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3
+                                    class="colored-title text-[#333745] text-base leading-normal flex-1 transition-all duration-300 font-medium">
+                                    Who is the Consulting Foundation Program designed for?
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus" class="">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4"
+                                style="display: none;">
+                                The Consulting Foundation Program is tailored for a diverse range of individuals. It's
+                                ideal for fresh university graduates aiming to venture into consulting, young employees
+                                and experienced managers who aspire to refine their business acumen, government
+                                employees eager to adopt a consultant's mindset for enhanced collaboration, and
+                                essentially anyone keen on cultivating solid and adaptable business skills.
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3
+                                    class="colored-title text-[#333745] text-base leading-normal flex-1 transition-all duration-300 font-medium">
+                                    What core skills can I expect to gain from the Consulting Foundation Program?
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                The Consulting Foundation Program is tailored for a diverse range of individuals. It's
+                                ideal for fresh university graduates aiming to venture into consulting, young employees
+                                and experienced managers who aspire to refine their business acumen, government
+                                employees eager to adopt a consultant's mindset for enhanced collaboration, and
+                                essentially anyone keen on cultivating solid and adaptable business skills.
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3
+                                    class="colored-title text-[#333745] text-base leading-normal flex-1 transition-all duration-300 font-medium">
+                                    How does the program differentiate itself from other consulting training courses
+                                    available?
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                The Consulting Foundation Program is tailored for a diverse range of individuals. It's
+                                ideal for fresh university graduates aiming to venture into consulting, young employees
+                                and experienced managers who aspire to refine their business acumen, government
+                                employees eager to adopt a consultant's mindset for enhanced collaboration, and
+                                essentially anyone keen on cultivating solid and adaptable business skills.
+                            </p>
+                        </div>
+
+                        <!-- Accordion Item  -->
+                        <div
+                            class="anb-accordion transition-all duration-300 border border-[#E9E8E8] rounded-3xl p-6 flex flex-col bg-white">
+                            <div
+                                class="anb-accordion-title flex items-center justify-between gap-1 lg:gap-8 cursor-pointer">
+                                <h3
+                                    class="colored-title text-[#333745] text-base leading-normal flex-1 transition-all duration-300 font-medium">
+                                    What kind of post-program support or resources are available for graduates?
+                                </h3>
+                                <span class="icon">
+                                    <img src="assets/images/plus.svg" width="24" height="24" alt="plus">
+                                    <img src="assets/images/minus.svg" class="hidden" width="24" height="24"
+                                        alt="minus">
+                                </span>
+                            </div>
+                            <p
+                                class="anb-accordion-content hidden text-[#5B5F6D] text-xs lg:text-sm leading-[180%] pt-4">
+                                The Consulting Foundation Program is tailored for a diverse range of individuals. It's
+                                ideal for fresh university graduates aiming to venture into consulting, young employees
+                                and experienced managers who aspire to refine their business acumen, government
+                                employees eager to adopt a consultant's mindset for enhanced collaboration, and
+                                essentially anyone keen on cultivating solid and adaptable business skills.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End FAQs setion  -->
 
         <!-- ======================================= -->
 
@@ -1441,12 +1944,10 @@
             </div>
         </section>
         <!-- End Call To action section -->
-
     </main>
     <!-- ======================================= -->
     <!-- End  Annab Main Content -->
 
-    <!-- Start Annab Footer -->
     <footer class="bg-[#0F0F0F] py-8 lg:py-12 px-6 lg:px-0">
         <div class="container flex flex-col gap-8">
             <div class="grid grid-cols-2 lg:grid-cols-8 gap-6">
