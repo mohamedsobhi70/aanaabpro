@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <title>منصة أعناب</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-DIN overflow-x-hidden relative">
+    <!-- Start Annab Header -->
+    <header class="bg-[#F7FAFA] px-[30px] lg:px-0">
+        <div class="container py-6 flex items-center gap-4 justify-between">
+            <button onclick="window.history.back()" type="button" aria-label="Back button"
+                class="flex items-center gap-2">
+                <img src="assets/images/arrow-right.svg" class="ltr:rotate-180" width="24" height="24" alt="menu">
+                <span class="text-[#838795] text-base leading-normal font-bold">
+                    Back
+                </span>
+            </button>
+            <!-- logo  -->
+            <a href="index.html" aria-label="Logo" class="shrink-0 hidden lg:block">
+                <img src="assets/images/Logo-en.svg" width="63" height="50" alt="Aanaab Logo">
+                <span class="sr-only">Logo</span>
+            </a>
+            <span class=""></span>
+        </div>
+    </header>
+    <!-- End  Annab Header -->
+    <!-- ======================================= -->
+
+    <!-- Start Annab  Main Content  -->
+    <main class="relative">
+        <div class=" pb-6 lg:py-12 bg-[#F7FAFA] px-[30px] lg:px-0">
+            <div class="container">
+                <h2 class="text-[#333745] text-2xl lg:text-[32px] leading-normal lg:leading-normal font-bold">
+                    Complete the Purchase
+                </h2>
+            </div>
+        </div>
+
+        <section class="py-8 lg:py-16 px-[30px] lg:px-0">
+            <div class="container grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+                <div class="col-span-1 lg:col-span-2 flex flex-col gap-4">
+                    <h2 class="text-[#333745] lg:text-2xl leading-normal lg:leading-normal font-bold">
+                        Choose the payment method
+                    </h2>
+                    <div class="flex flex-col gap-3">
+                        <!-- payment item  -->
+                        <div
+                            class="payment-item flex flex-col border border-[#E9E8E8] rounded-2xl transition-all duration-300">
+                            <div class="flex items-center gap-4 p-4 lg:p-6">
+                                <input type="radio" class="peer shrink-0 form-radio"
+                                    name="payment-method transition-all duration-300" id="apple-pay">
+                                <label for="apple-pay"
+                                    class="cursor-pointer flex-1 transition-all duration-300 text-[#838795] text-sm lg:text-base leading-normal lg:leading-normal peer-checked:text-[#333745] font-normal peer-checked:font-bold">
+                                    Pay with Apple Pay
+                                </label>
+                                <div class="shrink-0 flex items-center gap-2">
+                                    <img src="assets/images/applepay.svg" width="34" height="24" alt="Apple Pay">
+                                </div>
+
+                            </div>
+                            <div class="payment-content hidden p-4 lg:p-6 border-t border-[#8447FF]">
+                                <div class="">
+                                    Pay with Apple Pay
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- payment item  -->
+                        <div
+                            class="payment-item flex flex-col border border-[#E9E8E8] rounded-2xl transition-all duration-300">
+                            <div class="flex items-center gap-4 p-4 lg:p-6">
+                                <input type="radio" class="peer shrink-0 form-radio"
+                                    name="payment-method transition-all duration-300" id="card-pay">
+                                <label for="card-pay"
+                                    class="cursor-pointer flex-1 transition-all duration-300 text-[#838795] text-sm lg:text-base leading-normal lg:leading-normal peer-checked:text-[#333745] font-normal peer-checked:font-bold">
+                                    Credit card
+                                </label>
+                                <div class="shrink-0 flex items-center gap-2">
+                                    <img src="assets/images/mada.svg" width="52" height="24" alt="MADA Pay">
+                                    <img src="assets/images/mastercard.svg" width="34" height="24" alt="mastercard Pay">
+                                    <img src="assets/images/visa.svg" width="34" height="24" alt="visa Pay">
+                                </div>
+                            </div>
+                            <div class="payment-content hidden p-4 lg:p-6 border-t border-[#8447FF]">
+                                <div class="flex flex-col gap-3 lg:gap-4">
+                                    <div class="flex flex-col gap-2">
+                                        <label for="card-name" class="text-[#05060A] text-sm leading-normal">
+                                            Name on the card
+                                        </label>
+                                        <input type="text"
+                                            class="border border-[#E9E8E8] rounded-full p-4 focus:outline-none placeholder:text-[#838795] text-sm leading-normal"
+                                            name="card-name" id="card-name" placeholder="Name on the card">
+                                    </div>
+                                    <div class="grid lg:grid-cols-2 gap-3">
+                                        <div class="flex flex-col gap-2">
+                                            <label for="card-name" class="text-[#05060A] text-sm leading-normal">
+                                                Card number
+                                            </label>
+                                            <input type="text"
+                                                class="border border-[#E9E8E8] rounded-full p-4 focus:outline-none placeholder:text-[#838795] text-sm leading-normal"
+                                                name="card-name" id="card-num" placeholder="Card number">
+                                        </div>
+                                        <div class="grid lg:grid-cols-2 gap-3">
+                                            <div class="flex flex-col gap-2">
+                                                <label for="card-name" class="text-[#05060A] text-sm leading-normal">
+                                                    Expiration date
+                                                </label>
+                                                <input type="text"
+                                                    class="border border-[#E9E8E8] rounded-full p-4 focus:outline-none placeholder:text-[#838795] text-sm leading-normal"
+                                                    name="card-name" id="card-ex-date" placeholder="Expiration date">
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <label for="card-name" class="text-[#05060A] text-sm leading-normal">
+                                                    CVV
+                                                </label>
+                                                <input type="text"
+                                                    class="border border-[#E9E8E8] rounded-full p-4 focus:outline-none placeholder:text-[#838795] text-sm leading-normal"
+                                                    name="card-name" id="card-cvv" placeholder="CVV ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- payment item  -->
+                        <div
+                            class="payment-item flex flex-col border border-[#E9E8E8] rounded-2xl transition-all duration-300">
+                            <div class="flex items-center gap-4 p-4 lg:p-6">
+                                <input type="radio" class="peer shrink-0 form-radio"
+                                    name="payment-method transition-all duration-300" id="tamara-pay">
+                                <label for="tamara-pay"
+                                    class="cursor-pointer flex-1 transition-all duration-300 text-[#838795] text-sm lg:text-base leading-normal lg:leading-normal peer-checked:text-[#333745] font-normal peer-checked:font-bold">
+                                    Payment in 3 installments with Tamara
+                                </label>
+                                <div class="shrink-0 flex items-center gap-2">
+                                    <img src="assets/images/tamara.png" width="68" height="22" alt="tamara Pay">
+                                </div>
+                            </div>
+                            <div class="payment-content hidden p-4 lg:p-6 border-t border-[#8447FF]">
+                                <div class="flex flex-col gap-3">
+                                    <h3 class="text-[#333745] text-sm leading-normal font-bold">
+                                        Pay in 3 installments using  
+                                        <span class="text-[#8447FF]">
+                                            Tamara
+                                        </span>
+                                        without fees! know more
+                                    </h3>
+
+                                    <div class="grid lg:grid-cols-3 gap-4">
+                                        <div class="flex flex-col items-center gap-1">
+                                            <span class="text-[#333745] text-5xl leading-normal font-bold">
+                                                1
+                                            </span>
+                                            <p class="text-[#333745] text-base leading-normal">
+                                                Due today
+                                            </p>
+                                            <span class="text-[#8447FF] t leading-normal font-bold">
+                                                1500 SAR
+                                            </span>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-1">
+                                            <span class="text-[#333745] text-5xl leading-normal font-bold">
+                                                2
+                                            </span>
+                                            <p class="text-[#333745] text-base leading-normal">
+                                                10 Aug
+                                            </p>
+                                            <span class="text-[#8447FF] t leading-normal font-bold">
+                                                1500 SAR
+                                            </span>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-1">
+                                            <span class="text-[#333745] text-5xl leading-normal font-bold">
+                                                3
+                                            </span>
+                                            <p class="text-[#333745] text-base leading-normal">
+                                                9 Sep
+                                            </p>
+                                            <span class="text-[#8447FF] t leading-normal font-bold">
+                                                1500 SAR
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- payment item  -->
+                        <div
+                            class="payment-item flex flex-col border border-[#E9E8E8] rounded-2xl transition-all duration-300">
+                            <div class="flex items-center gap-4 p-4 lg:p-6">
+                                <input type="radio" class="peer shrink-0 form-radio"
+                                    name="payment-method transition-all duration-300" id="bank-pay">
+                                <label for="bank-pay"
+                                    class="cursor-pointer flex-1 transition-all duration-300 text-[#838795] text-sm lg:text-base leading-normal lg:leading-normal peer-checked:text-[#333745] font-normal peer-checked:font-bold">
+                                    Bank transfer
+                                </label>
+                                <div class="shrink-0 flex items-center gap-2">
+                                    <img src="assets/images/bank.svg" width="24" height="24" alt="visa Pay">
+                                </div>
+                            </div>
+                            <div class="payment-content hidden p-4 lg:p-6 border-t border-[#8447FF]">
+                                <div class="grid lg:grid-cols-2 gap-3">
+                                    <div
+                                        class="col-span-1 lg:col-span-2 flex flex-col gap-3 lg:gap-4 p-4 rounded-xl border border-[#E9E8E8]">
+                                        <div class="flex items-center justify-between gap-3">
+                                            <span
+                                                class="text-[#333745] text-xs lg:text-base leading-normal lg:leading-normal">
+                                                Bank name
+                                            </span>
+                                            <p
+                                                class="flex items-center gap-2 text-[#333745] text-base leading-normal font-bold">
+                                                <button>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.6654 8.5987V11.3987C10.6654 13.732 9.73203 14.6654 7.3987 14.6654H4.5987C2.26536 14.6654 1.33203 13.732 1.33203 11.3987V8.5987C1.33203 6.26536 2.26536 5.33203 4.5987 5.33203H7.3987C9.73203 5.33203 10.6654 6.26536 10.6654 8.5987Z"
+                                                            stroke="#333745" stroke-width="1.25" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M14.6654 4.5987V7.3987C14.6654 9.73203 13.732 10.6654 11.3987 10.6654H10.6654V8.5987C10.6654 6.26536 9.73203 5.33203 7.3987 5.33203H5.33203V4.5987C5.33203 2.26536 6.26536 1.33203 8.5987 1.33203H11.3987C13.732 1.33203 14.6654 2.26536 14.6654 4.5987Z"
+                                                            stroke="#333745" stroke-width="1.25" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                Riyad Bank
+                                            </p>
+                                        </div>
+                                        <div class="flex items-center justify-between gap-3">
+                                            <span
+                                                class="text-[#333745] text-xs lg:text-base leading-normal lg:leading-normal">
+                                                Account number
+                                            </span>
+                                            <p class="text-[#333745] text-base leading-normal font-bold">
+                                                150355533131
+                                            </p>
+                                        </div>
+                                        <div class="flex items-center justify-between gap-3">
+                                            <span
+                                                class="text-[#333745] text-xs lg:text-base leading-normal lg:leading-normal">
+                                                IBAN number
+                                            </span>
+                                            <p class="text-[#333745] text-base leading-normal font-bold">
+                                                SA2320000015035553131
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-1">
+                                        <div class="flex flex-col gap-2">
+                                            <label for="acc-num" class="text-[#05060A] text-sm leading-normal">
+                                                Transaction number
+                                            </label>
+                                            <input type="text"
+                                                class="border border-[#E9E8E8] rounded-full p-4 focus:outline-none placeholder:text-[#838795] text-sm leading-normal"
+                                                name="acc-num" id="acc-num" placeholder="Transaction number">
+                                        </div>
+                                    </div>
+                                    <div class="col-span-1">
+                                        <div class="flex flex-col gap-2">
+                                            <label for="trans-num" class="text-[#05060A] text-sm leading-normal">
+                                                Transferred account number
+                                            </label>
+                                            <input type="text"
+                                                class="border border-[#E9E8E8] rounded-full p-4 focus:outline-none placeholder:text-[#838795] text-sm leading-normal"
+                                                name="trans-num" id="trans-num"
+                                                placeholder="Transferred account number">
+                                        </div>
+                                    </div>
+                                    <div class="col-span-1">
+                                        <div class="flex flex-col gap-2">
+                                            <label for="trans-date" class="text-[#05060A] text-sm leading-normal">
+                                                The name of the transferee
+                                            </label>
+                                            <input type="text"
+                                                class="border border-[#E9E8E8] rounded-full p-4 focus:outline-none placeholder:text-[#838795] text-sm leading-normal"
+                                                name="trans-date" id="trans-date"
+                                                placeholder="The name of the transferee">
+                                        </div>
+                                    </div>
+                                    <div class="col-span-1">
+                                        <div class="flex flex-col gap-2">
+                                            <label for="per-name" class="text-[#05060A] text-sm leading-normal">
+                                                Transaction date
+                                            </label>
+                                            <input type="text"
+                                                class="border border-[#E9E8E8] rounded-full p-4 focus:outline-none placeholder:text-[#838795] text-sm leading-normal"
+                                                name="per-name" id="per-name" placeholder="Transaction date">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-span-1 flex flex-col gap-4">
+                    <h2 class="text-[#333745] lg:text-2xl leading-normal lg:leading-normal font-bold">
+                        Summary
+                    </h2>
+                    <div class="p-4 lg:p-6 flex flex-col gap-6 border border-[#E9E8E8] rounded-2xl">
+                        <div class="flex flex-col gap-2">
+                            <label for="copon" class="text-[#333745] text-sm leading-normal">
+                                Discount coupon
+                            </label>
+                            <div class="rounded-full flex items-center gap-[30px] border border-[#E9E8E8] py-3 px-4">
+                                <input type="text" name="copon" id="copon" placeholder="Do you have a coupon?"
+                                    class="w-full shrink focus:outline-none text-sm leading-normal">
+                                <button
+                                    class="shrink-0 rounded-full bg-[#F3EDFF] text-[#8447FF] text-xs lg:text-sm leading-normal lg:leading-normal font-bold py-1.5 px-4">
+                                    Apply
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="py-6 border-y border-[#E9E8E8] flex flex-col gap-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-[#333745] text-sm leading-normal">
+                                    Subtotal
+                                </span>
+                                <span class="text-[#333745] text-sm leading-normal font-bold">
+                                    4,800 SAR
+                                </span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-[#838795] text-sm leading-normal">
+                                    ضريبة القيمة المضافة VAT 14%
+                                </span>
+                                <span class="text-[#838795] text-sm leading-normal font-bold">
+                                    720 SAR
+                                </span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-[#039855] text-sm leading-normal font-extrabold">
+                                    الخصم
+                                </span>
+                                <span class="text-[#039855] text-sm leading-normal font-bold">
+                                    -200 SAR
+                                </span>
+                            </div>
+
+                            <div class="bg-[#F6FEF9] border border-[#039855] p-2 flex items-center gap-2 rounded">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.9987 14.6654C11.6806 14.6654 14.6654 11.6806 14.6654 7.9987C14.6654 4.3168 11.6806 1.33203 7.9987 1.33203C4.3168 1.33203 1.33203 4.3168 1.33203 7.9987C1.33203 11.6806 4.3168 14.6654 7.9987 14.6654Z"
+                                        stroke="#039855" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6 10L10 6" stroke="#039855" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9.6617 9.66536H9.66769" stroke="#039855" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M6.32967 6.33333H6.33566" stroke="#039855" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="text-[#039855] text-xs leading-normal">
+                                    Congratulations, you have a discount
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#333745] text-sm leading-normal">
+                                Total
+                            </span>
+                            <span class="text-[#333745] text-2xl leading-normal font-bold">
+                                5,320 SAR
+                            </span>
+                        </div>
+                        <div class="bg-white py-4 px-[30px] lg:p-0 flex fixed lg:static bottom-0 left-0 w-full">
+                            <a href="#"
+                                class="py-3 w-full text-center px-6 rounded-full bg-[#8447FF] hover:bg-[#7841E8] active:bg-[#9D6CFF] transition-all duration-300 text-white text-base leading-6 font-bold">
+                                Complete the payment process
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-[#838795] text-sm leading-normal text-center">
+                        By confirming payment, you agree to the
+                        <a href="#" class="text-[#333745]">
+                            terms and conditions.
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ======================================= -->
+    <!-- End  Annab Main Content -->
+
+    <!-- Start Annab Footer -->
+    <footer class="pt-8 pb-24 lg:py-16 border-t border-[#D1D5DB]">
+        <div class="container">
+            <p class="text-center text-[#6B7280] text-sm leading-normal">
+                © 2023 Aanaab | All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <!-- End  Annab header -->
+    <!-- scripts -->
+    <script src="assets/scripts/jquiry.js"></script>
+    <script src="assets/scripts/swiper.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
