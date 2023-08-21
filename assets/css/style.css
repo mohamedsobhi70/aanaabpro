@@ -1352,6 +1352,10 @@ video {
   border-right-width: 1px;
 }
 
+.border-s {
+  border-inline-start-width: 1px;
+}
+
 .border-t {
   border-top-width: 1px;
 }
@@ -2733,6 +2737,7 @@ video {
 @media (min-width: 1024px) {
   .all-filts {
     position: static;
+    height: auto;
   }
 }
 
