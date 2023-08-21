@@ -2950,6 +2950,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.border-\[\#D9C6FF\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(237 229 213 / var(--tw-border-opacity));
+}
+
+.bg-\[\#F3EDFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 251 247 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 1024px) {
   .lg\:container {
     width: 100%;
