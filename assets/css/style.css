@@ -3277,6 +3277,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+:is([dir="rtl"] .rtl\:font-Almarai) {
+  font-family: Almarai, sans-serif;
+}
+
 :is([dir="rtl"] .rtl\:text-2xl) {
   font-size: 1.5rem;
   line-height: 2rem;
