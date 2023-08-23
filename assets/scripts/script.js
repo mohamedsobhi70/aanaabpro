@@ -752,6 +752,24 @@ if ($(".payment-item").length > 0) {
     });
 }
 
+// tabs 
+if ($(".tabs").length > 0) {
+    $('.tabs').each(function () {
+        let th = $(this);
+        th.find(".tab-content").addClass("hidden");
+        th.find(".tab-content:first-child").removeClass("hidden");
+
+
+        th.find(".tab-item").on("click", function () {
+            th.find(".tab-item").removeClass("active");
+            $(this).addClass("active");
+            let it = $(this).attr('data-tab-item');
+            th.find(".tab-content").addClass("hidden");
+            th.find(`.tab-content[data-tab-item=${it}]`).removeClass("hidden");
+        })
+    });
+}
+
 
 // filter in course listing 
 if ($(".filter-courses-listing").length > 0) {
