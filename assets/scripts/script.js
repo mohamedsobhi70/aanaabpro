@@ -405,6 +405,19 @@ if ($(".hero-img").length) {
         }
     });
 }
+// single programm prog-sticky-section
+if ($(".prog-sticky-section").length) {
+    $(".prog-sticky-section").css("top", $("body > header").innerHeight())
+    $(window).on("scroll", function () {
+        let pos = $("#links").position().top - 100;
+
+        if (window.scrollY > pos) {
+            $(".prog-sticky-section").css({ "transform": "translateY(0%)" });
+        } else {
+            $(".prog-sticky-section").css({ "transform": "translateY(-100%)" });
+        }
+    });
+}
 // =================================================
 
 // Annab Accordion Component
@@ -758,8 +771,10 @@ if ($(".tabs").length > 0) {
         let th = $(this);
         th.find(".tab-content").addClass("hidden");
         th.find(".tab-content:first-child").removeClass("hidden");
-
-
+        th.find(".tab-sec-item").on("click", function () {
+            th.find(".tab-sec-item").removeClass("active");
+            $(this).addClass("active");
+        })
         th.find(".tab-item").on("click", function () {
             th.find(".tab-item").removeClass("active");
             $(this).addClass("active");
@@ -768,6 +783,9 @@ if ($(".tabs").length > 0) {
             th.find(`.tab-content[data-tab-item=${it}]`).removeClass("hidden");
         })
     });
+}
+if ($(".prog-sticky-section-clone").length > 0) {
+    $(".prog-sticky-section .container").html($(".prog-sticky-section-clone").clone());
 }
 
 
