@@ -422,16 +422,16 @@ if ($(".prog-sticky-section").length) {
 if ($(".aanaab-popup").length) {
     $(".close-popup-btn").on("click", function () {
         $(".aanaab-popup").removeClass("active");
-        $("body").css("overflow-y","visible");
+        $("body").css("overflow-y", "visible");
     })
     $(".popup-btn").on("click", function () {
         let datPop = $(this).attr("data-pop")
         $(`.aanaab-popup[data-pop=${datPop}]`).addClass("active");
-        $("body").css("overflow-y","hidden");
+        $("body").css("overflow-y", "hidden");
     })
     $(".aanaab-popup").on("click", function () {
         $(".aanaab-popup").removeClass("active");
-        $("body").css("overflow-y","visible");
+        $("body").css("overflow-y", "visible");
     })
     $(".popup-container").click(function (e) {
         e.stopPropagation();
@@ -645,7 +645,6 @@ if ($(".jobs").length > 0) {
         $(".jobs .iso-nav .filter-item").removeClass("active");
         $(this).addClass("active");
         let filt = $(this).attr("data-filter");
-
         if (filt === "*") {
             $(".jobs .filter-card").removeClass("hidden");
         }
@@ -655,13 +654,33 @@ if ($(".jobs").length > 0) {
         }
     })
 }
+if ($(".program-filter").length > 0) {
+
+    let actitemfilt = $(".program-filter .program-filter-item.active").attr("data-filter");
+    $(".filt-items-container .filter-card").addClass("hidden");
+    $(`.filt-items-container .filter-card${actitemfilt}`).removeClass("hidden");
+
+
+
+    $(".program-filter .program-filter-item").on("click", function () {
+        $(".program-filter .program-filter-item").removeClass("active");
+        $(this).addClass("active");
+        let filt = $(this).attr("data-filter");
+        if (filt === "*") {
+            $(".filt-items-container .filter-card").removeClass("hidden");
+        }
+        else {
+            $(".filt-items-container .filter-card").removeClass("hidden");
+            $(`.filt-items-container .filter-card:not(${filt})`).addClass("hidden");
+        }
+    })
+}
 
 if ($(".filt-items-container").length > 0) {
     $(".iso-nav .filter-item").on("click", function () {
         $(".iso-nav .filter-item").removeClass("active");
         $(this).addClass("active");
         let filt = $(this).attr("data-filter");
-
         if (filt === "*") {
             $(".filt-items-container .filter-card").removeClass("hidden");
         }
@@ -827,7 +846,6 @@ if ($(".aanaab-tabs").length > 0) {
         let th = $(this),
             filt = th.attr("data-tab");
         th.addClass("active")
-        console.log(filt);
         $(".tab-content").addClass("hidden");
         $(`.tab-content[data-tab=${filt}]`).removeClass("hidden")
 
