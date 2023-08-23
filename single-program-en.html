@@ -769,7 +769,6 @@
     <!-- End  Annab Header -->
     <!-- ======================================= -->
 
-
     <!-- Start Annab  Main Content  -->
     <main class="relative overflow-x-hidden">
         <div
@@ -777,6 +776,8 @@
             <div class="container">
             </div>
         </div>
+
+        <!-- ======================================= -->
 
         <section class="lg:bg-[url(../images/page-title-2.jpeg)] bg-[#F7FAFA] bg-cover bg-center relative">
             <div class="absolute bottom-0 left-0 w-full h-[200%] bg-gradient-to-t from-[#FDFBF7] to-transparent"></div>
@@ -803,7 +804,7 @@
                                 stroke-linejoin="round" />
                         </svg>
                         <a href="#" class="text-[#1D1D1B] text-sm leading-normal shrink-0">
-                            CFP Program
+                            Program
                         </a>
                         <svg class="rtl:rotate-180" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -813,7 +814,7 @@
                                 stroke-linejoin="round" />
                         </svg>
                         <a href="#" class="text-[333745] text-sm leading-normal font-bold truncate flex-1">
-                            Master the ToolsMaster the Tools
+                            Consulting for Professionals
                         </a>
                     </div>
 
@@ -977,34 +978,24 @@
 
         <section class="py-8 lg:py-[72px] bg-[#F7FAFA]" id="links">
             <div class="container flex flex-col items-center gap-8 tabs sticky top-0">
-                <ul
+                <div
                     class="iso-nav main-iso overflow-x-auto max-w-full lg:overflow-x-visible px-6 lg:px-0 flex items-center lg:justify-center border-b border-[#D0D5DD]">
-                    <li class="tab-sec-item cursor-pointer active">
-                        <a href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li class="tab-sec-item cursor-pointer">
-                        <a href="#outcomes">
-                            Outcomes
-                        </a>
-                    </li>
-                    <li class="tab-sec-item cursor-pointer">
-                        <a href="#all-traks">
-                            Tracks
-                        </a>
-                    </li>
-                    <li class="tab-sec-item cursor-pointer">
-                        <a href="#instructors">
-                            Instructors
-                        </a>
-                    </li>
-                    <li class="tab-sec-item cursor-pointer">
-                        <a href="#testimonials">
-                            Testimonials
-                        </a>
-                    </li>
-                </ul>
+                    <a href="#about" class="tab-sec-item cursor-pointer active">
+                        About
+                    </a>
+                    <a href="#outcomes" class="tab-sec-item cursor-pointer">
+                        Outcomes
+                    </a>
+                    <a href="#all-traks" class="tab-sec-item cursor-pointer">
+                        Tracks
+                    </a>
+                    <a href="#instructors" class="tab-sec-item cursor-pointer">
+                        Instructors
+                    </a>
+                    <a href="#testimonials" class="tab-sec-item cursor-pointer">
+                        Testimonials
+                    </a>
+                </div>
                 <div class="flex flex-col gap-8 px-6 lg:px-0" id="about">
                     <div class="flex flex-col gap-4">
                         <h2 class="text-[#1D1D1B] text-xl leading-normal font-bold">
@@ -1124,6 +1115,8 @@
             </div>
         </section>
 
+        <!-- ======================================= -->
+
         <!--  section -->
         <section class="py-8 lg:py-[72px] bg-[#F7FAFA] px-6 lg:px-0 sticky bottom-0 " id="outcomes">
             <div class="container flex flex-col gap-6 lg:gap-8">
@@ -1239,10 +1232,38 @@
                 </header>
 
                 <div class="h-[190px] lg:h-[522px] rounded-2xl overflow-hidden relative">
-                    <button type="button" class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                    <button type="button" class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 popup-btn"
+                        data-pop="video-popup">
                         <img src="assets/images/homepage/play.svg" width="64" height="64" alt="play">
                     </button>
+
                     <img src="assets/images/vid.png" class="w-full h-full object-cover" width="" height="" alt="video">
+                </div>
+            </div>
+
+            <!-- Video Popup -->
+            <div class="aanaab-popup flex flex-col justify-center cursor-zoom-out" data-pop="video-popup">
+                <div class="container flex flex-col gap-6 popup-container cursor-auto">
+                    <div class="flex items-center gap-3">
+                        <div class="flex-1 flex flex-col gap-2">
+                            <h3 class="text-white text-base leading-normal">
+                                About This Class
+                            </h3>
+                            <p class="text-white text-lg font-bold leading-normal">
+                                Consulting for Professionals
+                            </p>
+                        </div>
+                        <button type="button" class="border border-white rounded-full p-3 close-popup-btn">
+                            <img src="assets/images/close-popup.svg" width="20" height="20" alt="Close Icon">
+                            <span class="sr-only">
+                                Close Button
+                            </span>
+                        </button>
+                    </div>
+                    <div class="lg:h-[522px] rounded-2xl overflow-hidden">
+                        <img src="assets/images/vid.png" class="w-full h-full object-cover" width="" height=""
+                            alt="video">
+                    </div>
                 </div>
             </div>
         </section>
@@ -1360,43 +1381,43 @@
                                     </h2>
                                     <div class="flex items-center flex-wrap gap-2">
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Stakeholder Engagement
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Data Analysis
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Project Management
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Business Strategy Formulation
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Risk Assessment
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Financial Forecasting
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Market Research
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Decision-making
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Critical Thinking
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Business Ethics
                                         </span>
                                     </div>
@@ -1499,43 +1520,43 @@
                                     </h2>
                                     <div class="flex items-center flex-wrap gap-2">
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Stakeholder Engagement
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Data Analysis
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Project Management
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Business Strategy Formulation
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Risk Assessment
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Financial Forecasting
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Market Research
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Decision-making
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Critical Thinking
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Business Ethics
                                         </span>
                                     </div>
@@ -1638,43 +1659,43 @@
                                     </h2>
                                     <div class="flex items-center flex-wrap gap-2">
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Stakeholder Engagement
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Data Analysis
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Project Management
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Business Strategy Formulation
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Risk Assessment
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Financial Forecasting
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Market Research
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Decision-making
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Critical Thinking
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Business Ethics
                                         </span>
                                     </div>
@@ -1778,43 +1799,43 @@
                                     </h2>
                                     <div class="flex items-center flex-wrap gap-2">
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Stakeholder Engagement
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Data Analysis
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Project Management
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Business Strategy Formulation
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Risk Assessment
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Financial Forecasting
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Market Research
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Decision-making
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Critical Thinking
                                         </span>
                                         <span
-                                            class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                            class="py-1 px-3 rounded-full bg-[#FBF6EF] text-[#1D1D1B] text-sm leading-normal">
                                             Business Ethics
                                         </span>
                                     </div>
@@ -2245,7 +2266,7 @@
                         skills,
                         amplify your growth, and lead your field with confidence
                     </p>
-                    <div class="flex flex-col lg:flex-row lg:justify-center gap-4">
+                    <div class="flex flex-col lg:flex-row lg:justify-center gap-4 w-full">
                         <a href="#"
                             class="py-3 text-center px-6 rounded-full bg-[#8447FF] hover:bg-[#7841E8] transition-all duration-300 text-white text-base leading-5">
                             Join for Free
@@ -2266,7 +2287,9 @@
             </div>
         </section>
         <!-- End Call To action section -->
+
     </main>
+
     <!-- ======================================= -->
     <!-- End  Annab Main Content -->
 
