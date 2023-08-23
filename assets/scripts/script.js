@@ -422,13 +422,16 @@ if ($(".prog-sticky-section").length) {
 if ($(".aanaab-popup").length) {
     $(".close-popup-btn").on("click", function () {
         $(".aanaab-popup").removeClass("active");
+        $("body").css("overflow-y","visible");
     })
     $(".popup-btn").on("click", function () {
         let datPop = $(this).attr("data-pop")
         $(`.aanaab-popup[data-pop=${datPop}]`).addClass("active");
+        $("body").css("overflow-y","hidden");
     })
     $(".aanaab-popup").on("click", function () {
         $(".aanaab-popup").removeClass("active");
+        $("body").css("overflow-y","visible");
     })
     $(".popup-container").click(function (e) {
         e.stopPropagation();
