@@ -979,6 +979,10 @@ video {
   max-height: 24rem;
 }
 
+.min-h-\[49px\] {
+  min-height: 49px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -3097,6 +3101,7 @@ video {
 
 .sticky-prog-head.fixdtop {
   position: fixed;
+  left: 0px;
   z-index: 50;
   width: 100%;
   --tw-bg-opacity: 1;
