@@ -369,6 +369,30 @@ if ($(".slider-events").length > 0) {
     });
 }
 // =================================================
+// ((About page)) About why aanaab
+if ($(".slider-why-aanaab").length > 0) {
+    let swiper = new Swiper(".slider-why-aanaab", {
+        breakpoints: {
+            0: {
+                spaceBetween: 24,
+                slidesPerView: 1,
+            },
+            680: {
+                slidesPerView: 1.5,
+                spaceBetween: 24,
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 2,
+            },
+        },
+        pagination: {
+            el: ".why-aanaab-pagination",
+            clickable: true,
+        }
+    });
+}
+// =================================================
 
 // Drop Down In Header
 if ($(".menu-dropdown").length) {
@@ -405,18 +429,38 @@ if ($(".hero-img").length) {
         }
     });
 }
-// single programm prog-sticky-section
-if ($(".prog-sticky-section").length) {
-    $(".prog-sticky-section").css("top", $("body > header").innerHeight())
-    $(window).on("scroll", function () {
-        let pos = $("#links").position().top - 200;
 
-        if (window.scrollY > pos) {
-            $(".prog-sticky-section").css({ "transform": "translateY(0%)" });
-        } else {
-            $(".prog-sticky-section").css({ "transform": "translateY(-100%)" });
+
+// single programm prog-sticky-section
+if ($(".sticky-prog-head").length) {
+    $(".sticky-prog-head").css("top", $("body > header").innerHeight())
+    let pos = $(".sticky-prog-head").position().top + $(".sticky-prog-head").innerHeight();
+    $(window).on("scroll", function () {
+        let scrollPos = $(document).scrollTop() + $("body > header").innerHeight() ;
+        let sections = $('.naved-sec');
+        sections.each(function () {
+            let top = $(this).offset().top - 100;
+            let bottom = top + $(this).outerHeight();
+
+            if (scrollPos >= top && scrollPos <= bottom) {
+                let id = $(this).attr('id');
+                $('.tab-sec-item[href="#' + id + '"]').addClass('active');
+            } else {
+                let id = $(this).attr('id');
+                $('.tab-sec-item[href="#' + id + '"]').removeClass('active');
+            }
+        });
+
+        if ($(window).scrollTop() > pos) {
+            $(".sticky-prog-head").addClass("fixdtop");
         }
+
+        else {
+            $(".sticky-prog-head").removeClass("fixdtop");
+        }
+
     });
+
 }
 // Popup
 if ($(".aanaab-popup").length) {
@@ -803,30 +847,6 @@ if ($(".payment-item").length > 0) {
         $(this).closest(".payment-item").addClass("border-[#8447FF]").removeClass("border-[#E9E8E8]")
     });
 }
-
-// tabs 
-if ($(".tabs").length > 0) {
-    $('.tabs').each(function () {
-        let th = $(this);
-        th.find(".tab-content").addClass("hidden");
-        th.find(".tab-content:first-child").removeClass("hidden");
-        th.find(".tab-sec-item").on("click", function () {
-            th.find(".tab-sec-item").removeClass("active");
-            $(this).addClass("active");
-        })
-        th.find(".tab-item").on("click", function () {
-            th.find(".tab-item").removeClass("active");
-            $(this).addClass("active");
-            let it = $(this).attr('data-tab-item');
-            th.find(".tab-content").addClass("hidden");
-            th.find(`.tab-content[data-tab-item=${it}]`).removeClass("hidden");
-        })
-    });
-}
-if ($(".prog-sticky-section-clone").length > 0) {
-    $(".prog-sticky-section .container").html($(".prog-sticky-section-clone").clone());
-}
-
 
 // filter in course listing 
 if ($(".filter-courses-listing").length > 0) {

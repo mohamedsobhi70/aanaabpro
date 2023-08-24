@@ -22,7 +22,7 @@
 <body class="rtl:font-Almarai ltr:font-DIN  overflow-x-hidden relative">
 
     <!-- Start Annab Header -->
-    <header class="bg-[#F7FAFA] z-50 lg:sticky top-0 px-[30px] lg:px-0">
+    <header class="bg-[#F7FAFA] z-50 sticky top-0 px-[30px] lg:px-0">
         <div class="container py-6 flex items-center gap-12 justify-between">
             <!-- logo  -->
             <a href="index-en.html" aria-label="Logo" class="shrink-0">
@@ -771,18 +771,11 @@
 
     <!-- Start Annab  Main Content  -->
     <main class="relative overflow-x-hidden">
-        <div
-            class="prog-sticky-section bg-white fixed  -translate-y-full py-6 w-full left-0 z-20 hidden lg:block transition-all duration-300">
-            <div class="container">
-            </div>
-        </div>
-
-        <!-- ======================================= -->
-
         <section class="lg:bg-[url(../images/page-title-2.jpeg)] bg-[#F7FAFA] bg-cover bg-center relative">
             <div class="absolute bottom-0 left-0 w-full h-[200%] bg-gradient-to-t from-[#FDFBF7] to-transparent"></div>
             <div class="container h-full relative flex items-center pt-8 pb-10 lg:pt-[120px] lg:pb-10 gap-[82px]">
                 <div class="flex flex-col gap-4 px-6 w-full lg:px-0">
+                   
                     <div class="flex items-center gap-3">
                         <a href="index-en.html">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -853,17 +846,6 @@
                                         500
                                     </span>
                                 </div>
-                                <div class="rev hidden">
-                                    <div class="flex items-center gap-1">
-                                        <span class="font-bold text-[#1D1D1B] text-xl">
-                                            4.7
-                                        </span>
-                                        <img src="assets/images/star.svg" width="14" height="14" alt="star">
-                                        <p class="text-sm leading-normal ps-1">
-                                            (923 reviews)
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
 
                         </div>
@@ -872,8 +854,8 @@
                                 class="py-3 px-6 lg:px-8 rounded-full bg-[#8447FF] hover:bg-[#7841E8] transition-all duration-300 flex items-center justify-center text-white text-base leading-6 font-bold">
                                 Enroll Now
                             </a>
-                            <a href="#"
-                                class="bg-[#FDFBF7] border border-[#EAECF0] p-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2 text-[#101828] text-base leading-6 font-bold">
+                            <a href="#" data-pop="video-popup"
+                                class="popup-btn bg-[#FDFBF7] border border-[#EAECF0] p-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2 text-[#101828] text-base leading-6 font-bold">
                                 Watch Overview
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -910,7 +892,7 @@
                         </p>
                     </div>
 
-                    <div class="flex items-center gap-1">
+                    <div class="hidden lg:flex items-center gap-1">
                         <span class="font-bold text-[#1D1D1B] text-xl">
                             4.7
                         </span>
@@ -955,16 +937,6 @@
                             class="py-3 px-6 lg:px-8 rounded-full bg-[#8447FF] hover:bg-[#7841E8] transition-all duration-300 flex items-center justify-center text-white text-base leading-6 font-bold">
                             Enroll Now
                         </a>
-                        <a href="#"
-                            class="bg-[#FDFBF7] border border-[#EAECF0] p-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2 text-[#101828] text-base leading-6 font-bold">
-                            Watch Overview
-                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M18.3203 9.46806L7.07812 2.59306C6.98349 2.53468 6.87499 2.50261 6.76382 2.50015C6.65265 2.49769 6.54284 2.52494 6.44571 2.57907C6.34859 2.63321 6.26766 2.71228 6.21128 2.80812C6.15491 2.90397 6.12512 3.01312 6.125 3.12431V16.8743C6.12512 16.9855 6.15491 17.0947 6.21128 17.1905C6.26766 17.2863 6.34859 17.3654 6.44571 17.4195C6.54284 17.4737 6.65265 17.5009 6.76382 17.4985C6.87499 17.496 6.98349 17.4639 7.07812 17.4056L18.3203 10.5306C18.4126 10.476 18.4891 10.3983 18.5423 10.3051C18.5954 10.212 18.6233 10.1066 18.6233 9.99931C18.6233 9.89206 18.5954 9.78667 18.5423 9.69351C18.4891 9.60035 18.4126 9.52265 18.3203 9.46806V9.46806Z"
-                                    stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </a>
                     </div>
                     <a href="#all-traks" class="hidden lg:flex font-bold text-[#2156A7] text-base leading-normal">
                         View all tracks ↓
@@ -977,138 +949,144 @@
         <!-- =============================-->
 
         <section class="py-8 lg:py-[72px] bg-[#F7FAFA]" id="links">
-            <div class="container flex flex-col items-center gap-8 tabs sticky top-0">
-                <div
-                    class="iso-nav main-iso overflow-x-auto max-w-full lg:overflow-x-visible px-6 lg:px-0 flex items-center lg:justify-center border-b border-[#D0D5DD]">
-                    <a href="#about" class="tab-sec-item cursor-pointer active">
-                        About
-                    </a>
-                    <a href="#outcomes" class="tab-sec-item cursor-pointer">
-                        Outcomes
-                    </a>
-                    <a href="#all-traks" class="tab-sec-item cursor-pointer">
-                        Tracks
-                    </a>
-                    <a href="#instructors" class="tab-sec-item cursor-pointer">
-                        Instructors
-                    </a>
-                    <a href="#testimonials" class="tab-sec-item cursor-pointer">
-                        Testimonials
-                    </a>
+            <div class="flex flex-col items-center gap-8 tabs">
+                <div class="sticky-prog-head">
+                    <div class="container">
+                        <div
+                            class="container iso-nav main-iso overflow-x-auto max-w-full lg:overflow-x-visible px-6 lg:px-0 flex items-center lg:justify-center border-b border-[#D0D5DD]">
+                            <a href="#about" class="tab-sec-item cursor-pointer">
+                                About
+                            </a>
+                            <a href="#outcomes" class="tab-sec-item cursor-pointer">
+                                Outcomes
+                            </a>
+                            <a href="#all-traks" class="tab-sec-item cursor-pointer">
+                                Tracks
+                            </a>
+                            <a href="#instructors" class="tab-sec-item cursor-pointer">
+                                Instructors
+                            </a>
+                            <a href="#testimonials" class="tab-sec-item cursor-pointer">
+                                Testimonials
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col gap-8 px-6 lg:px-0" id="about">
-                    <div class="flex flex-col gap-4">
-                        <h2 class="text-[#1D1D1B] text-xl leading-normal font-bold">
-                            You Will Learn
-                        </h2>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
-                            <div class="flex items-baseline gap-3">
-                                <img src="assets/images/true.svg" width="16" height="13" alt="check">
-                                <p class="text-[#1D1D1B] text-base leading-normal">
-                                    Explore the roles of data professionals within an organization
-                                </p>
-                            </div>
-                            <div class="flex items-baseline gap-3">
-                                <img src="assets/images/true.svg" width="16" height="13" alt="check">
-                                <p class="text-[#1D1D1B] text-base leading-normal">
-                                    Explore the roles of data professionals within an organization
-                                </p>
-                            </div>
-                            <div class="flex items-baseline gap-3">
-                                <img src="assets/images/true.svg" width="16" height="13" alt="check">
-                                <p class="text-[#1D1D1B] text-base leading-normal">
-                                    Explore the roles of data professionals within an organization
-                                </p>
-                            </div>
-                            <div class="flex items-baseline gap-3">
-                                <img src="assets/images/true.svg" width="16" height="13" alt="check">
-                                <p class="text-[#1D1D1B] text-base leading-normal">
-                                    Explore the roles of data professionals within an organization
-                                </p>
+                <div class="container naved-sec" id="about">
+                    <div class="flex flex-col gap-8 px-6 lg:px-0">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-[#1D1D1B] text-xl leading-normal font-bold">
+                                You Will Learn
+                            </h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+                                <div class="flex items-baseline gap-3">
+                                    <img src="assets/images/true.svg" width="16" height="13" alt="check">
+                                    <p class="text-[#1D1D1B] text-base leading-normal">
+                                        Explore the roles of data professionals within an organization
+                                    </p>
+                                </div>
+                                <div class="flex items-baseline gap-3">
+                                    <img src="assets/images/true.svg" width="16" height="13" alt="check">
+                                    <p class="text-[#1D1D1B] text-base leading-normal">
+                                        Explore the roles of data professionals within an organization
+                                    </p>
+                                </div>
+                                <div class="flex items-baseline gap-3">
+                                    <img src="assets/images/true.svg" width="16" height="13" alt="check">
+                                    <p class="text-[#1D1D1B] text-base leading-normal">
+                                        Explore the roles of data professionals within an organization
+                                    </p>
+                                </div>
+                                <div class="flex items-baseline gap-3">
+                                    <img src="assets/images/true.svg" width="16" height="13" alt="check">
+                                    <p class="text-[#1D1D1B] text-base leading-normal">
+                                        Explore the roles of data professionals within an organization
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h2 class="text-[#1D1D1B] text-xl leading-normal font-bold">
-                            Skills
-                        </h2>
-                        <div class="flex items-center flex-wrap gap-2">
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Stakeholder Engagement
-                            </span>
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Data Analysis
-                            </span>
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Project Management
-                            </span>
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Business Strategy Formulation
-                            </span>
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Risk Assessment
-                            </span>
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Financial Forecasting
-                            </span>
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Market Research
-                            </span>
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Decision-making
-                            </span>
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Critical Thinking
-                            </span>
-                            <span
-                                class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
-                                Business Ethics
-                            </span>
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-[#1D1D1B] text-xl leading-normal font-bold">
+                                Skills
+                            </h2>
+                            <div class="flex items-center flex-wrap gap-2">
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Stakeholder Engagement
+                                </span>
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Data Analysis
+                                </span>
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Project Management
+                                </span>
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Business Strategy Formulation
+                                </span>
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Risk Assessment
+                                </span>
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Financial Forecasting
+                                </span>
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Market Research
+                                </span>
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Decision-making
+                                </span>
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Critical Thinking
+                                </span>
+                                <span
+                                    class="py-1 px-3 rounded-full bg-white border border-[#D0D5DD] text-[#1D1D1B] text-sm leading-normal">
+                                    Business Ethics
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h2 class="text-[#1D1D1B] text-xl leading-normal font-bold">
-                            Things to Know
-                        </h2>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-2">
-                            <div class="flex flex-col gap-2">
-                                <img src="assets/images/ant-design_linkedin-outlined.svg" width="24" height="24"
-                                    alt="things to do">
-                                <p class="text-[#445566] text-sm leading-normal">
-                                    Shareable Certificate
-                                </p>
-                                <h3 class="text-[#1D1D1B] text-base font-medium leading-normal">
-                                    Add to your LinkedIn profile
-                                </h3>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <img src="assets/images/Translate.svg" width="24" height="24" alt="things to do">
-                                <p class="text-[#445566] text-sm leading-normal">
-                                    Program Language
-                                </p>
-                                <h3 class="text-[#1D1D1B] text-base font-medium leading-normal">
-                                    English
-                                </h3>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <img src="assets/images/Clock-3.svg" width="24" height="24" alt="things to do">
-                                <p class="text-[#445566] text-sm leading-normal">
-                                    Latest Update
-                                </p>
-                                <h3 class="text-[#1D1D1B] text-base font-medium leading-normal">
-                                    April 2023
-                                </h3>
-                            </div>
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-[#1D1D1B] text-xl leading-normal font-bold">
+                                Things to Know
+                            </h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-2">
+                                <div class="flex flex-col gap-2">
+                                    <img src="assets/images/ant-design_linkedin-outlined.svg" width="24" height="24"
+                                        alt="things to do">
+                                    <p class="text-[#445566] text-sm leading-normal">
+                                        Shareable Certificate
+                                    </p>
+                                    <h3 class="text-[#1D1D1B] text-base font-medium leading-normal">
+                                        Add to your LinkedIn profile
+                                    </h3>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <img src="assets/images/Translate.svg" width="24" height="24" alt="things to do">
+                                    <p class="text-[#445566] text-sm leading-normal">
+                                        Program Language
+                                    </p>
+                                    <h3 class="text-[#1D1D1B] text-base font-medium leading-normal">
+                                        English
+                                    </h3>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <img src="assets/images/Clock-3.svg" width="24" height="24" alt="things to do">
+                                    <p class="text-[#445566] text-sm leading-normal">
+                                        Latest Update
+                                    </p>
+                                    <h3 class="text-[#1D1D1B] text-base font-medium leading-normal">
+                                        April 2023
+                                    </h3>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1118,7 +1096,7 @@
         <!-- ======================================= -->
 
         <!--  section -->
-        <section class="py-8 lg:py-[72px] bg-[#F7FAFA] px-6 lg:px-0 sticky bottom-0 " id="outcomes">
+        <section class="naved-sec py-8 lg:py-[72px] bg-[#F7FAFA] px-6 lg:px-0 sticky bottom-0 " id="outcomes">
             <div class="container flex flex-col gap-6 lg:gap-8">
                 <!-- header  -->
                 <header class="flex flex-col items-center gap-3">
@@ -1222,7 +1200,7 @@
         <!--  section -->
 
         <!--  section -->
-        <section class="py-8 lg:py-[72px] bg-[#F7FAFA] px-6 lg:px-0">
+        <section class="naved-sec py-8 lg:py-[72px] bg-[#F7FAFA] px-6 lg:px-0">
             <div class="container flex flex-col gap-6 lg:gap-8">
                 <!-- header  -->
                 <header class="flex flex-col items-center gap-3">
@@ -1232,46 +1210,21 @@
                 </header>
 
                 <div class="h-[190px] lg:h-[522px] rounded-2xl overflow-hidden relative">
-                    <button type="button" class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 popup-btn"
-                        data-pop="video-popup">
+                    <button type="button" class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                         <img src="assets/images/homepage/play.svg" width="64" height="64" alt="play">
                     </button>
-                    <img src="assets/images/vid.png" class="w-full h-full object-cover" width="1920" height="1080" alt="video">
+                    <img src="assets/images/vid.png" class="w-full h-full object-cover" width="1920" height="1080"
+                        alt="video">
                 </div>
             </div>
 
-            <!-- Video Popup -->
-            <div class="aanaab-popup flex flex-col justify-center cursor-zoom-out px-6 lg:px-0" data-pop="video-popup">
-                <div class="container flex flex-col gap-6 popup-container cursor-auto">
-                    <div class="flex items-center gap-3">
-                        <div class="flex-1 flex flex-col gap-2">
-                            <h3 class="text-white text-base leading-normal">
-                                About This Class
-                            </h3>
-                            <p class="text-white text-lg font-bold leading-normal">
-                                Consulting for Professionals
-                            </p>
-                        </div>
-                        <button type="button" class="border border-white rounded-full p-3 close-popup-btn">
-                            <img src="assets/images/close-popup.svg" width="20" height="20" alt="Close Icon">
-                            <span class="sr-only">
-                                Close Button
-                            </span>
-                        </button>
-                    </div>
-                    <div class="lg:h-[522px] max-h-[80%] rounded-2xl overflow-hidden">
-                        <img src="assets/images/vid.png" class="w-full h-full object-cover" width="1920" height="1080"
-                            alt="video">
-                    </div>
-                </div>
-            </div>
         </section>
         <!--  section -->
 
         <!-- ======================================= -->
 
         <!-- Start Resume setion  -->
-        <section class="py-8 lg:py-16 px-8 lg:px-0 bg-[#F7FAFA] flex flex-col gap-[60px]" id="all-traks">
+        <section class="naved-sec py-8 lg:py-16 px-8 lg:px-0 bg-[#F7FAFA] flex flex-col gap-[60px]" id="all-traks">
             <div class="container flex flex-col gap-4">
                 <header class="flex flex-col gap-6">
                     <h2 class="text-[#1D1D1B] text-[28px] leading-normal font-bold">
@@ -1876,7 +1829,7 @@
         <!-- End Resume setion  -->
 
         <!-- Start Team section -->
-        <section class="py-8 lg:py-[72px] bg-[#F7FAFA]" id="instructors">
+        <section class="naved-sec py-8 lg:py-[72px] bg-[#F7FAFA]" id="instructors">
             <div class="container flex flex-col gap-6 lg:gap-8 items-center">
 
                 <!-- header section  -->
@@ -2119,7 +2072,7 @@
         <!-- ======================================= -->
 
         <!-- Start Aanaab Testimonials section -->
-        <section class="py-12 lg:py-16" id="testimonials">
+        <section class="naved-sec py-12 lg:py-16" id="testimonials">
             <div class="container flex flex-col items-center gap-8 lg:gap-10">
                 <!-- header section  -->
                 <header class="flex flex-col items-center gap-3 px-[30px] lg:px-0">
@@ -2286,6 +2239,36 @@
             </div>
         </section>
         <!-- End Call To action section -->
+
+
+        <!-- ======================================= -->
+        <!-- Video Popup -->
+        <div class="aanaab-popup flex flex-col justify-center cursor-zoom-out px-6 lg:px-0" data-pop="video-popup">
+            <div class="container flex flex-col gap-6 popup-container cursor-auto">
+                <div class="flex items-center gap-3">
+                    <div class="flex-1 flex flex-col gap-2">
+                        <h3 class="text-white text-base leading-normal">
+                            About This Class
+                        </h3>
+                        <p class="text-white text-lg font-bold leading-normal">
+                            Consulting for Professionals
+                        </p>
+                    </div>
+                    <button type="button" class="border border-white rounded-full p-3 close-popup-btn">
+                        <img src="assets/images/close-popup.svg" width="20" height="20" alt="Close Icon">
+                        <span class="sr-only">
+                            Close Button
+                        </span>
+                    </button>
+                </div>
+                <div class="lg:h-[522px] rounded-2xl overflow-hidden">
+                    <img src="assets/images/vid.png" class="w-full h-full object-cover" width="1920" height="1080"
+                        alt="video">
+                </div>
+            </div>
+        </div>
+        <!-- End Video Popup-->
+        <!-- ======================================= -->
 
     </main>
 
@@ -2540,6 +2523,7 @@
             </div>
         </div>
     </footer>
+
     <!-- scripts -->
     <script src="assets/scripts/jquiry.js"></script>
     <script src="assets/scripts/swiper.js"></script>
