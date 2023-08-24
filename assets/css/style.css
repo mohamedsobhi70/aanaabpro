@@ -3106,7 +3106,15 @@ video {
   transition-duration: 300ms;
 }
 
+.sticky-prog-head.fixdtop  .iso-nav.main-iso {
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
+  .sticky-prog-head.fixdtop  .iso-nav.main-iso {
+    justify-content: flex-start;
+  }
+
   .lg\:container {
     width: 100%;
     margin-right: auto;
