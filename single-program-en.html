@@ -233,7 +233,7 @@
                 </div>
             </div>
 
-            <div class="search-result-container">
+            <div class="search-result-container active">
                 <div
                     class="w-full lg:w-[920px] h-full bg-white rounded-2xl overflow-hidden border border-[#D7D5D5] flex flex-col">
 
@@ -244,8 +244,7 @@
                                 Search Icon
                             </span>
                         </button>
-                        <input type="search" name="search-2" id="search-2"
-                            placeholder="Search for courses - qualifications - professional licenses.."
+                        <input type="search" name="search-2" id="search-2" placeholder="Search for courses - programs.."
                             class="placeholder:text-[#5B5F6D] text-base leading-normal flex-1 focus:outline-none">
                         <button type="button" class="close-search-res">
                             <img src="assets/images/close.svg" width="24" height="24" alt="Search Icon">
@@ -267,18 +266,8 @@
                                 <span
                                     class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
                             </li>
-                            <li data-filter=".qualifications" class="filter-srch flex items-center gap-2">
-                                qualifications
-                                <span
-                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
-                            </li>
-                            <li data-filter=".pro-qualifications" class="filter-srch flex items-center gap-2">
-                                Professional qualifications
-                                <span
-                                    class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
-                            </li>
-                            <li data-filter=".pro-licence" class="filter-srch flex items-center gap-2">
-                                Professional licenses
+                            <li data-filter=".programs" class="filter-srch flex items-center gap-2">
+                                Programs
                                 <span
                                     class="bg-[#E9E8E8] rounded-full py-0.5 px-2 text-[#838795] text-xs leading-normal">5</span>
                             </li>
@@ -291,8 +280,7 @@
                             <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
                                 courses
                             </h2>
-                            <div
-                                class="flex lg:grid lg:grid-cols-3 gap-5 overflow-x-scroll lg:overflow-x-visible px-6 pb-6 lg:p-0">
+                            <div class="flex lg:grid lg:grid-cols-3 gap-5 overflow-x-scroll lg:overflow-x-visible px-6 pb-6 lg:p-0">
                                 <div
                                     class="w-[272px] shrink-0 lg:w-auto group filt-1 filt-2 filt-5 border border-[#E9E8E8] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#8447FF]">
                                     <div class="h-[150px] relative">
@@ -428,339 +416,236 @@
                         </div>
                         <!-- ======================================= -->
 
-                        <div
-                            class="lg:p-8 flex flex-col lg:gap-4 border-b border-[#E9E8E8] srch-filter-card qualifications">
+                        <div class="lg:p-8 flex flex-col lg:gap-4 border-b border-[#E9E8E8] srch-filter-card programs">
                             <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
-                                Qualifications
+                                Programs
                             </h2>
-                            <div
-                                class="lg:pt-0 p-6 lg:p-0 flex lg:grid lg:grid-cols-2 gap-5 overflow-x-scroll lg:overflow-x-visible">
+                            <div  class="flex lg:grid lg:grid-cols-2 gap-5 overflow-x-scroll lg:overflow-x-visible px-6 pb-6 lg:p-0">
+                                <!-- program item  -->
                                 <div
-                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
-                                        <img src="assets/images/qual-1.png"
-                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                            width="750" height="500" alt="licence-1">
-                                    </div>
-                                    <div class="p-6 flex flex-col gap-6 flex-1">
-                                        <div class="flex flex-col gap-4">
-                                            <div class="flex flex-col gap-2">
-                                                <h2
-                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-2">
-                                                    <a href="#">
-                                                        Training course on the professional certificate in controlling
-                                                        the quality of learning
-                                                    </a>
-                                                </h2>
-                                                <div class="flex items-center gap-2">
-                                                    <div
-                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                        <img src="assets/images/homepage/calender.png" width="12"
-                                                            height="14" alt="calender">
-                                                        1 Month
-                                                    </div>
-                                                    <div
-                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                        <img src="assets/images/clock-alt.png" width="14" height="13"
-                                                            alt="clock">
-                                                        30 hour
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="text-[#838795] text-xs leading-[180%] line-clamp-2">
-                                                The Annab Institute is one of the bodies accredited by the National
-                                                Center for E-Learning that provides training for the professional
-                                                certificate in control
-
-                                            </p>
+                                    class="border shrink-0 max-w-full border-[#D0D5DD] hover:border-[#2156A7] flex flex-col rounded-2xl overflow-hidden transition-colors duration-300">
+                                    <div class="h-[224px] relative">
+                                        <div
+                                            class="absolute font-bold end-5 top-5 bg-[#2E90FA] rounded-full px-[10px] py-2 text-white text-sm leading-normal ltr:leading-5 ltr:-tracking-[0.42px]">
+                                            Beginner
                                         </div>
+                                        <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover"
+                                            width="371" height="244" alt="programs">
                                     </div>
-                                </div>
-
-                                <div
-                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
-                                        <img src="assets/images/qual-1.png"
-                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                            width="750" height="500" alt="licence-1">
-                                    </div>
-                                    <div class="p-6 flex flex-col gap-6 flex-1">
-                                        <div class="flex flex-col gap-4">
-                                            <div class="flex flex-col gap-2">
-                                                <h2
-                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-2">
-                                                    <a href="#">
-                                                        Training course on the professional certificate in controlling
-                                                        the quality of learning
-                                                    </a>
-                                                </h2>
-                                                <div class="flex items-center gap-2">
-                                                    <div
-                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                        <img src="assets/images/homepage/calender.png" width="12"
-                                                            height="14" alt="calender">
-                                                        1 Month
-                                                    </div>
-                                                    <div
-                                                        class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                        <img src="assets/images/clock-alt.png" width="14" height="13"
-                                                            alt="clock">
-                                                        30 houre
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="text-[#838795] text-xs leading-[180%] line-clamp-2">
-                                                The Annab Institute is one of the bodies accredited by the National
-                                                Center for E-Learning that provides training for the professional
-                                                certificate in control
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ======================================= -->
-
-                        <div
-                            class="lg:p-8 flex flex-col lg:gap-4 border-b border-[#E9E8E8] srch-filter-card pro-qualifications">
-                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
-                                Professional qualifications
-                            </h2>
-                            <div
-                                class="lg:pt-0 p-6 lg:p-0 flex lg:grid lg:grid-cols-2 gap-5 overflow-x-scroll lg:overflow-x-visible">
-                                <div
-                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
-                                        <img src="assets/images/qual-1.png"
-                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                            width="750" height="500" alt="licence-1">
-                                    </div>
-                                    <div class="p-6 flex flex-col gap-6 flex-1">
-                                        <div class="flex flex-col gap-4">
-                                            <div class="flex flex-col gap-2">
-                                                <h2
-                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-1">
-                                                    <a href="#">
-                                                        Slice and dice with Excel
-                                                    </a>
-                                                </h2>
-                                                <p
-                                                    class="flex items-start gap-1.5 text-[#838795] text-xs leading-normal">
-                                                    <img src="assets/images/homepage/calender.png" class="mt-1"
-                                                        width="12" height="14" alt="calender">
-                                                    <span class="flex-1">
-                                                        April 18th - May 20th (4 weeks)
+                                    <div class="p-6 bg-white flex flex-col gap-4">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-black text-lg leading-normal font-bold">
+                                                <a href="#" class="">
+                                                    Consulting Foundation Program (CFP)
+                                                </a>
+                                            </h3>
+                                            <div class="flex items-center gap-3">
+                                                <div class="flex items-center gap-1">
+                                                    <img src="assets/images/clock-1.svg" width="20" height="20"
+                                                        alt="clock">
+                                                    <span
+                                                        class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                                        3 Months Learning
                                                     </span>
+                                                </div>
+                                                <div class="flex items-center gap-1">
+                                                    <img src="assets/images/book-1.svg" width="20" height="20"
+                                                        alt="clock">
+                                                    <span
+                                                        class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                                        4 Tracks 12 Courses
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p
+                                            class="line-clamp-2 text-[#445566] text-xs leading-[180%] ltr:leading-[160%]">
+                                            The Consulting Foundation Program (CFP) is a highly engaging talent
+                                            development
+                                            program
+                                            designed to equip ....
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <div class=" flex items-center gap-2">
+                                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M15.2217 1.28906C15.4795 1.40625 15.667 1.6875 15.667 1.96875V9.42188C15.667 9.84375 15.292 10.1484 14.8936 10.1484C14.8232 10.1484 14.7295 10.1484 14.6592 10.125C13.9326 9.89062 13.2061 9.79688 12.4795 9.79688C9.59668 9.79688 6.71387 11.25 3.83105 11.25C2.91699 11.25 2.00293 11.1094 1.08887 10.7344C0.831055 10.6172 0.666992 10.3359 0.666992 10.0547V2.60156C0.666992 2.17969 1.01855 1.85156 1.41699 1.85156C1.4873 1.85156 1.58105 1.875 1.65137 1.89844C2.37793 2.13281 3.10449 2.22656 3.83105 2.22656C6.71387 2.22656 9.59668 0.75 12.4795 0.75C13.3936 0.75 14.3076 0.914062 15.2217 1.28906ZM1.79199 3.11719V4.52344C2.51855 4.52344 3.10449 4.00781 3.24512 3.32812C2.75293 3.28125 2.26074 3.23438 1.79199 3.11719ZM1.79199 9.79688C2.26074 9.96094 2.75293 10.0781 3.26855 10.1016C3.24512 9.30469 2.58887 8.67188 1.79199 8.67188V9.79688ZM8.16699 8.25C9.19824 8.25 10.042 7.26562 10.042 6C10.042 4.75781 9.19824 3.75 8.16699 3.75C7.1123 3.75 6.29199 4.75781 6.29199 6C6.29199 7.26562 7.1123 8.25 8.16699 8.25ZM14.542 8.90625V7.57031C13.9092 7.64062 13.3936 8.10938 13.2529 8.71875C13.6982 8.74219 14.1201 8.8125 14.542 8.90625ZM14.542 3.375V2.22656C14.1201 2.08594 13.6748 1.99219 13.2295 1.94531C13.2529 2.67188 13.8154 3.28125 14.542 3.375Z"
+                                                        fill="#445566" />
+                                                </svg>
+                                                <p class="text-[#1D1D1B] text-xs leading-normal font-bold">
+                                                    Price:
+                                                    <span class="text-[#2156A7]">
+                                                        6000
+                                                    </span>
+                                                    SAR
                                                 </p>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <div
-                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
-                                                        height="16" alt="icon">
-                                                    6 courses
+                                                <div class="w-6 h-6 rounded-full">
+                                                    <img src="assets/images/homepage/course-trainer.jpg"
+                                                        class="w-full h-full object-cover" width="24" height="24"
+                                                        alt="person">
                                                 </div>
-                                                <div
-                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                                    <img src="assets/images/homepage/lic-icon-1.png" width="13"
-                                                        height="16" alt="icon">
-                                                    13 day
-                                                </div>
-                                                <div
-                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
-                                                        height="16" alt="icon">
-                                                    52 hour
-                                                </div>
+                                                <p class="text-[#1D1D1B] text-[13px] leading-normal">
+                                                    Mohamed Abdelrazek
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- program item  -->
                                 <div
-                                    class="shrink-0 w-full lg:w-auto border bg-white border-[#E9E8E8] transition-all duration-300 hover:border-[#8447FF] rounded-2xl lg:overflow-hidden flex flex-col lg:flex-row">
-                                    <div class="lg:w-[148px] p-6 pb-0 lg:p-0 overflow-hidden -mt-12">
-                                        <img src="assets/images/qual-1.png"
-                                            class="h-56 rounded-2xl lg:rounded-none w-full lg:h-full object-cover"
-                                            width="750" height="500" alt="licence-1">
+                                    class="border shrink-0 max-w-full  border-[#D0D5DD] hover:border-[#2156A7] flex flex-col rounded-2xl overflow-hidden transition-colors duration-300">
+                                    <div class="h-[224px] relative">
+                                        <div
+                                            class="absolute font-bold end-5 top-5 bg-[#2E90FA] rounded-full px-[10px] py-2 text-white text-sm leading-normal ltr:leading-5 ltr:-tracking-[0.42px]">
+                                            Beginner
+                                        </div>
+                                        <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover"
+                                            width="371" height="244" alt="programs">
                                     </div>
-                                    <div class="p-6 flex flex-col gap-6 flex-1">
-                                        <div class="flex flex-col gap-4">
-                                            <div class="flex flex-col gap-2">
-                                                <h2
-                                                    class="text-[#333745] text-sm leading-normal font-extrabold line-clamp-1">
-                                                    <a href="#">
-                                                        Slice and dice with Excel
-                                                    </a>
-                                                </h2>
-                                                <p
-                                                    class="flex items-start gap-1.5 text-[#838795] text-xs leading-normal">
-                                                    <img src="assets/images/homepage/calender.png" class="mt-1"
-                                                        width="12" height="14" alt="calender">
-                                                    <span class="flex-1">
-                                                        April 18th - May 20th (4 weeks)
+                                    <div class="p-6 bg-white flex flex-col gap-4">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-black text-lg leading-normal font-bold">
+                                                <a href="#" class="">
+                                                    Consulting Foundation Program (CFP)
+                                                </a>
+                                            </h3>
+                                            <div class="flex items-center gap-3">
+                                                <div class="flex items-center gap-1">
+                                                    <img src="assets/images/clock-1.svg" width="20" height="20"
+                                                        alt="clock">
+                                                    <span
+                                                        class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                                        3 Months Learning
                                                     </span>
+                                                </div>
+                                                <div class="flex items-center gap-1">
+                                                    <img src="assets/images/book-1.svg" width="20" height="20"
+                                                        alt="clock">
+                                                    <span
+                                                        class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                                        4 Tracks 12 Courses
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p
+                                            class="line-clamp-2 text-[#445566] text-xs leading-[180%] ltr:leading-[160%]">
+                                            The Consulting Foundation Program (CFP) is a highly engaging talent
+                                            development
+                                            program
+                                            designed to equip ....
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <div class=" flex items-center gap-2">
+                                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M15.2217 1.28906C15.4795 1.40625 15.667 1.6875 15.667 1.96875V9.42188C15.667 9.84375 15.292 10.1484 14.8936 10.1484C14.8232 10.1484 14.7295 10.1484 14.6592 10.125C13.9326 9.89062 13.2061 9.79688 12.4795 9.79688C9.59668 9.79688 6.71387 11.25 3.83105 11.25C2.91699 11.25 2.00293 11.1094 1.08887 10.7344C0.831055 10.6172 0.666992 10.3359 0.666992 10.0547V2.60156C0.666992 2.17969 1.01855 1.85156 1.41699 1.85156C1.4873 1.85156 1.58105 1.875 1.65137 1.89844C2.37793 2.13281 3.10449 2.22656 3.83105 2.22656C6.71387 2.22656 9.59668 0.75 12.4795 0.75C13.3936 0.75 14.3076 0.914062 15.2217 1.28906ZM1.79199 3.11719V4.52344C2.51855 4.52344 3.10449 4.00781 3.24512 3.32812C2.75293 3.28125 2.26074 3.23438 1.79199 3.11719ZM1.79199 9.79688C2.26074 9.96094 2.75293 10.0781 3.26855 10.1016C3.24512 9.30469 2.58887 8.67188 1.79199 8.67188V9.79688ZM8.16699 8.25C9.19824 8.25 10.042 7.26562 10.042 6C10.042 4.75781 9.19824 3.75 8.16699 3.75C7.1123 3.75 6.29199 4.75781 6.29199 6C6.29199 7.26562 7.1123 8.25 8.16699 8.25ZM14.542 8.90625V7.57031C13.9092 7.64062 13.3936 8.10938 13.2529 8.71875C13.6982 8.74219 14.1201 8.8125 14.542 8.90625ZM14.542 3.375V2.22656C14.1201 2.08594 13.6748 1.99219 13.2295 1.94531C13.2529 2.67188 13.8154 3.28125 14.542 3.375Z"
+                                                        fill="#445566" />
+                                                </svg>
+                                                <p class="text-[#1D1D1B] text-xs leading-normal font-bold">
+                                                    Price:
+                                                    <span class="text-[#2156A7]">
+                                                        6000
+                                                    </span>
+                                                    SAR
                                                 </p>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <div
-                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
-                                                        height="16" alt="icon">
-                                                    6 courses
+                                                <div class="w-6 h-6 rounded-full">
+                                                    <img src="assets/images/homepage/course-trainer.jpg"
+                                                        class="w-full h-full object-cover" width="24" height="24"
+                                                        alt="person">
                                                 </div>
-                                                <div
-                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                                    <img src="assets/images/homepage/lic-icon-1.png" width="13"
-                                                        height="16" alt="icon">
-                                                    13 day
-                                                </div>
-                                                <div
-                                                    class="flex-1 flex items-center gap-2 text-[#333745] text-xs leading-normal">
-                                                    <img src="assets/images/homepage/lic-icon-1.png" width="14"
-                                                        height="16" alt="icon">
-                                                    52 hour
-                                                </div>
+                                                <p class="text-[#1D1D1B] text-[13px] leading-normal">
+                                                    Mohamed Abdelrazek
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
+                                <!-- program item  -->
+                                <div
+                                    class="border shrink-0 max-w-full  border-[#D0D5DD] hover:border-[#2156A7] flex flex-col rounded-2xl overflow-hidden transition-colors duration-300">
+                                    <div class="h-[224px] relative">
+                                        <div
+                                            class="absolute font-bold end-5 top-5 bg-[#2E90FA] rounded-full px-[10px] py-2 text-white text-sm leading-normal ltr:leading-5 ltr:-tracking-[0.42px]">
+                                            Beginner
+                                        </div>
+                                        <img src="assets/images/program-pro.jpg" class="w-full h-full object-cover"
+                                            width="371" height="244" alt="programs">
+                                    </div>
+                                    <div class="p-6 bg-white flex flex-col gap-4">
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="text-black text-lg leading-normal font-bold">
+                                                <a href="#" class="">
+                                                    Consulting Foundation Program (CFP)
+                                                </a>
+                                            </h3>
+                                            <div class="flex items-center gap-3">
+                                                <div class="flex items-center gap-1">
+                                                    <img src="assets/images/clock-1.svg" width="20" height="20"
+                                                        alt="clock">
+                                                    <span
+                                                        class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                                        3 Months Learning
+                                                    </span>
+                                                </div>
+                                                <div class="flex items-center gap-1">
+                                                    <img src="assets/images/book-1.svg" width="20" height="20"
+                                                        alt="clock">
+                                                    <span
+                                                        class="text-[#1D1D1B] text-sm md:text-base leading-normal ltr:lg:leading-5 ltr:-tracking-[0.48px]">
+                                                        4 Tracks 12 Courses
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p
+                                            class="line-clamp-2 text-[#445566] text-xs leading-[180%] ltr:leading-[160%]">
+                                            The Consulting Foundation Program (CFP) is a highly engaging talent
+                                            development
+                                            program
+                                            designed to equip ....
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <div class=" flex items-center gap-2">
+                                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M15.2217 1.28906C15.4795 1.40625 15.667 1.6875 15.667 1.96875V9.42188C15.667 9.84375 15.292 10.1484 14.8936 10.1484C14.8232 10.1484 14.7295 10.1484 14.6592 10.125C13.9326 9.89062 13.2061 9.79688 12.4795 9.79688C9.59668 9.79688 6.71387 11.25 3.83105 11.25C2.91699 11.25 2.00293 11.1094 1.08887 10.7344C0.831055 10.6172 0.666992 10.3359 0.666992 10.0547V2.60156C0.666992 2.17969 1.01855 1.85156 1.41699 1.85156C1.4873 1.85156 1.58105 1.875 1.65137 1.89844C2.37793 2.13281 3.10449 2.22656 3.83105 2.22656C6.71387 2.22656 9.59668 0.75 12.4795 0.75C13.3936 0.75 14.3076 0.914062 15.2217 1.28906ZM1.79199 3.11719V4.52344C2.51855 4.52344 3.10449 4.00781 3.24512 3.32812C2.75293 3.28125 2.26074 3.23438 1.79199 3.11719ZM1.79199 9.79688C2.26074 9.96094 2.75293 10.0781 3.26855 10.1016C3.24512 9.30469 2.58887 8.67188 1.79199 8.67188V9.79688ZM8.16699 8.25C9.19824 8.25 10.042 7.26562 10.042 6C10.042 4.75781 9.19824 3.75 8.16699 3.75C7.1123 3.75 6.29199 4.75781 6.29199 6C6.29199 7.26562 7.1123 8.25 8.16699 8.25ZM14.542 8.90625V7.57031C13.9092 7.64062 13.3936 8.10938 13.2529 8.71875C13.6982 8.74219 14.1201 8.8125 14.542 8.90625ZM14.542 3.375V2.22656C14.1201 2.08594 13.6748 1.99219 13.2295 1.94531C13.2529 2.67188 13.8154 3.28125 14.542 3.375Z"
+                                                        fill="#445566" />
+                                                </svg>
+                                                <p class="text-[#1D1D1B] text-xs leading-normal font-bold">
+                                                    Price:
+                                                    <span class="text-[#2156A7]">
+                                                        6000
+                                                    </span>
+                                                    SAR
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <div class="w-6 h-6 rounded-full">
+                                                    <img src="assets/images/homepage/course-trainer.jpg"
+                                                        class="w-full h-full object-cover" width="24" height="24"
+                                                        alt="person">
+                                                </div>
+                                                <p class="text-[#1D1D1B] text-[13px] leading-normal">
+                                                    Mohamed Abdelrazek
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                         <!-- ======================================= -->
 
-                        <div class="lg:p-8 flex flex-col lg:gap-4 srch-filter-card pro-licence">
-                            <h2 class="text-[#333745] text-sm leading-normal font-bold p-6 lg:p-0">
-                                الرخص المهنية
-                            </h2>
-                            <div
-                                class="flex lg:grid lg:grid-cols-3 gap-5 overflow-x-scroll lg:overflow-x-visible px-6 pb-6 lg:p-0">
-                                <div
-                                    class="shrink-0 w-[272px] lg:w-auto rounded-2xl overflow-hidden border border-[#E9E8E8] bg-white hover:border-[#8447FF] transition-all duration-300">
-                                    <div class="h-[150px] relative">
-                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                                height="64" alt="badge" class="h-full w-full object-cover">
-                                        </div>
-                                        <img src="assets/images/license-card.jpg" class="w-full h-full object-cover"
-                                            width="348" height="224" alt="Card">
-                                    </div>
-                                    <div class="flex flex-col gap-5 p-5 pt-0 -mt-4 relative">
-                                        <div class="flex flex-col gap-2 items-start">
-                                            <span
-                                                class="flex items-center gap-2.5 bg-[#F8F4FF] border-2 border-white rounded-full px-4 text-[#6B7280] text-[13px] leading-[30px] font-bold">
-                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M2.8125 2.52344V11.4609H1.1875V1.91406C1.1875 1.35547 1.61914 0.898438 2.20312 0.898438H14.7969C15.3555 0.898438 15.8125 1.35547 15.8125 1.91406V11.4609H14.1875V2.52344H2.8125ZM16.2188 12.2734C16.4219 12.2734 16.625 12.4766 16.625 12.6797V13.4922C16.625 13.7207 16.4219 13.8984 16.2188 13.8984H0.78125C0.552734 13.8984 0.375 13.7207 0.375 13.4922V12.6797C0.375 12.4766 0.552734 12.2734 0.78125 12.2734H7.6875V10.6484H12.5625V12.2734H16.2188Z"
-                                                        fill="#6B7280"></path>
-                                                </svg>
-                                                short course
-                                            </span>
-
-                                            <h3 class="text-black text-sm leading-normal font-bold">
-                                                <a href="#">
-                                                    Professional license for the general educational test (registered)
-                                                </a>
-                                            </h3>
-
-                                            <div
-                                                class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                <span class="flex-1">
-                                                    April 18th - May 20th (4 weeks)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="shrink-0 w-[272px] lg:w-auto rounded-2xl overflow-hidden border border-[#E9E8E8] bg-white hover:border-[#8447FF] transition-all duration-300">
-                                    <div class="h-[150px] relative">
-                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                                height="64" alt="badge" class="h-full w-full object-cover">
-                                        </div>
-                                        <img src="assets/images/license-card.jpg" class="w-full h-full object-cover"
-                                            width="348" height="224" alt="Card">
-                                    </div>
-                                    <div class="flex flex-col gap-5 p-5 pt-0 -mt-4 relative">
-                                        <div class="flex flex-col gap-2 items-start">
-                                            <span
-                                                class="flex items-center gap-2.5 bg-[#F8F4FF] border-2 border-white rounded-full px-4 text-[#6B7280] text-[13px] leading-[30px] font-bold">
-                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M2.8125 2.52344V11.4609H1.1875V1.91406C1.1875 1.35547 1.61914 0.898438 2.20312 0.898438H14.7969C15.3555 0.898438 15.8125 1.35547 15.8125 1.91406V11.4609H14.1875V2.52344H2.8125ZM16.2188 12.2734C16.4219 12.2734 16.625 12.4766 16.625 12.6797V13.4922C16.625 13.7207 16.4219 13.8984 16.2188 13.8984H0.78125C0.552734 13.8984 0.375 13.7207 0.375 13.4922V12.6797C0.375 12.4766 0.552734 12.2734 0.78125 12.2734H7.6875V10.6484H12.5625V12.2734H16.2188Z"
-                                                        fill="#6B7280"></path>
-                                                </svg>
-                                                short course
-                                            </span>
-
-                                            <h3 class="text-black text-sm leading-normal font-bold">
-                                                <a href="#">
-                                                    Professional license for the general educational test (registered)
-                                                </a>
-                                            </h3>
-
-                                            <div
-                                                class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                <span class="flex-1">
-                                                    April 18th - May 20th (4 weeks)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="shrink-0 w-[272px] lg:w-auto rounded-2xl overflow-hidden border border-[#E9E8E8] bg-white hover:border-[#8447FF] transition-all duration-300">
-                                    <div class="h-[150px] relative">
-                                        <div class="w-16 h-16 absolute top-0 left-8 rounded-b-[64px] overflow-hidden">
-                                            <img src="assets/images/homepage/training-courses-badge.png" width="64"
-                                                height="64" alt="badge" class="h-full w-full object-cover">
-                                        </div>
-                                        <img src="assets/images/license-card.jpg" class="w-full h-full object-cover"
-                                            width="348" height="224" alt="Card">
-                                    </div>
-                                    <div class="flex flex-col gap-5 p-5 pt-0 -mt-4 relative">
-                                        <div class="flex flex-col gap-2 items-start">
-                                            <span
-                                                class="flex items-center gap-2.5 bg-[#F8F4FF] border-2 border-white rounded-full px-4 text-[#6B7280] text-[13px] leading-[30px] font-bold">
-                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M2.8125 2.52344V11.4609H1.1875V1.91406C1.1875 1.35547 1.61914 0.898438 2.20312 0.898438H14.7969C15.3555 0.898438 15.8125 1.35547 15.8125 1.91406V11.4609H14.1875V2.52344H2.8125ZM16.2188 12.2734C16.4219 12.2734 16.625 12.4766 16.625 12.6797V13.4922C16.625 13.7207 16.4219 13.8984 16.2188 13.8984H0.78125C0.552734 13.8984 0.375 13.7207 0.375 13.4922V12.6797C0.375 12.4766 0.552734 12.2734 0.78125 12.2734H7.6875V10.6484H12.5625V12.2734H16.2188Z"
-                                                        fill="#6B7280"></path>
-                                                </svg>
-                                                short course
-                                            </span>
-
-                                            <h3 class="text-black text-sm leading-normal font-bold">
-                                                <a href="#">
-                                                    Professional license for the general educational test (registered)
-                                                </a>
-                                            </h3>
-
-                                            <div
-                                                class="flex items-center gap-1.5 text-[#838795] text-xs leading-normal">
-                                                <img src="assets/images/homepage/calender.png" width="12" height="14"
-                                                    alt="calender">
-                                                <span class="flex-1">
-                                                    April 18th - May 20th (4 weeks)
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -2203,7 +2088,7 @@
         <!-- ======================================= -->
 
         <!-- Start Call To action section -->
-        <section class="bg-[#0F0F0F] px-6 lg:px-0 py-8 lg:py-[72px]">
+        <section class="bg-[#0F0F0F] px-6 lg:px-0 py-8 lg:py-[72px] cta-sec">
 
             <div
                 class="container bg-[#1B1C1F] rounded-3xl lg:border border-[#ffffff1a] py-8 lg:py-15 px-6 lg:px-20 relative overflow-hidden">
@@ -2245,7 +2130,7 @@
 
         <!-- ======================================= -->
         <!-- Video Popup -->
-        <div class="aanaab-popup flex flex-col justify-center cursor-zoom-out px-6 lg:px-0" data-pop="video-popup">
+        <div class="aanaab-popup flex flex-col justify-center  px-6 lg:px-0" data-pop="video-popup">
             <div class="container flex flex-col gap-6 popup-container cursor-auto">
                 <div class="flex items-center gap-3">
                     <div class="flex-1 flex flex-col gap-2">

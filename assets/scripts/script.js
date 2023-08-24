@@ -18,6 +18,15 @@ if ($(".close-search-res").length > 0) {
     $(".close-search-res").on("click", function () {
         $(".search-result-container").removeClass("active")
     })
+
+    $(".search-result-container").on("click", function () {
+        $(".search-result-container").removeClass("active");
+    })
+
+    $(".search-result-container > div").click(function (e) {
+        e.stopPropagation();
+    });
+
 }
 // =================================================
 // Testimonial Carousel  ==> Home Page
@@ -436,7 +445,7 @@ if ($(".sticky-prog-head").length) {
     $(".sticky-prog-head").css("top", $("body > header").innerHeight())
     let pos = $(".sticky-prog-head").position().top + $(".sticky-prog-head").innerHeight();
     $(window).on("scroll", function () {
-        let scrollPos = $(document).scrollTop() + $("body > header").innerHeight() ;
+        let scrollPos = $(document).scrollTop() + $("body > header").innerHeight();
         let sections = $('.naved-sec');
         sections.each(function () {
             let top = $(this).offset().top - 100;
@@ -451,7 +460,7 @@ if ($(".sticky-prog-head").length) {
             }
         });
 
-        if ($(window).scrollTop() > pos) {
+        if ($(window).scrollTop() > pos && $(window).scrollTop() < $(".cta-sec").position().top) {
             $(".sticky-prog-head").addClass("fixdtop");
         }
 
@@ -830,7 +839,7 @@ if ($(".license-cards-container").length > 0) {
 if ($("#search-courses").length > 0) {
 
     $("#search-courses").on("focus", function () {
-        $(".search-result-container").addClass("active")
+        $(".search-result-container").addClass("active");
     })
 }
 
