@@ -1616,6 +1616,10 @@ video {
   padding: 2.5rem;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1900,6 +1904,10 @@ video {
   font-size: 32px;
 }
 
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .text-\[44px\] {
   font-size: 44px;
 }
@@ -2007,6 +2015,14 @@ video {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-\[\] {
+  line-height: ;
 }
 
 .-tracking-\[0\.16px\] {
@@ -2842,8 +2858,19 @@ video {
   font-size: 32px;
 }
 
-.slider-why-aanaab {
+.slider-why-aanaab,
+.slider-success-story {
   overflow: visible;
+}
+
+.slider-success-story .swiper-slide-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 86 167 / var(--tw-bg-opacity));
+}
+
+.slider-success-story .swiper-slide-active > * {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .aanaab-popup {
@@ -3107,12 +3134,12 @@ video {
   transition-duration: 300ms;
 }
 
-.sticky-prog-head.fixdtop  .iso-nav.main-iso {
+.sticky-prog-head.fixdtop .iso-nav.main-iso {
   width: 100%;
 }
 
 @media (min-width: 1024px) {
-  .sticky-prog-head.fixdtop  .iso-nav.main-iso {
+  .sticky-prog-head.fixdtop .iso-nav.main-iso {
     justify-content: flex-start;
   }
 
@@ -3914,6 +3941,14 @@ video {
     padding: 2rem;
   }
 
+  .lg\:p-16 {
+    padding: 4rem;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -4095,6 +4130,10 @@ video {
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .lg\:font-bold {

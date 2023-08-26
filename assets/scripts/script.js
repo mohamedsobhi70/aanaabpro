@@ -80,17 +80,19 @@ if ($(".slider-team").length > 0) {
 // Partners Carousel
 if ($(".slider-partners").length > 0) {
     let swiper = new Swiper(".slider-partners", {
-        spaceBetween: 40,
         autoplay: true,
         breakpoints: {
             0: {
                 slidesPerView: 2.5,
+                spaceBetween: 16,
             },
             680: {
                 slidesPerView: 4,
+                spaceBetween: 24,
             },
             1024: {
                 slidesPerView: 5,
+                spaceBetween: 40,
             },
         },
         pagination: {
@@ -378,12 +380,15 @@ if ($(".slider-events").length > 0) {
     });
 }
 // =================================================
+
 // ((About page)) About why aanaab
 if ($(".slider-why-aanaab").length > 0) {
     let swiper = new Swiper(".slider-why-aanaab", {
+        loop: true,
+        autoplay: true,
         breakpoints: {
             0: {
-                spaceBetween: 24,
+                spaceBetween: 16,
                 slidesPerView: 1,
             },
             680: {
@@ -403,8 +408,36 @@ if ($(".slider-why-aanaab").length > 0) {
 }
 // =================================================
 
+// ((About page)) About success story
+if ($(".slider-success-story").length > 0) {
+    let swiper = new Swiper(".slider-success-story", {
+        centeredSlides: true,
+        loop: true,
+        autoplay: true,
+        breakpoints: {
+            0: {
+                spaceBetween: 16,
+                slidesPerView: 1,
+            },
+            680: {
+                slidesPerView: 1.5,
+                spaceBetween: 24,
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 1,
+            },
+        },
+        pagination: {
+            el: ".success-story-pagination",
+            clickable: true,
+        }
+    });
+}
+// =================================================
+
 // Drop Down In Header
-if ($(".menu-dropdown").length) {
+if ($(".menu-dropdown").length > 0) {
     $(".menu-dropdown")
         .on("mouseenter", function () {
             if ($(window).width() > 1024) {
@@ -428,7 +461,7 @@ if ($(".menu-dropdown").length) {
 // =================================================
 
 // Change the shadow of Img ==> Home Page
-if ($(".hero-img").length) {
+if ($(".hero-img").length > 0) {
     $(window).on("scroll", function () {
         let pos = $(".hero-img").position().top + 100;
         if (window.scrollY > pos) {
@@ -441,7 +474,7 @@ if ($(".hero-img").length) {
 
 
 // single programm prog-sticky-section
-if ($(".sticky-prog-head").length) {
+if ($(".sticky-prog-head").length > 0) {
     $(".sticky-prog-head").css("top", $("body > header").innerHeight())
     let pos = $(".sticky-prog-head").position().top + $(".sticky-prog-head").innerHeight();
     $(window).on("scroll", function () {
@@ -472,7 +505,8 @@ if ($(".sticky-prog-head").length) {
 
 }
 // Popup
-if ($(".aanaab-popup").length) {
+
+if ($(".aanaab-popup").length > 0) {
     $(".close-popup-btn").on("click", function () {
         $(".aanaab-popup").removeClass("active");
         $("body").css("overflow-y", "visible");
@@ -494,7 +528,7 @@ if ($(".aanaab-popup").length) {
 // =================================================
 
 // Annab Accordion Component
-if ($(".anb-accordion").length) {
+if ($(".anb-accordion").length > 0) {
     $(".anb-accordion .anb-accordion-title").on("click", function (e) {
         $(this).parent().toggleClass("active");
         $(this).parent().find(".anb-accordion-content").slideToggle(300);
